@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Response and Explanatory Variables – Math221D Notebook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d19aaff0441ffe538fac26ca03b5f350.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e89341beafc15df96e2eb459d0c9c10f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Math221D Notebook</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-getting-started" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Getting Started</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-getting-started">    
+        <li>
+    <a class="dropdown-item" href="../1-Getting_Started/1-Course_Intro.html">
+ <span class="dropdown-text">Course Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../1-Getting_Started/2-Installing_R.html">
+ <span class="dropdown-text">Installing R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../1-Getting_Started/3-Introducing_R.html">
+ <span class="dropdown-text">Introducing R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../1-Getting_Started/4-Installing_Packages.html">
+ <span class="dropdown-text">Installing R Libraries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process.html">
+ <span class="dropdown-text">The Statistical Process</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process_Practice.html">
+ <span class="dropdown-text">Statistical Process Practice Problems</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-descriptive-stats" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Descriptive Stats</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-descriptive-stats">    
+        <li class="dropdown-header">Descriptive Statistics</li>
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html">
+ <span class="dropdown-text">Response and Explanatory Variables</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html">
+ <span class="dropdown-text">Numerical Quantitative Data Summaries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html">
+ <span class="dropdown-text">Practice: Numerical Summaries (Quant.)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html">
+ <span class="dropdown-text">Graphical Quantitative Data Summaries</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html">
+ <span class="dropdown-text">Practice: Graphical Summaries (Quant.)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html">
+ <span class="dropdown-text">Quantitative Data Summaries - Multiple Groups</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/3b-Quantitative_Data_Summaries_Multiple_Groups_Practice.html">
+ <span class="dropdown-text">Practice: Summarizing Multiple Groups</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/4-Bivariate_Quantitative_Data_Summaries.html">
+ <span class="dropdown-text">Summarizing Bivariate Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/4b-Bivariate_Quantitative_Data_Summaries_Practice.html">
+ <span class="dropdown-text">Practice: Bivariate Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/5-Univariate_Categorical_Data_Summaries.html">
+ <span class="dropdown-text">Categorical Data Summaries - One Variable</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/6-Bivariate_Categorical_Data_Summaries.html">
+ <span class="dropdown-text">Categorical Data Summaries - 2 Variables</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/6b-Categorical_Data_Summaries_Practice.html">
+ <span class="dropdown-text">Practice: Summarizing Categorical Data</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-wrangling" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data Wrangling</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-wrangling">    
+        <li class="dropdown-header">Into the Tidyverse</li>
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/1-GGPlot_Intro.html">
+ <span class="dropdown-text">A Better Way to Plot</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/2-Wrangling_Basics.html">
+ <span class="dropdown-text">Intro to Data Wrangling</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/3-Filter.html">
+ <span class="dropdown-text">filter()</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/4-Select.html">
+ <span class="dropdown-text">select()</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/5-Mutate.html">
+ <span class="dropdown-text">mutate()</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/6-Factors.html">
+ <span class="dropdown-text">Factors in R</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/7-Exploring_New_Data_with_Tidyverse.html">
+ <span class="dropdown-text">Into The Tidyverse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/8-AA_Data_Wrang_and_Viz.html">
+ <span class="dropdown-text">Data Wrangling - Application Activity</span></a>
+  </li>  
+        <li class="dropdown-header">Bonus Material</li>
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/Bonus_More_Tidy_Practice.html">
+ <span class="dropdown-text">Level up your Tidy-ness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/Bonus_GroupBy_Summarise.html">
+ <span class="dropdown-text">group_by() + summarise()</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-inferential-stats" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Inferential Stats</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-inferential-stats">    
+        <li class="dropdown-header">Foundations</li>
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/1-Probability.html">
+ <span class="dropdown-text">Probability</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/2-The_Normal_Distribution.html">
+ <span class="dropdown-text">The Normal Distribution</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/2b-The_Normal_Distribution_Practice.html">
+ <span class="dropdown-text">Normal Probability Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/3-Sampling_Distributions_CLT_LLN.html">
+ <span class="dropdown-text">Distribution of Sample Means</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/4-Assessing_Normality.html">
+ <span class="dropdown-text">Assessing Normality</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/6-Central_Limit_Theorem_Practice.html">
+ <span class="dropdown-text">Central Limit Theorem Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/7-Confidence_Intervals_for_Means.html">
+ <span class="dropdown-text">Confidence Intervals for a Mean</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/7-Introducing_T-Distribution.html">
+ <span class="dropdown-text">Introducing the T-Distribution</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/7b-Confidence_Intervals_for_Means_Practice.html">
+ <span class="dropdown-text">Confidence Intervals For Means - Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/8-Introducing_Hypothesis_Tests.html">
+ <span class="dropdown-text">Introducing Hypothesis Tests</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../4-Foundations_Statistical_Inference/9-One_Sample_ttest.html">
+ <span class="dropdown-text">One-Sample T-test</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-statistical-tests-i" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Statistical Tests I</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-statistical-tests-i">    
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/1-Conf_Int_Hyp_Test_for_Proportions.html">
+ <span class="dropdown-text">Confidence Intervals and Hypothesis Tests for Proportions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/1b-Conf_Int_Hyp_Test_for_Proportions_Practice.html">
+ <span class="dropdown-text">Confidence Intervals and Hypothesis Tests Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/2-Two_sample_Independent_ttest.html">
+ <span class="dropdown-text">Independent Two-sample T-test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/2b-Two_sample_Independent_ttest_practice.html">
+ <span class="dropdown-text">2-Sample Independent T-Test Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/3-Matched_Pairs_ttest.html">
+ <span class="dropdown-text">Matched Pairs T-test</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/3b-Matched_Pairs_ttest_Practice.html">
+ <span class="dropdown-text">Matched Pairs T-Test Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/4-Two_sample_Proportions.html">
+ <span class="dropdown-text">2-Sample Proportions</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../5-Statistical_Tests_Part1/4b-Two_sample_Proportions_Practice.html">
+ <span class="dropdown-text">2-Sample Proportion Practice</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-statistical-tests-ii" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Statistical Tests II</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-statistical-tests-ii">    
+        <li>
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1-Regression.html">
+ <span class="dropdown-text">Simple Linear Regression</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1-Regression_Practice.html">
+ <span class="dropdown-text">Regression Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2-ANOVA.html">
+ <span class="dropdown-text">Analysis of Variance (ANOVA)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2-ANOVA_Practice.html">
+ <span class="dropdown-text">ANOVA Practice</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence.html">
+ <span class="dropdown-text">Chi-square Test of Independence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html">
+ <span class="dropdown-text">Chi-Square Practice</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-semester-project" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Semester Project</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-semester-project">    
+        <li>
+    <a class="dropdown-item" href="../7-Semester_Project/Data_Search.html">
+ <span class="dropdown-text">Finding a Dataset</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../7-Semester_Project/Importing_Data.html">
+ <span class="dropdown-text">Downloading Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../7-Semester_Project/1-Semester_Project_Template_Part1.html">
+ <span class="dropdown-text">Semester Project</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Final_Report.html">
+ <span class="dropdown-text">Semester Project</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../8-References/Course_Map.html">
+ <span class="dropdown-text">Interactive Course Map</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../8-References/Hypothesis_Test_ProcessB.html">
+ <span class="dropdown-text">Hypothesis Test Process</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">
+ <span class="dropdown-text">Tidyverse Cheat Sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r4ds.had.co.nz/transform.html">
+ <span class="dropdown-text">R for Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://byuistats.github.io/Statistics-Notebook/RCommands.html">
+ <span class="dropdown-text">Statistics Notebook - R Commands</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#load-the-libraries" id="toc-load-the-libraries" class="nav-link" data-scroll-target="#load-the-libraries">Load the Libraries</a></li>
+  </ul></li>
+  <li><a href="#define-your-terms" id="toc-define-your-terms" class="nav-link" data-scroll-target="#define-your-terms">Define Your Terms</a>
+  <ul class="collapse">
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#data-types-review" id="toc-data-types-review" class="nav-link" data-scroll-target="#data-types-review">Data Types (Review)</a></li>
+  <li><a href="#quantitative-variables" id="toc-quantitative-variables" class="nav-link" data-scroll-target="#quantitative-variables">Quantitative Variables</a></li>
+  <li><a href="#categroical-variables" id="toc-categroical-variables" class="nav-link" data-scroll-target="#categroical-variables">Categroical Variables</a></li>
+  </ul></li>
+  <li><a href="#responsedependent-variable" id="toc-responsedependent-variable" class="nav-link" data-scroll-target="#responsedependent-variable">Response/Dependent Variable</a></li>
+  <li><a href="#explanatoryindependent-variable" id="toc-explanatoryindependent-variable" class="nav-link" data-scroll-target="#explanatoryindependent-variable">Explanatory/Independent Variable</a></li>
+  </ul></li>
+  <li><a href="#madison-countr-real-estate" id="toc-madison-countr-real-estate" class="nav-link" data-scroll-target="#madison-countr-real-estate">Madison Countr Real Estate</a>
+  <ul class="collapse">
+  <li><a href="#useful-functions-for-seeing-whats-in-a-dataset" id="toc-useful-functions-for-seeing-whats-in-a-dataset" class="nav-link" data-scroll-target="#useful-functions-for-seeing-whats-in-a-dataset">Useful Functions for Seeing What’s In a Dataset</a></li>
+  </ul></li>
+  <li><a href="#cadillac" id="toc-cadillac" class="nav-link" data-scroll-target="#cadillac">Cadillac</a></li>
+  <li><a href="#chocolate" id="toc-chocolate" class="nav-link" data-scroll-target="#chocolate">Chocolate</a></li>
+  <li><a href="#high-school-survey" id="toc-high-school-survey" class="nav-link" data-scroll-target="#high-school-survey">High School Survey</a></li>
+  <li><a href="#good-data" id="toc-good-data" class="nav-link" data-scroll-target="#good-data">Good Data</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Response and Explanatory Variables</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>In this section, we will:</p>
+<ol type="1">
+<li>Review the definitions of Response/Dependent variables and Explanatory/Independent variables<br>
+</li>
+<li>Learn some R tools to help us look at the data (<code>View()</code>, <code>glimpse()</code>, <code>names()</code>)<br>
+</li>
+<li>Look at several datasets and identify the response variables and explanatory variables<br>
+</li>
+<li>Identify data types (categorical or quantitative)<br>
+</li>
+<li>Identify each level of a categorical variable</li>
+</ol>
+<section id="load-the-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-the-libraries">Load the Libraries</h2>
+<p>Don’t forget, before we can use the tools in the different toolboxes, we need to retrieve them from the shed. In R, that means, loading the libraries:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mosaic)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="define-your-terms" class="level1">
+<h1>Define Your Terms</h1>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>Datasets contain rows and columns. Rows in a dataset represent individual <strong>observations</strong> or records. Each row contains all the relevant data for a single case, instance, or subject being studied. For example, in a dataset about students, each row might represent a different student, with all their associated data (such as name, age, and grade) contained within that row.</p>
+<p>Columns in a dataset represent the different <strong>variables</strong> or attributes being measured or recorded. Each column contains one specific type of data across all the observations. For example, in the same student dataset, there could be a column for “Name,” a column for “Age,” and another for “Grade.”</p>
+<p><strong>NOTE</strong>: Column names in a dataset are considered <strong>variables</strong>.</p>
+<p>Together, rows and columns provide a structured format that makes it easy to organize, analyze, and visualize the data.</p>
+<section id="data-types-review" class="level3">
+<h3 class="anchored" data-anchor-id="data-types-review">Data Types (Review)</h3>
+<p>In this class, we will use the broad categories of “quantitative” and “categorical” variables to distinguish between numerical values and data that represent group information respectively. As we will see below, it’s not always as easy as it seems to tell the difference.</p>
+</section>
+<section id="quantitative-variables" class="level3">
+<h3 class="anchored" data-anchor-id="quantitative-variables">Quantitative Variables</h3>
+<p>Variables that are quantitative consists of values that represent measurable quantities.</p>
+</section>
+<section id="categroical-variables" class="level3">
+<h3 class="anchored" data-anchor-id="categroical-variables">Categroical Variables</h3>
+<p>Categorical data consists of values that represent categories or groups. We refer to each of the categories as “levels” of the variable.</p>
+<p>To see all of the levels of a categorical variable, we can use the <code>unique()</code> function. The code chunk below has a list of favorite pets. The <code>unique()</code> function takes as an input a categorical variable and returns a list of the distinct values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>favorite_pet <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"cat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span>, <span class="st">"ferret"</span>, <span class="st">"cat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span>, <span class="st">"lizard"</span>, <span class="st">"dog"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(favorite_pet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "cat"    "dog"    "ferret" "lizard"</code></pre>
+</div>
+</div>
+<p>This lists all the “levels” of a categorical variable.</p>
+</section>
+</section>
+<section id="responsedependent-variable" class="level2">
+<h2 class="anchored" data-anchor-id="responsedependent-variable">Response/Dependent Variable</h2>
+<p>The response variable, also known as the dependent variable, is the outcome or the variable that researchers are interested in explaining or predicting. Its value <em>depends</em> on the influence of other variables. For example, in a study examining the effect of study time on exam scores, the exam score is the response variable because it changes in response to different amounts of study time.</p>
+</section>
+<section id="explanatoryindependent-variable" class="level2">
+<h2 class="anchored" data-anchor-id="explanatoryindependent-variable">Explanatory/Independent Variable</h2>
+<p>The explanatory variable, also known as the independent variable, is the variable that is manipulated or controlled in a statistical experiment to observe its effect on the response variable. It is considered the cause or predictor in the relationship being studied. In the example above, the amount of study time is the explanatory variable, as it is the factor that <em>explains</em> exam scores.</p>
+</section>
+</section>
+<section id="madison-countr-real-estate" class="level1">
+<h1>Madison Countr Real Estate</h1>
+<p>This dataset contains information about properties in Madison County.</p>
+<p><strong>QUESTION</strong>: Before looking at the data, what do you think is the purpose of collecting these data?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: What do you think the Response variable is?<br>
+<strong>ASNWER</strong>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>real_estate <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/MadisonCountyRealEstate.xlsx'</span>) <span class="sc">%&gt;%</span> <span class="fu">tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Functions in R perform a task or calculation on a given input. For example, in the code chunk above, we used the <code>import()</code> function which took as an input a web address where the dataset is stored.</p>
+<p>But all that did was create a dataset called <code>real_estate</code>. If we want to look at the dataset, we can but the dataset name into the <code>View()</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(real_estate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The <code>View()</code> function takes a dataset name as an input and opens up a window that looks like an Excel spreadsheet. This allows us to see what the data contains.</p>
+<section id="useful-functions-for-seeing-whats-in-a-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="useful-functions-for-seeing-whats-in-a-dataset">Useful Functions for Seeing What’s In a Dataset</h3>
+<ol type="1">
+<li><code>View()</code> takes a dataset name as an input and opens a window and lets you scroll around and look at the complete dataset<br>
+</li>
+<li><code>names()</code> takes a dataset name as an input and prints out the column names<br>
+</li>
+<li><code>glimpse()</code> takes a dataset name as an input and prints out a list of the column names and tells you a little aobut each column and shows the first few values of each column</li>
+</ol>
+<p>Try each of the functions in the code chunk below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in names(): 0 arguments passed to 'names' which requires 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in glimpse.default(): argument "x" is missing, with no default</code></pre>
+</div>
+</div>
+<p><strong>QUESTION</strong>: After looking at the data, what is the <strong>response</strong> variable? (use the column name)<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
+<strong>ANsWER</strong>:</p>
+<p><strong>QUESTION</strong>: What variables do you think are the 5 most impactful <strong>explanatory</strong> variables? List the column names and say whether or not each are categorical or quantitative.</p>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>For any categorical variables, print out the levels:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(real_estate<span class="sc">$</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in parse(text = input): &lt;text&gt;:2:20: unexpected ')'
+1: 
+2: unique(real_estate$)
+                      ^</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="cadillac" class="level1">
+<h1>Cadillac</h1>
+<p>This dataset contains information about different Cadillac models, their mileage and price.</p>
+<p>Read in the data and look it over.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cadillac_data <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/Cadillac.txt'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>QUESTION</strong>: What is the response variable?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: List some of the explanatory variables and say whether they are categorical or quantitative:</p>
+<p>For any categorical variables, print out the levels:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(cadillac_data<span class="sc">$</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in parse(text = input): &lt;text&gt;:2:22: unexpected ')'
+1: 
+2: unique(cadillac_data$)
+                        ^</code></pre>
+</div>
+</div>
+</section>
+<section id="chocolate" class="level1">
+<h1>Chocolate</h1>
+<p>This dataset contains information about different chocolate brands.</p>
+<p>Read in the data and look it over.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>chocolate <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/Chocolate.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>QUESTION</strong>: What is the response variable?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: List some of the explanatory variables and say whether they are categorical or quantitative:</p>
+</section>
+<section id="high-school-survey" class="level1">
+<h1>High School Survey</h1>
+<p>This dataset contains survey responses for high school students. This one is very large, with lots of columns.</p>
+<p>Read in the data and look it over.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>hs_survey <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/HighSchoolSeniors.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>QUESTION</strong>: What are some possible response variables? List them and label them as categorical or quantitative:</p>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p><strong>QUESTION</strong>: For one of the above response variables, list some of the explanatory variables and say whether they are categorical or quantitative:</p>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</section>
+<section id="good-data" class="level1">
+<h1>Good Data</h1>
+<p>Good Data starts with a well-defined study. You should know ahead of time what your response and explanatory variables are.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

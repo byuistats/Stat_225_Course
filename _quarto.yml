@@ -25,11 +25,11 @@ website:
         - href: ./1-Getting_Started/4-Installing_Packages.qmd
         - href: ./1-Getting_Started/5-Stat_Process.qmd
         - href: ./1-Getting_Started/5-Stat_Process_Practice.qmd
-        - href: ./1-Getting_Started/6-Response_and_Explanatory_Variables.qmd
 
     - text: "Descriptive Stats"
       menu:
          - text: "Descriptive Statistics"
+         - href: ./2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.qmd
          - href: ./2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.qmd
          - href: ./2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.qmd
          - href: ./2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.qmd

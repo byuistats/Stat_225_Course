@@ -182,10 +182,6 @@ window.Quarto = {
     <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process_Practice.html">
  <span class="dropdown-text">Statistical Process Practice Problems</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../1-Getting_Started/6-Response_and_Explanatory_Variables.html">
- <span class="dropdown-text">Response and Explanatory Variables</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -194,6 +190,10 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-descriptive-stats">    
         <li class="dropdown-header">Descriptive Statistics</li>
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html">
+ <span class="dropdown-text">Response and Explanatory Variables</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html">
  <span class="dropdown-text">Numerical Quantitative Data Summaries</span></a>
@@ -673,20 +673,20 @@ window.Quarto = {
 <div class="cell-output cell-output-stdout">
 <pre><code>                     median     mean       sd
 Population Parameter 17.300 17.15117 1.974793
-Mean of Sample Stat  17.454 17.18480 2.011157</code></pre>
+Mean of Sample Stat  17.337 17.10235 1.967190</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">favstats_simulation</span>(<span class="at">n_samples=</span><span class="dv">1000</span>, <span class="at">sample_size =</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                      median     mean       sd
 Population Parameter 17.3000 17.15117 1.974793
-Mean of Sample Stat  17.3166 17.12414 1.968827</code></pre>
+Mean of Sample Stat  17.3525 17.15439 1.967070</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Try a bigger sample size:  </span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">favstats_simulation</span>(<span class="at">n_samples=</span><span class="dv">1000</span>, <span class="at">sample_size =</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                       median     mean       sd
 Population Parameter 17.30000 17.15117 1.974793
-Mean of Sample Stat  17.35865 17.14713 1.972536</code></pre>
+Mean of Sample Stat  17.35845 17.15132 1.974737</code></pre>
 </div>
 </div>
 

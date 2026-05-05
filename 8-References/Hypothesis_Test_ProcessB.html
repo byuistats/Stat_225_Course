@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Response and Explanatory Variables – Math221D Notebook</title>
+<title>Hypothesis Test Process – Math221D Notebook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,6 +69,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -153,10 +148,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process_Practice.html">
  <span class="dropdown-text">Statistical Process Practice Problems</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../1-Getting_Started/6-Response_and_Explanatory_Variables.html">
- <span class="dropdown-text">Response and Explanatory Variables</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -165,6 +156,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-descriptive-stats">    
         <li class="dropdown-header">Descriptive Statistics</li>
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html">
+ <span class="dropdown-text">Response and Explanatory Variables</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html">
  <span class="dropdown-text">Numerical Quantitative Data Summaries</span></a>
@@ -449,29 +444,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#load-the-libraries" id="toc-load-the-libraries" class="nav-link" data-scroll-target="#load-the-libraries">Load the Libraries</a></li>
-  </ul></li>
-  <li><a href="#define-your-terms" id="toc-define-your-terms" class="nav-link" data-scroll-target="#define-your-terms">Define Your Terms</a>
-  <ul class="collapse">
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
-  <ul class="collapse">
-  <li><a href="#data-types-review" id="toc-data-types-review" class="nav-link" data-scroll-target="#data-types-review">Data Types (Review)</a></li>
-  <li><a href="#quantitative-variables" id="toc-quantitative-variables" class="nav-link" data-scroll-target="#quantitative-variables">Quantitative Variables</a></li>
-  <li><a href="#categroical-variables" id="toc-categroical-variables" class="nav-link" data-scroll-target="#categroical-variables">Categroical Variables</a></li>
-  </ul></li>
-  <li><a href="#responsedependent-variable" id="toc-responsedependent-variable" class="nav-link" data-scroll-target="#responsedependent-variable">Response/Dependent Variable</a></li>
-  <li><a href="#explanatoryindependent-variable" id="toc-explanatoryindependent-variable" class="nav-link" data-scroll-target="#explanatoryindependent-variable">Explanatory/Independent Variable</a></li>
-  </ul></li>
-  <li><a href="#madison-countr-real-estate" id="toc-madison-countr-real-estate" class="nav-link" data-scroll-target="#madison-countr-real-estate">Madison Countr Real Estate</a>
-  <ul class="collapse">
-  <li><a href="#useful-functions-for-seeing-whats-in-a-dataset" id="toc-useful-functions-for-seeing-whats-in-a-dataset" class="nav-link" data-scroll-target="#useful-functions-for-seeing-whats-in-a-dataset">Useful Functions for Seeing What’s In a Dataset</a></li>
-  </ul></li>
-  <li><a href="#cadillac" id="toc-cadillac" class="nav-link" data-scroll-target="#cadillac">Cadillac</a></li>
-  <li><a href="#chocolate" id="toc-chocolate" class="nav-link" data-scroll-target="#chocolate">Chocolate</a></li>
-  <li><a href="#high-school-survey" id="toc-high-school-survey" class="nav-link" data-scroll-target="#high-school-survey">High School Survey</a></li>
-  <li><a href="#good-data" id="toc-good-data" class="nav-link" data-scroll-target="#good-data">Good Data</a></li>
+  <li><a href="#hypothesis-testing-process" id="toc-hypothesis-testing-process" class="nav-link active" data-scroll-target="#hypothesis-testing-process">Hypothesis Testing Process</a></li>
+  <li><a href="#hypothesis-test-conclusions" id="toc-hypothesis-test-conclusions" class="nav-link" data-scroll-target="#hypothesis-test-conclusions">Hypothesis Test Conclusions</a></li>
   </ul>
 </nav>
     </div>
@@ -480,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Response and Explanatory Variables</h1>
+<h1 class="title">Hypothesis Test Process</h1>
 </div>
 
 
@@ -497,191 +471,48 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>In this section, we will:</p>
+<section id="hypothesis-testing-process" class="level1">
+<h1>Hypothesis Testing Process</h1>
 <ol type="1">
-<li>Review the definitions of Response/Dependent variables and Explanatory/Independent variables<br>
+<li>State <span class="math inline">\(H_0\)</span>, <span class="math inline">\(H_a\)</span>, and pick <span class="math inline">\(\alpha\)</span><br>
 </li>
-<li>Learn some R tools to help us look at the data (<code>View()</code>, <code>glimpse()</code>, <code>names()</code>)<br>
+<li>Calculate the <strong>Test Statistic</strong> (evidence against <span class="math inline">\(H_0\)</span>)<br>
 </li>
-<li>Look at several datasets and identify the response variables and explanatory variables<br>
+<li>Calculate the <strong>P-Value</strong> (the probability of observing our test statistic or more extreme, if <span class="math inline">\(H_0\)</span> were true)<br>
 </li>
-<li>Identify data types (categorical or quantitative)<br>
+<li>Compare P-value to <span class="math inline">\(\alpha\)</span><br>
 </li>
-<li>Identify each level of a categorical variable</li>
-</ol>
-<section id="load-the-libraries" class="level2">
-<h2 class="anchored" data-anchor-id="load-the-libraries">Load the Libraries</h2>
-<p>Don’t forget, before we can use the tools in the different toolboxes, we need to retrieve them from the shed. In R, that means, loading the libraries:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mosaic)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-</section>
-<section id="define-your-terms" class="level1">
-<h1>Define Your Terms</h1>
-<section id="data" class="level2">
-<h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>Datasets contain rows and columns. Rows in a dataset represent individual <strong>observations</strong> or records. Each row contains all the relevant data for a single case, instance, or subject being studied. For example, in a dataset about students, each row might represent a different student, with all their associated data (such as name, age, and grade) contained within that row.</p>
-<p>Columns in a dataset represent the different <strong>variables</strong> or attributes being measured or recorded. Each column contains one specific type of data across all the observations. For example, in the same student dataset, there could be a column for “Name,” a column for “Age,” and another for “Grade.”</p>
-<p><strong>NOTE</strong>: Column names in a dataset are considered <strong>variables</strong>.</p>
-<p>Together, rows and columns provide a structured format that makes it easy to organize, analyze, and visualize the data.</p>
-<section id="data-types-review" class="level3">
-<h3 class="anchored" data-anchor-id="data-types-review">Data Types (Review)</h3>
-<p>In this class, we will use the broad categories of “quantitative” and “categorical” variables to distinguish between numerical values and data that represent group information respectively. As we will see below, it’s not always as easy as it seems to tell the difference.</p>
-</section>
-<section id="quantitative-variables" class="level3">
-<h3 class="anchored" data-anchor-id="quantitative-variables">Quantitative Variables</h3>
-<p>Variables that are quantitative consists of values that represent measurable quantities.</p>
-</section>
-<section id="categroical-variables" class="level3">
-<h3 class="anchored" data-anchor-id="categroical-variables">Categroical Variables</h3>
-<p>Categorical data consists of values that represent categories or groups. We refer to each of the categories as “levels” of the variable.</p>
-<p>To see all of the levels of a categorical variable, we can use the <code>unique()</code> function. The code chunk below has a list of favorite pets. The <code>unique()</code> function takes as an input a categorical variable and returns a list of the distinct values.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>favorite_pet <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"cat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span>, <span class="st">"ferret"</span>, <span class="st">"cat"</span>, <span class="st">"cat"</span>, <span class="st">"dog"</span>, <span class="st">"lizard"</span>, <span class="st">"dog"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(favorite_pet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "cat"    "dog"    "ferret" "lizard"</code></pre>
-</div>
-</div>
-<p>This lists all the “levels” of a categorical variable.</p>
-</section>
-</section>
-<section id="responsedependent-variable" class="level2">
-<h2 class="anchored" data-anchor-id="responsedependent-variable">Response/Dependent Variable</h2>
-<p>The response variable, also known as the dependent variable, is the outcome or the variable that researchers are interested in explaining or predicting. Its value <em>depends</em> on the influence of other variables. For example, in a study examining the effect of study time on exam scores, the exam score is the response variable because it changes in response to different amounts of study time.</p>
-</section>
-<section id="explanatoryindependent-variable" class="level2">
-<h2 class="anchored" data-anchor-id="explanatoryindependent-variable">Explanatory/Independent Variable</h2>
-<p>The explanatory variable, also known as the independent variable, is the variable that is manipulated or controlled in a statistical experiment to observe its effect on the response variable. It is considered the cause or predictor in the relationship being studied. In the example above, the amount of study time is the explanatory variable, as it is the factor that <em>explains</em> exam scores.</p>
-</section>
-</section>
-<section id="madison-countr-real-estate" class="level1">
-<h1>Madison Countr Real Estate</h1>
-<p>This dataset contains information about properties in Madison County.</p>
-<p><strong>QUESTION</strong>: Before looking at the data, what do you think is the purpose of collecting these data?<br>
-<strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What do you think the Response variable is?<br>
-<strong>ASNWER</strong>:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>real_estate <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/MadisonCountyRealEstate.xlsx'</span>) <span class="sc">%&gt;%</span> <span class="fu">tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Functions in R perform a task or calculation on a given input. For example, in the code chunk above, we used the <code>import()</code> function which took as an input a web address where the dataset is stored.</p>
-<p>But all that did was create a dataset called <code>real_estate</code>. If we want to look at the dataset, we can but the dataset name into the <code>View()</code> function.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(real_estate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The <code>View()</code> function takes a dataset name as an input and opens up a window that looks like an Excel spreadsheet. This allows us to see what the data contains.</p>
-<section id="useful-functions-for-seeing-whats-in-a-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="useful-functions-for-seeing-whats-in-a-dataset">Useful Functions for Seeing What’s In a Dataset</h3>
-<ol type="1">
-<li><code>View()</code> takes a dataset name as an input and opens a window and lets you scroll around and look at the complete dataset<br>
+<li>Check the test requirements<br>
 </li>
-<li><code>names()</code> takes a dataset name as an input and prints out the column names<br>
-</li>
-<li><code>glimpse()</code> takes a dataset name as an input and prints out a list of the column names and tells you a little aobut each column and shows the first few values of each column</li>
-</ol>
-<p>Try each of the functions in the code chunk below:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in names(): 0 arguments passed to 'names' which requires 1</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in glimpse.default(): argument "x" is missing, with no default</code></pre>
-</div>
-</div>
-<p><strong>QUESTION</strong>: After looking at the data, what is the <strong>response</strong> variable? (use the column name)<br>
-<strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
-<strong>ANsWER</strong>:</p>
-<p><strong>QUESTION</strong>: What variables do you think are the 5 most impactful <strong>explanatory</strong> variables? List the column names and say whether or not each are categorical or quantitative.</p>
-<ol type="1">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<p>For any categorical variables, print out the levels:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(real_estate<span class="sc">$</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in parse(text = input): &lt;text&gt;:2:20: unexpected ')'
-1: 
-2: unique(real_estate$)
-                      ^</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="cadillac" class="level1">
-<h1>Cadillac</h1>
-<p>This dataset contains information about different Cadillac models, their mileage and price.</p>
-<p>Read in the data and look it over.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cadillac_data <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/Cadillac.txt'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>QUESTION</strong>: What is the response variable?<br>
-<strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
-<strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: List some of the explanatory variables and say whether they are categorical or quantitative:</p>
-<p>For any categorical variables, print out the levels:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(cadillac_data<span class="sc">$</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in parse(text = input): &lt;text&gt;:2:22: unexpected ')'
-1: 
-2: unique(cadillac_data$)
-                        ^</code></pre>
-</div>
-</div>
-</section>
-<section id="chocolate" class="level1">
-<h1>Chocolate</h1>
-<p>This dataset contains information about different chocolate brands.</p>
-<p>Read in the data and look it over.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>chocolate <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/Chocolate.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>QUESTION</strong>: What is the response variable?<br>
-<strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
-<strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: List some of the explanatory variables and say whether they are categorical or quantitative:</p>
-</section>
-<section id="high-school-survey" class="level1">
-<h1>High School Survey</h1>
-<p>This dataset contains survey responses for high school students. This one is very large, with lots of columns.</p>
-<p>Read in the data and look it over.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>hs_survey <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/HighSchoolSeniors.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>QUESTION</strong>: What are some possible response variables? List them and label them as categorical or quantitative:</p>
-<ol type="1">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<p><strong>QUESTION</strong>: For one of the above response variables, list some of the explanatory variables and say whether they are categorical or quantitative:</p>
-<ol type="1">
-<li></li>
-<li></li>
-<li></li>
+<li>Make a conclusion</li>
 </ol>
 </section>
-<section id="good-data" class="level1">
-<h1>Good Data</h1>
-<p>Good Data starts with a well-defined study. You should know ahead of time what your response and explanatory variables are.</p>
+<section id="hypothesis-test-conclusions" class="level1">
+<h1>Hypothesis Test Conclusions</h1>
+<ol type="1">
+<li><span class="math inline">\(\text{P-value} &lt; \alpha\)</span>:
+<ul>
+<li><strong>Reject</strong> the null hypothesis, <span class="math inline">\(H_0\)</span>, in favor of the alternative<br>
+</li>
+<li>“When <span class="math inline">\(P\)</span> is low, reject <span class="math inline">\(H_0\)</span>”<br>
+</li>
+<li><strong>Sufficient Evidence</strong> to support the alternative
+<ol type="i">
+<li>Bring back to context of the research question. For example: I have sufficient evidence to suggest that Brother Cannon’s students are, on average, more agreeable than the general population.<br>
+</li>
+</ol></li>
+<li>Opportunity for a <strong>Type I Error</strong>, rejecting a true null hypothesis</li>
+</ul></li>
+<li><span class="math inline">\(\text{P-value} \ge \alpha\)</span>:
+<ul>
+<li><strong>Fail to Reject</strong> the null hypothesis, <span class="math inline">\(H_0\)</span><br>
+</li>
+<li><strong>Insufficient Evidence</strong> to support the alternative
+<ol type="i">
+<li>Bring back to context of the research question. For example: I have insufficient evidence to suggest that Brother Cannon’s students are, on average, less open than the general population.</li>
+</ol></li>
+</ul></li>
+</ol>
 
 
 </section>
