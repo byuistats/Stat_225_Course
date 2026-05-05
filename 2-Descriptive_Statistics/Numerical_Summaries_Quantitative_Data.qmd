@@ -1,10 +1,9 @@
 ---
-title: "Numerical Quantitative Data Summaries"
+title: "Quantitative Data Summaries"
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
 ```
-
 
 
 # Introduction
@@ -13,23 +12,23 @@ In this section we discuss data summaries for quantitative data.  After this les
 
   1.  Understand common measures of center (mean, median, mode)  
   2.  Understand common measures of spread (standard deviation, variance, percentiles), why they are important, and how to interpret them  
-  3.  Use R to calculate measures of center and spread     
+  3.  Use R to calculate measures of center and spread  
+  4.  Create a table of summary statistics (`favstats()`) for multiple groups  
   
-Throughout this section, we will use the "wrong patient" dataset which contains information about malpractice lawsuits of operations performed on the wrong patient or the wrong site on the patient.  
 
-## Reading Data into R
+## Load the data and libraries
 
-We will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient's body (the wrong site).
-
-Load the libraries and the data into R:  
+We will use the Big 5 Personality data of a random sample of Brother Cannon's students.  
 
 ```{r}
+
 library(rio)
 library(mosaic)
 library(tidyverse)
 library(car)
 
-wrong_patient <- import("https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx")
+big5 <- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')
+
 
 ```
 
@@ -49,14 +48,11 @@ In Statistics, important ideas are given a name. Very important ideas are given 
 $$
   \bar{x} \text{ is used to denote the sample mean}
 $$
-
-You may have heard people refer to the sample mean as the average. Technically, the word average refers to any number that is used to estimate the center of a distribution. The mean, median and mode are all examples of "averages." To avoid confusion, it is best to use the words mean, median, and mode instead of the word average, so that it is clear which "average" your are referencing.
-
-Calculate the mean payout for operations done on the wrong patient:
+Calculate the mean extroversion score for the sample of Stat 225 Students:  
 
 ```{r}
 
-mean(wrong_patient$Wrong_Patient)
+mean(big5$Extroversion)
 
 ```
 
@@ -64,7 +60,7 @@ When there are missing values in the dataset, the `mean()` function will return 
 
 ```{r}
 
-mean(wrong_patient$Wrong_Patient, na.rm=TRUE)
+mean(big5$Extroversion, na.rm=TRUE)
 
 ```
 
@@ -80,23 +76,14 @@ The median is the middle value in a sorted data set. Half of the observations in
     + If there are an odd number of values, the median is the middle value in the sorted list.
     + If there are an even number of values, the median is the mean of the two middle values in the sorted list.
 
-Calculate the Median payout for operations done on the wrong patient using the `median()` function:
+Calculate the Median extroversion percentile using the `median()` function:
 
 ```{r}
-median(wrong_patient$Wrong_Patient, na.rm=TRUE)
+median(big5$Extroversion, na.rm=TRUE)
 ```
 
-__QUESTION__:  What does this mean?  
+__QUESTION__:  Explain this number?  
 __ANSWER__:  
-
-
-__QUESTION__:  Notice how much bigger the Mean is from the Median. Why is that the case?  
-__ANSWER__:  
-
-
-__QUESTION__:  Which do you think is most appropriate to use, the Mean or the Median?  Why?  
-__ANSWER__:  
-
 
 
 __NOTE__:  The Median is a good measure of center when the data are skewed or there are large outliers.  
@@ -108,7 +95,7 @@ The most frequently occurring value is called the mode. This only works well whe
 
 If no number occurs more than once in the data set, we say that there is no mode.
 
-Because there is no meaningful mode in the wrong patient data, let's look at another example to calculate the mode:  
+Because there is no meaningful mode for extroversion in the personality dataset, let's look at another example to calculate the mode:  
 
 **Calculate a Mode**
 
@@ -133,6 +120,7 @@ __QUESTION__:  How many times did that value occur?
 __ANSWER__:  
 
 
+__NOTE__:  The mode is a good metric when counting frequencies of a categorical variable or with a quantitative variable with few likely options, such as number of children in a family.    
 
 
 # Spread
@@ -224,20 +212,17 @@ __NOTE__:  Percentiles can be used to describe the center and spread of any dist
 
 Use R's `quantile()` function to calculate percentiles.  This functions requires two inputs separated by a comma: the data and the desired percentile input as a decimal.  
 
-- To calculate the 25th percentile for the costs of surgery done on the Wrong Site:
+Calculate the 25th percentile for Extroversion:
 
 ```{r}
-quantile(wrong_patient$Wrong_Site, .25, na.rm=TRUE)
+quantile(big5$Extroversion, .25, na.rm=TRUE)
 ```
 
 __QUESTION__:  What does this number mean?  
 __ANSWER__:  
 
 
-The first quartile ($Q_1$) or 25<sup>th</sup> percentile (calculated in R) of the wrong-site data is: \$29,496. (This result is illustrated in the figure below.)  This means that 25 percent of the time hospitals lost a wrong-site lawsuit, they had to pay \$29,496 or less. The 25<sup>th</sup> percentile can be written symbolically as: P<sub>25</sub> = \$29,496.  Other percentiles can be written the same way.  The 99<sup>th</sup> percentile can be written as P<sub>99</sub>.
-
-
-__QUESTION__:  What is the 13<sup>th</sup> percentile of the wrong patient data?  
+__QUESTION__:  What is the 13<sup>th</sup> percentile of Extroversion?  
 
 ```{r}
 quantile()
@@ -247,14 +232,8 @@ __QUESTION__:  Interpret this value:
 __ANSWER__:  
 
 
-__QUESTION__:  Find P<sub>90</sub>.  
 
-```{r}
-quantile()
-```
-
-
-__QUESTION__:  Half of the wrong-site lawsuits judgments were less than or equal to what value?
+__QUESTION__:  Half of the Extroversion percentiles are less than or equal to what value?
 ```{r}
 quantile()
 ## OR....
@@ -268,25 +247,33 @@ Another way to summarize data is with the five-number summary.  **The five-numbe
 
 There is a very easy way to get the Five-Number Summary along with the mean and standard deviation.  The `favstats()` function in the `mosaic` library gives us all of our **fav**orite **stat**istic**s**. 
 
-As before, we will have to install the `mosaic` library once, then load it when we want to use it.  
-
 
 **To find the values for a five-number summary in R, do the following**
 
 - Input the data into the `favstats()` function:
 
 ```{r}
-favstats(wrong_patient$Wrong_Patient)
+favstats(big5$Extroversion)
 ```
 
 
 ## Your Turn
 
-Create a summary statistics table for the cost of operating on the *wrong site*:
+Create a summary statistics table for the cost of operating on the *Neuroticism*:
 
 ```{r}
 
 ```
 
+
+# Summary Statistics for Multiple Groups  
+
+With R, we can easily extend this to get summary statistics for multiple groups.  For example, we can extend the  `favstats()` to get a table of summary statistics of Openness for different course sections.  We do this by using making a formula inside of the `favstat()` function using a tilde, `~`.  On most keyboards, this is found next to the `1` key.  
+
+```{r}
+
+favstats(big5$)
+
+```
 
 
