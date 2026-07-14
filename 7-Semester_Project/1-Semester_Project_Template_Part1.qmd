@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRU
 [Provide a brief overview of your research question.  Explain why you're interested in the topic, where you found your  data and the objectives of your analysis.]
 
 
-# Part 1:  Descriptive Statistics
+# Descriptive Statistics
 
 Part 1 of your semester project should include:  
 

@@ -12,7 +12,7 @@ execute:
   warning: false
     
 website:
-  title: "Math221D Notebook"
+  title: "Stat 225 - Intro to Stats in R"
   navbar:
     background: primary
     search: true
