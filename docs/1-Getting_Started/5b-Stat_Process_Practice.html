@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hypothesis Test Process – Math221D Notebook</title>
+<title>Statistical Process Practice Problems – Stat 225 - Intro to Stats in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -110,7 +81,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Math221D Notebook</span>
+    <span class="navbar-title">Stat 225 - Intro to Stats in R</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -145,7 +116,7 @@ window.Quarto = {
  <span class="dropdown-text">The Statistical Process</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process_Practice.html">
+    <a class="dropdown-item" href="../1-Getting_Started/5b-Stat_Process_Practice.html">
  <span class="dropdown-text">Statistical Process Practice Problems</span></a>
   </li>  
     </ul>
@@ -156,10 +127,6 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-descriptive-stats">    
         <li class="dropdown-header">Descriptive Statistics</li>
-        <li>
-    <a class="dropdown-item" href="../2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html">
- <span class="dropdown-text">Response and Explanatory Variables</span></a>
-  </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html">
  <span class="dropdown-text">Numerical Quantitative Data Summaries</span></a>
@@ -175,6 +142,10 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html">
  <span class="dropdown-text">Practice: Graphical Summaries (Quant.)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html">
+ <span class="dropdown-text">Response and Explanatory Variables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html">
@@ -356,7 +327,7 @@ window.Quarto = {
  <span class="dropdown-text">Simple Linear Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1-Regression_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1b-Regression_Practice.html">
  <span class="dropdown-text">Regression Practice</span></a>
   </li>  
         <li>
@@ -364,7 +335,7 @@ window.Quarto = {
  <span class="dropdown-text">Analysis of Variance (ANOVA)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2-ANOVA_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2b-ANOVA_Practice.html">
  <span class="dropdown-text">ANOVA Practice</span></a>
   </li>  
         <li>
@@ -372,7 +343,7 @@ window.Quarto = {
  <span class="dropdown-text">Chi-square Test of Independence</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html">
  <span class="dropdown-text">Chi-Square Practice</span></a>
   </li>  
     </ul>
@@ -395,7 +366,7 @@ window.Quarto = {
  <span class="dropdown-text">Semester Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Final_Report.html">
+    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Part2.html">
  <span class="dropdown-text">Semester Project</span></a>
   </li>  
     </ul>
@@ -444,8 +415,24 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hypothesis-testing-process" id="toc-hypothesis-testing-process" class="nav-link active" data-scroll-target="#hypothesis-testing-process">Hypothesis Testing Process</a></li>
-  <li><a href="#hypothesis-test-conclusions" id="toc-hypothesis-test-conclusions" class="nav-link" data-scroll-target="#hypothesis-test-conclusions">Hypothesis Test Conclusions</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#sampling-schemes" id="toc-sampling-schemes" class="nav-link" data-scroll-target="#sampling-schemes">Sampling Schemes</a></li>
+  <li><a href="#experiment-vs-observational-study" id="toc-experiment-vs-observational-study" class="nav-link" data-scroll-target="#experiment-vs-observational-study">Experiment vs Observational Study</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  </ul></li>
+  <li><a href="#population-vs-sample" id="toc-population-vs-sample" class="nav-link" data-scroll-target="#population-vs-sample">Population vs Sample</a>
+  <ul class="collapse">
+  <li><a href="#new-drug" id="toc-new-drug" class="nav-link" data-scroll-target="#new-drug">New Drug</a>
+  <ul class="collapse">
+  <li><a href="#background-1" id="toc-background-1" class="nav-link" data-scroll-target="#background-1">Background</a></li>
+  </ul></li>
+  <li><a href="#elections" id="toc-elections" class="nav-link" data-scroll-target="#elections">Elections</a>
+  <ul class="collapse">
+  <li><a href="#background-2" id="toc-background-2" class="nav-link" data-scroll-target="#background-2">Background</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#statistical-process" id="toc-statistical-process" class="nav-link" data-scroll-target="#statistical-process">Statistical Process</a></li>
   </ul>
 </nav>
     </div>
@@ -454,7 +441,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hypothesis Test Process</h1>
+<h1 class="title">Statistical Process Practice Problems</h1>
 </div>
 
 
@@ -471,48 +458,63 @@ window.Quarto = {
 </header>
 
 
-<section id="hypothesis-testing-process" class="level1">
-<h1>Hypothesis Testing Process</h1>
-<ol type="1">
-<li>State <span class="math inline">\(H_0\)</span>, <span class="math inline">\(H_a\)</span>, and pick <span class="math inline">\(\alpha\)</span><br>
-</li>
-<li>Calculate the <strong>Test Statistic</strong> (evidence against <span class="math inline">\(H_0\)</span>)<br>
-</li>
-<li>Calculate the <strong>P-Value</strong> (the probability of observing our test statistic or more extreme, if <span class="math inline">\(H_0\)</span> were true)<br>
-</li>
-<li>Compare P-value to <span class="math inline">\(\alpha\)</span><br>
-</li>
-<li>Check the test requirements<br>
-</li>
-<li>Make a conclusion</li>
-</ol>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>These questions will help deepen your understanding of the statistical process that we refer to throughout the semester.</p>
+<hr>
 </section>
-<section id="hypothesis-test-conclusions" class="level1">
-<h1>Hypothesis Test Conclusions</h1>
-<ol type="1">
-<li><span class="math inline">\(\text{P-value} &lt; \alpha\)</span>:
-<ul>
-<li><strong>Reject</strong> the null hypothesis, <span class="math inline">\(H_0\)</span>, in favor of the alternative<br>
-</li>
-<li>“When <span class="math inline">\(P\)</span> is low, reject <span class="math inline">\(H_0\)</span>”<br>
-</li>
-<li><strong>Sufficient Evidence</strong> to support the alternative
-<ol type="i">
-<li>Bring back to context of the research question. For example: I have sufficient evidence to suggest that Brother Cannon’s students are, on average, more agreeable than the general population.<br>
-</li>
-</ol></li>
-<li>Opportunity for a <strong>Type I Error</strong>, rejecting a true null hypothesis</li>
-</ul></li>
-<li><span class="math inline">\(\text{P-value} \ge \alpha\)</span>:
-<ul>
-<li><strong>Fail to Reject</strong> the null hypothesis, <span class="math inline">\(H_0\)</span><br>
-</li>
-<li><strong>Insufficient Evidence</strong> to support the alternative
-<ol type="i">
-<li>Bring back to context of the research question. For example: I have insufficient evidence to suggest that Brother Cannon’s students are, on average, less open than the general population.</li>
-</ol></li>
-</ul></li>
-</ol>
+<section id="sampling-schemes" class="level1">
+<h1>Sampling Schemes</h1>
+<p>In each of the following scenarios, state which type of random sample is being performed.</p>
+<p><strong>Scenario 1</strong>: Students in an Introductory Statistics class at BYU-Idaho were studying prices of cold cereal at grocery stores in Rexburg. To get a sample of cold cereal prices, they went to Albertson’s and rolled a die to decide which box from the left of the top shelf they would start on. They then recorded every 6th cereal after the first, moving from left to right down the shelves, recording the name, size, and price of each cereal in their sample.</p>
+<p><strong>QUESTION</strong>: Which sampling method did they use?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>Scenario 2</strong>: A study conducted by researchers from the Department of Education wanted to know the average debt of college students in the United States. In order to obtain a sample representative of all students, the researchers divided college students into the four classes (freshman, sophomore, junior, and senior) and then took a random sample of students from each class.</p>
+<p><strong>QUESTION</strong>: Which sampling method did they use?<br>
+<strong>ANSWER</strong>:</p>
+<hr>
+</section>
+<section id="experiment-vs-observational-study" class="level1">
+<h1>Experiment vs Observational Study</h1>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>A sample of 504 patients in early stages of Alzheimer’s disease is divided into two groups. One group receives an experimental drug and the other a placebo. The advance of the disease is tracked at one-month intervals over the next year.</p>
+<p><strong>QUESTION</strong>: Is this a designed experiment or an observational study? Explain your answer.<br>
+<strong>ANSWER</strong>:</p>
+<hr>
+</section>
+</section>
+<section id="population-vs-sample" class="level1">
+<h1>Population vs Sample</h1>
+<section id="new-drug" class="level2">
+<h2 class="anchored" data-anchor-id="new-drug">New Drug</h2>
+<section id="background-1" class="level3">
+<h3 class="anchored" data-anchor-id="background-1">Background</h3>
+<p>Say that you are a researcher for a large pharmaceutical company that has produced a new drug that is believed to help reduce the risk of developing arthritis. You test the drug and compare it to a placebo by randomly choosing one group of men and women in their 50’s to take the drug and one group of men and women in their 50’s to take a placebo. Each participant takes the drug or placebo for a period of 10 years, after which the effects of the drug are measured against the effects of the placebo.</p>
+<p><strong>QUESTION</strong>: What (or who) are the experimental units or subject?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: What is the population of the study?<br>
+<strong>ANSWER</strong>:</p>
+</section>
+</section>
+<section id="elections" class="level2">
+<h2 class="anchored" data-anchor-id="elections">Elections</h2>
+<section id="background-2" class="level3">
+<h3 class="anchored" data-anchor-id="background-2">Background</h3>
+<p>Each presidential election, many different groups want to know how popular each candidate is among the electorate. In the recent election, one marketing research firm was asked by a special interest group to help estimate the proportion of Americans who supported a particular candidate. From a list of all registered voters, 8000 names were randomly selected. An automated phone-call was made to each of the 8000 individuals selected asking them to answer a few questions indicating their voting preferences. The marketing firm received 2969 responses.</p>
+<p><strong>QUESTION</strong>: What is the population of this study?<br>
+<strong>ANSWER</strong>:</p>
+<p><strong>QUESTION</strong>: What is the sample of this study?<br>
+<strong>ANSWER</strong>:</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="statistical-process" class="level1">
+<h1>Statistical Process</h1>
+<p>Amy is doing statistical research for her semester project. On Monday she does a graph of one of the variables in her data.</p>
+<p><strong>QUESTION</strong>: Which step of the statistical process is Amy working on?<br>
+<strong>ANSWER</strong>:</p>
 
 
 </section>

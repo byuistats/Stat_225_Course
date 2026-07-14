@@ -85,7 +85,7 @@ __Question__:  What does it mean if the correlation coefficient, $r$, is negativ
 __Answer__:  
 
 
-# Math Confidence
+# Stat Confidence
 
 ## Scatter plot
 

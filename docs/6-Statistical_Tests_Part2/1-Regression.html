@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Simple Linear Regression – Math221D Notebook</title>
+<title>Simple Linear Regression – Stat 225 - Intro to Stats in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Math221D Notebook</span>
+    <span class="navbar-title">Stat 225 - Intro to Stats in R</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -179,12 +179,8 @@ window.Quarto = {
  <span class="dropdown-text">The Statistical Process</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process_Practice.html">
+    <a class="dropdown-item" href="../1-Getting_Started/5b-Stat_Process_Practice.html">
  <span class="dropdown-text">Statistical Process Practice Problems</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href=".././1-Getting_Started/6-Response_and_Explanatory_Variables.qmd">
- <span class="dropdown-text"></span></a>
   </li>  
     </ul>
   </li>
@@ -209,6 +205,10 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html">
  <span class="dropdown-text">Practice: Graphical Summaries (Quant.)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html">
+ <span class="dropdown-text">Response and Explanatory Variables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html">
@@ -390,7 +390,7 @@ window.Quarto = {
  <span class="dropdown-text">Simple Linear Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1-Regression_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1b-Regression_Practice.html">
  <span class="dropdown-text">Regression Practice</span></a>
   </li>  
         <li>
@@ -398,7 +398,7 @@ window.Quarto = {
  <span class="dropdown-text">Analysis of Variance (ANOVA)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2-ANOVA_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2b-ANOVA_Practice.html">
  <span class="dropdown-text">ANOVA Practice</span></a>
   </li>  
         <li>
@@ -406,7 +406,7 @@ window.Quarto = {
  <span class="dropdown-text">Chi-square Test of Independence</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html">
  <span class="dropdown-text">Chi-Square Practice</span></a>
   </li>  
     </ul>
@@ -429,7 +429,7 @@ window.Quarto = {
  <span class="dropdown-text">Semester Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Final_Report.html">
+    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Part2.html">
  <span class="dropdown-text">Semester Project</span></a>
   </li>  
     </ul>
@@ -516,7 +516,7 @@ window.Quarto = {
 
 <section id="review" class="level1">
 <h1>Review</h1>
-<p>Consider the relationship between Score on a math exam and a student’s self-reported Confidence Rating.</p>
+<p>Consider the relationship between score on a math exam and a student’s self-reported Confidence Rating.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mosaic)</span>
@@ -669,7 +669,7 @@ ConfidenceRatingMean 10.89262 14.49703</code></pre>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkblue"</span>) <span class="sc">+</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Relationship between Student Confidence Rating in Math and Test Score"</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Relationship between Student Confidence Rating in Stat and Test Score"</span></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">

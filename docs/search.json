@@ -2,14 +2,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "BYU-Idaho Math 221: Introduction to Statistics in R",
+    "title": "BYU-Idaho Stat 225: Introduction to Statistics in R",
     "section": "",
     "text": "This course is intended to familiarize students with foundational concepts and vocabulary in statistics and introduce basic data wrangling and visualization in R.\nThose who diligently work through these materials will be well prepared for their next Statistics or Data Science course.\nThis book is designed to be a digital workbook. You can download the notes, practice problems and application activities which can be edited locally on your computer. Completed assignments will be submitted in Canvas as web-page reports.\n\n\nTo download the folder containing all of the exercises, notes and application activities by following these steps:\n\nCreate a class folder where you will save all your work throughout this semester. This can be on your computer locally or in cloud-based storage such as One-Drive or iCloud.\nClick on the link below to download the .zip file containing all contents of the course website:\n\n\n Download Course Files \n\n\nOpen the .zip file\nSave the Student_Work folder to your class folder created in step 1. This can typically be done by right clicking the folder then copying and pasting it into the new location.\n\nThese files will be the basis of your coursework.\nThere may be additional files to download throughout the semester. You can save those to your\n\n\n\nEach unit contains:\n\nPreparation readings\nPractice problems\nApplication Activities\nAssessments\n\nGetting Started guides you through getting R and R-Studio set up, introduces the tools we will use for the class, and introduces basic statistical concepts to help get you started. We learn how to use R-Studio to make lovely reports that can be viewed in a web-browser. It’s a gentle enough introduction to enable even those who have never coded before to start working with R.\nDescriptive Statistics introduces tools to help understand data. We review summary statistics and visualizations for quantitative and categorical data types and learn the basic skills to turn data into information.\nData Wrangling and Visualization takes a step further into dealing with messy data and creating better visualizations.\nFoundations of Statistical Inference introduces the key concepts for using sample data to make generalized conclusions about a population. We cover probability, hypothesis testing, confidence intervals and other concepts necessary for making the leap from sample to population.\nStatistical Tests - Part 1 and 2 cover specific inferential statistics for different data types.\nThe Semester Project is an opportunity for students to demonstrate the skills acquired during the course. You will be able to find and import data into R, clean the data, create top notch visualizations, perform appropriate statistical analysis and create a beautiful report.\nR Help provides additional resources for learning how to use R.\n\n\nBy the end of this semester, students will confidently be able to:\n\nImport data and apply basic data wrangling to moderately messy data\nDescribe data with numerical and graphical summaries\nMake evidence-based decisions regarding situations with inherent randomness\nInvestigate questions through the application of probability distributions\nPerform the appropriate statistical analysis based on specific data being analyzed including hypothesis tests and confidence intervals\nCreate web-based reports to communicate the results of statistical analyses to relevant audiences"
   },
   {
     "objectID": "index.html#an-interactive-textbook",
     "href": "index.html#an-interactive-textbook",
-    "title": "BYU-Idaho Math 221: Introduction to Statistics in R",
+    "title": "BYU-Idaho Stat 225: Introduction to Statistics in R",
     "section": "",
     "text": "This course is intended to familiarize students with foundational concepts and vocabulary in statistics and introduce basic data wrangling and visualization in R.\nThose who diligently work through these materials will be well prepared for their next Statistics or Data Science course.\nThis book is designed to be a digital workbook. You can download the notes, practice problems and application activities which can be edited locally on your computer. Completed assignments will be submitted in Canvas as web-page reports.\n\n\nTo download the folder containing all of the exercises, notes and application activities by following these steps:\n\nCreate a class folder where you will save all your work throughout this semester. This can be on your computer locally or in cloud-based storage such as One-Drive or iCloud.\nClick on the link below to download the .zip file containing all contents of the course website:\n\n\n Download Course Files \n\n\nOpen the .zip file\nSave the Student_Work folder to your class folder created in step 1. This can typically be done by right clicking the folder then copying and pasting it into the new location.\n\nThese files will be the basis of your coursework.\nThere may be additional files to download throughout the semester. You can save those to your\n\n\n\nEach unit contains:\n\nPreparation readings\nPractice problems\nApplication Activities\nAssessments\n\nGetting Started guides you through getting R and R-Studio set up, introduces the tools we will use for the class, and introduces basic statistical concepts to help get you started. We learn how to use R-Studio to make lovely reports that can be viewed in a web-browser. It’s a gentle enough introduction to enable even those who have never coded before to start working with R.\nDescriptive Statistics introduces tools to help understand data. We review summary statistics and visualizations for quantitative and categorical data types and learn the basic skills to turn data into information.\nData Wrangling and Visualization takes a step further into dealing with messy data and creating better visualizations.\nFoundations of Statistical Inference introduces the key concepts for using sample data to make generalized conclusions about a population. We cover probability, hypothesis testing, confidence intervals and other concepts necessary for making the leap from sample to population.\nStatistical Tests - Part 1 and 2 cover specific inferential statistics for different data types.\nThe Semester Project is an opportunity for students to demonstrate the skills acquired during the course. You will be able to find and import data into R, clean the data, create top notch visualizations, perform appropriate statistical analysis and create a beautiful report.\nR Help provides additional resources for learning how to use R.\n\n\nBy the end of this semester, students will confidently be able to:\n\nImport data and apply basic data wrangling to moderately messy data\nDescribe data with numerical and graphical summaries\nMake evidence-based decisions regarding situations with inherent randomness\nInvestigate questions through the application of probability distributions\nPerform the appropriate statistical analysis based on specific data being analyzed including hypothesis tests and confidence intervals\nCreate web-based reports to communicate the results of statistical analyses to relevant audiences"
   },
@@ -112,211 +112,211 @@
     "text": "PC Instructions:\n\nOpen File Explorer, which is usually the folder icon located on your taskbar or in the Start menu.\nNavigate to the folder where your file is located by clicking through the folders.\nOnce you’ve found your file, right-click on it and select “Properties”.\nIn the Properties window, you’ll see a field called “Location” or “Location:” which shows you the file path. It looks something like C:\\Users\\YourUsername\\Documents\\YourFile.csv. You can copy this path by selecting it and pressing Ctrl + C.\n\nIn both cases, the file path tells the computer where to find your file, similar to how a street address tells someone where to find a physical location. You can use this file path to access your file from anywhere on your computer.\nUnfortunately, R doesn’t like single backslashes, \\. If you’re on a PC you can either add a second \\ or switch them to /\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(ggplot2)\n\nwar &lt;- import('C:\\\\Users\\\\paulccannon\\\\OneDrive - BYU-Idaho\\\\Math221inR\\\\countries-in-conflict-data.csv')\nwar &lt;- import('C:/Users/paulccannon/OneDrive - BYU-Idaho/Math221inR/countries-in-conflict-data.csv')\n\nThe rio::import() function can handle many different types data types (.xlsx, .xls, .csv, .txt, and many others). If you run into a data file type that rio can’t import, there are other libraries that have similar functions that can do the same thing. But we limit the scope for this class to sources that rio can handle."
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html",
     "title": "Semester Project",
     "section": "",
     "text": "[Provide a brief overview of your research question. Explain why you’re interested in the topic, where you found your data and the objectives of your analysis.]"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#data-import-and-preparation",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#data-import-and-preparation",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#data-import-and-preparation",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#data-import-and-preparation",
     "title": "Semester Project",
     "section": "Data Import and Preparation",
     "text": "Data Import and Preparation\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(ggplot2)\n\n# Be sure to make this using ggplot()"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#visualizations",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#visualizations",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#visualizations",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#visualizations",
     "title": "Semester Project",
     "section": "Visualizations",
     "text": "Visualizations\n[Use ggplot() to create presentation-worth graphs (histograms, scatterplots, bar charts, boxplots, etc). Include an overall visualization of your response variable and one or two exploratory graphs showing the relationship between explanatory variables and your response.\nNOTE: The type of graphs and summaries you do depends entirely on the type of data (categorical or quantitative) that you have for your project.]\n\n# Create Visuals Here"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#numerical-summaries",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#numerical-summaries",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#numerical-summaries",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#numerical-summaries",
     "title": "Semester Project",
     "section": "Numerical Summaries",
-    "text": "Numerical Summaries\n[Create numerical summaries (favstats(), prop.table() with row or column totals, etc.) of your response variable. Include a table of summary statistics broken out by your explanatory variable. Include a discussion of what you observe.]\n\n# Create numerical summaries"
+    "text": "Numerical Summaries\n[Create numerical summaries (favstats(), prop.table(), etc with row or column totals, etc.) of your response variable. Include a table of summary statistics broken out by your explanatory variable. Include a discussion of what you observe.\nNOTE: You do not need to do all of the different types of summaries. The types of summaries you do will depend on the data types (Categorical or Quantitative) that you have in your dataset. ]\n\n# Create numerical summaries"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#state-ho-and-ha",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#state-ho-and-ha",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#state-ho-and-ha",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#state-ho-and-ha",
     "title": "Semester Project",
     "section": "State Ho and Ha",
     "text": "State Ho and Ha"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#hypothesis-test",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#hypothesis-test",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#hypothesis-test",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#hypothesis-test",
     "title": "Semester Project",
     "section": "Hypothesis Test",
     "text": "Hypothesis Test\n\n# Perform the appropriate test for the data selected"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#confidence-interval-where-appropriate",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#confidence-interval-where-appropriate",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#confidence-interval-where-appropriate",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#confidence-interval-where-appropriate",
     "title": "Semester Project",
     "section": "Confidence Interval (where appropriate)",
     "text": "Confidence Interval (where appropriate)"
   },
   {
-    "objectID": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#check-test-requirements",
-    "href": "7-Semester_Project/2-Semester_Project_Template_Final_Report.html#check-test-requirements",
+    "objectID": "7-Semester_Project/2-Semester_Project_Template_Part2.html#check-test-requirements",
+    "href": "7-Semester_Project/2-Semester_Project_Template_Part2.html#check-test-requirements",
     "title": "Semester Project",
     "section": "Check Test Requirements",
     "text": "Check Test Requirements"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html",
-    "href": "6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html",
+    "objectID": "6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html",
+    "href": "6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html",
     "title": "Chi-Square Practice",
     "section": "",
     "text": "Complete the following questions about testing for independence between 2 categorical variables. When completed, Render the qmd file and submit the html."
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html#hypothesis-test",
-    "href": "6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html#hypothesis-test",
+    "objectID": "6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html#hypothesis-test",
+    "href": "6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html#hypothesis-test",
     "title": "Chi-Square Practice",
     "section": "Hypothesis Test",
     "text": "Hypothesis Test\nNOTE: The way the data were imported into bp_alcohol, it contains a column, V1, which is the row label. It should not be included in the input table in the chisq.test() function. Create a new dataset that only includes the columns: zero, one_two, three_four_five and six_or_more.\n\nalcohol_tbl &lt;- bp_alcohol %&gt;%\n  select()\n\nOnce you’ve created the table with only the counts, perform the Chi-square test for independence:\n\n# Run the Chi-square test:  \n\n\n# Check the requirements:\n\nQuestion: Are the requirements satisfied for the \\(\\chi\\)-square test for independence?\nAnswer:\nQuestion: What is the value of the test statistic?\nAnswer:\nQuestion: What is the P-value?\nAnswer:\nQuestion: State your conclusion in context of this problem:\nAnswer:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html",
     "title": "ANOVA Practice",
     "section": "",
     "text": "You are curious to compare life expectancy between female poets, novelists, and non-fiction writers.\nYou take a sample of female authors from each of the three groups to test if the average age at death is different between any of the three types of authors using a level of significance of, \\(\\alpha = 0.05\\).\n\n\n\n\nlibrary(rio)\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(car)\n\nwomenpoet &lt;- rio::import(\"https://byuistats.github.io/BYUI_M221_Book/Data/womenpoet.xls\")\n\n\n\n\nCreate a side-by-side boxplot of the age at death of each of the different author styles.\nModify the colors of each of the boxes for each group.\nCreate a summary statistics table for age at death for each author type:\nList the mean and standard deviations of age at death for:\n\nNovelists:\nPoets:\nNon-fiction:\n\n\n\n\nState your null and alternative hypotheses:\nHo:\nHa:\nPerform an Analysis of Variance test including checking for the appropriateness of our analysis.\nQuestion: What is the test statistic?\nAnswer:\nQuestion: What are the degrees of freedom for your analysis?\na. Numerator (between Groups) Degrees of Freedom\nb. Denominator (within groups) Degrees of Freedom\nAnswer:\nQuestion: What is the P-value?\nAnswer:\nQuestion: Do you reject the null hypothesis? Why?\nAnswer:\nQuestion: State your conclusion in context of the problem.\nAnswer:\nQuestion: Can we trust the p-value? a. Check for equal standard deviation (is the ratio of the largest SD / smallest SD greater than 2?) b. Check Normality of the residuals (qqPlot())\nAnswer:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#introduction",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#introduction",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#introduction",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#introduction",
     "title": "ANOVA Practice",
     "section": "",
     "text": "You are curious to compare life expectancy between female poets, novelists, and non-fiction writers.\nYou take a sample of female authors from each of the three groups to test if the average age at death is different between any of the three types of authors using a level of significance of, \\(\\alpha = 0.05\\)."
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#load-the-data-and-libraries",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#load-the-data-and-libraries",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#load-the-data-and-libraries",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#load-the-data-and-libraries",
     "title": "ANOVA Practice",
     "section": "",
     "text": "library(rio)\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(car)\n\nwomenpoet &lt;- rio::import(\"https://byuistats.github.io/BYUI_M221_Book/Data/womenpoet.xls\")"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#explore-the-data",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#explore-the-data",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#explore-the-data",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#explore-the-data",
     "title": "ANOVA Practice",
     "section": "",
     "text": "Create a side-by-side boxplot of the age at death of each of the different author styles.\nModify the colors of each of the boxes for each group.\nCreate a summary statistics table for age at death for each author type:\nList the mean and standard deviations of age at death for:\n\nNovelists:\nPoets:\nNon-fiction:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#perform-the-appropriate-analysis",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#perform-the-appropriate-analysis",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#perform-the-appropriate-analysis",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#perform-the-appropriate-analysis",
     "title": "ANOVA Practice",
     "section": "",
     "text": "State your null and alternative hypotheses:\nHo:\nHa:\nPerform an Analysis of Variance test including checking for the appropriateness of our analysis.\nQuestion: What is the test statistic?\nAnswer:\nQuestion: What are the degrees of freedom for your analysis?\na. Numerator (between Groups) Degrees of Freedom\nb. Denominator (within groups) Degrees of Freedom\nAnswer:\nQuestion: What is the P-value?\nAnswer:\nQuestion: Do you reject the null hypothesis? Why?\nAnswer:\nQuestion: State your conclusion in context of the problem.\nAnswer:\nQuestion: Can we trust the p-value? a. Check for equal standard deviation (is the ratio of the largest SD / smallest SD greater than 2?) b. Check Normality of the residuals (qqPlot())\nAnswer:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#introduction-1",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#introduction-1",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#introduction-1",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#introduction-1",
     "title": "ANOVA Practice",
     "section": "Introduction",
     "text": "Introduction\nA study was conducted to determine if different types of material can reduce the amount of mosquito human contact. The researchers evaluated five different types of patches 1=Odomos, 2=Deltamethrin, 3=Cyfluthrin, 4=D+O, 5=C+O.\nThe amount of mosquito human contact was measured to assess any differences between the five different types of material. Use a level of significance of 0.05."
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#load-the-data",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#load-the-data",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#load-the-data",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#load-the-data",
     "title": "ANOVA Practice",
     "section": "Load the Data",
     "text": "Load the Data\n\nMosquitoPatch &lt;- rio::import(\"https://raw.githubusercontent.com/rdcromar/Math221D/main/MosquitoPatch.csv\") %&gt;% mutate(Treatment = factor(Treatment))"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#review-the-data",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#review-the-data",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#review-the-data",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#review-the-data",
     "title": "ANOVA Practice",
     "section": "Review the Data",
     "text": "Review the Data\nCreate a side-by-side boxplot for human contact for each of the treatment groups.\nAdd a title and change the colors of the boxes.\nCreate a summary statistics table for human contact for each of the treatment groups:\nQuestion: What do you observe?\nAnswer:\nQuestion: What is the maximum standard deviation?\nAnswer:\nQuestion: What is the minimum standard deviation?\nAnswer:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#perform-the-appropriate-analysis-1",
-    "href": "6-Statistical_Tests_Part2/2-ANOVA_Practice.html#perform-the-appropriate-analysis-1",
+    "objectID": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#perform-the-appropriate-analysis-1",
+    "href": "6-Statistical_Tests_Part2/2b-ANOVA_Practice.html#perform-the-appropriate-analysis-1",
     "title": "ANOVA Practice",
     "section": "Perform the Appropriate Analysis",
     "text": "Perform the Appropriate Analysis\nState your null and alternative hypotheses:\nPerform an Analysis of Variance test including checking for the appropriateness of our analysis.\nQuestion: What is the test statistic (F-value)?\nAnswer:\nQuestion: What are the degrees of freedom for your analysis?\n\nNumerator (between Groups) Degrees of Freedom\n\nDenominator (within groups) Degrees of Freedom\nAnswer:\n\nQuestion: What is the P-value?\nAnswer:\nQuestion: Do you reject the null hypothesis? Why?\nAnswer:\nQuestion: State your conclusion in context of the problem.\nAnswer:\nQuestion: Can we trust the p-value? a. Check for equal standard deviation (is the ratio of the largest SD / smallest SD greater than 2?) b. Check Normality of the residuals (qqPlot())\nAnswer:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html",
     "title": "Regression Practice",
     "section": "",
     "text": "In this assignment, you will practice regression analysis including:\n\nPlotting bivariate data with a regression line\nCalculating and interpreting the correlation coefficient, r\nFitting a linear regression analysis\nVerifying if a linear model is model is adequate:\n\nChecking for linearity (scatterplot)\nChecking for constant variance (plot(lm_output, which=1))\nChecking for normality of residuals (qqPlot(lm_output$residuals))\n\n\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#plot-the-data-and-calculate-r",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#plot-the-data-and-calculate-r",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#plot-the-data-and-calculate-r",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#plot-the-data-and-calculate-r",
     "title": "Regression Practice",
     "section": "Plot the Data and calculate r",
     "text": "Plot the Data and calculate r\nUse ggplot() to create a scatter plot with the regression line, then calculate r:\n\n# geom_smooth(method=\"lm\")\n\nQUESTION: Does the relationship look linear?\nANSWER:\nQUESTION: What is the correlation coefficient, r?\nANSWER:\nQUESTION: What does r show?\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#fit-a-linear-regression-model",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#fit-a-linear-regression-model",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#fit-a-linear-regression-model",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#fit-a-linear-regression-model",
     "title": "Regression Practice",
     "section": "Fit a Linear Regression Model",
     "text": "Fit a Linear Regression Model\n\n#lm_output &lt;- lm()\n\nQUESTION: What is the slope of the regression line, and what does it mean?\nANSWER:\nQUESTION: What is the intercept and what does it mean?\nANSWER:\nQUESTION: What is the p-value?\nANSWER:\nQUESTION: State your conclusion in context of the research question:\nANSWER:\nQUESTION: What is the confidence interval for the slope?\nANSWER:\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#check-model-requirements",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#check-model-requirements",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#check-model-requirements",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#check-model-requirements",
     "title": "Regression Practice",
     "section": "Check Model Requirements",
     "text": "Check Model Requirements\nCheck the normality of the residuals:\nCheck for constant variance (Residual by Predicted plot):\n\n#plot(lm_output, which = 1)\n\nQUESTION: Do the test requirements appear to be satisfied? Why?\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#good-price",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#good-price",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#good-price",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#good-price",
     "title": "Regression Practice",
     "section": "Good Price?",
     "text": "Good Price?\nLastly, the car you’re interested in buying has around 100,000 miles and costs $11,200. Could this be considered a good deal? Why?"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#plot-the-data-and-calculate-r-1",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#plot-the-data-and-calculate-r-1",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#plot-the-data-and-calculate-r-1",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#plot-the-data-and-calculate-r-1",
     "title": "Regression Practice",
     "section": "Plot the Data and calculate r",
     "text": "Plot the Data and calculate r\nUse ggplot() to create a scatter plot with the regression line, then calculate r:\n\n# geom_smooth(method=\"lm\")\n\nQUESTION: Does the relationship look linear?\nANSWER:\nQUESTION: What is the correlation coefficient, r?\nANSWER:\nQUESTION: What does r show?\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#fit-a-linear-regression-model-1",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#fit-a-linear-regression-model-1",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#fit-a-linear-regression-model-1",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#fit-a-linear-regression-model-1",
     "title": "Regression Practice",
     "section": "Fit a Linear Regression Model",
     "text": "Fit a Linear Regression Model\n\n#lm_output &lt;- lm()\n\nQUESTION: What is the slope of the regression line, and what does it mean?\nANSWER:\nQUESTION: What is the intercept and what does it mean?\nANSWER:\nQUESTION: What is the p-value?\nANSWER:\nQUESTION: State your conclusion in context of the research question:\nANSWER:\nQUESTION: What is the confidence interval for the slope?\nANSWER:\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#check-model-requirements-1",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#check-model-requirements-1",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#check-model-requirements-1",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#check-model-requirements-1",
     "title": "Regression Practice",
     "section": "Check Model Requirements",
     "text": "Check Model Requirements\nCheck the normality of the residuals:\nCheck for constant variance (Residual by Predicted plot):\n\n#plot(lm_output, which = 1)\n\nQUESTION: Do the test requirements appear to be satisfied? Why?\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#plot-the-data-and-calculate-r-2",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#plot-the-data-and-calculate-r-2",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#plot-the-data-and-calculate-r-2",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#plot-the-data-and-calculate-r-2",
     "title": "Regression Practice",
     "section": "Plot the Data and calculate r",
     "text": "Plot the Data and calculate r\nUse ggplot() to create a scatter plot with the regression line, then calculate r:\n\n# geom_smooth(method=\"lm\")\n\nQUESTION: Does the relationship look linear?\nANSWER:\nQUESTION: What is the correlation coefficient, r?\nANSWER:\nQUESTION: What does r show?\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#fit-a-linear-regression-model-2",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#fit-a-linear-regression-model-2",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#fit-a-linear-regression-model-2",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#fit-a-linear-regression-model-2",
     "title": "Regression Practice",
     "section": "Fit a Linear Regression Model",
     "text": "Fit a Linear Regression Model\nQUESTION: What is the slope of the regression line, and what does it mean?\nANSWER:\nQUESTION: What is the intercept and what does it mean?\nANSWER:\nQUESTION: What is the p-value?\nANSWER:\nQUESTION: State your conclusion in context of the research question:\nANSWER:\nQUESTION: What is the confidence interval for the slope?\nANSWER:\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:"
   },
   {
-    "objectID": "6-Statistical_Tests_Part2/1-Regression_Practice.html#check-model-requirements-2",
-    "href": "6-Statistical_Tests_Part2/1-Regression_Practice.html#check-model-requirements-2",
+    "objectID": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#check-model-requirements-2",
+    "href": "6-Statistical_Tests_Part2/1b-Regression_Practice.html#check-model-requirements-2",
     "title": "Regression Practice",
     "section": "Check Model Requirements",
     "text": "Check Model Requirements\nCheck the normality of the residuals:\nCheck for constant variance (Residual by Predicted plot):\nQUESTION: Do the test requirements appear to be satisfied? Why?\nANSWER:"
@@ -669,7 +669,7 @@
     "href": "4-Foundations_Statistical_Inference/9-One_Sample_ttest.html#calculating-p-values-by-hand-with-the-t-distribution-one-out-of-ten.-would-not-recommended",
     "title": "One-Sample T-test",
     "section": "Calculating P-values by hand with the T-distribution (One out of ten. Would NOT RECOMMENDED)",
-    "text": "Calculating P-values by hand with the T-distribution (One out of ten. Would NOT RECOMMENDED)\nHere is an example of performing a hypothesis test using the \\(t\\)-distribution by hand.\nSuppose we have a sample of 25 test scores of Math 221 students. We believe that the true population mean of Math 221 students is significantly higher than overall average of 50.\nOur null and alternative hypothesis are as follows:\n\\[ H_0:  \\mu_{\\text{M221 Students}} = 50 \\] We would read this: The population average test score of Math 221 students is equal to the general population average of 50.\n\\[ H_a: \\mu_{\\text{M221 Students}} &gt; 50 \\] We would read this: The population average test score of Math 221 students is greater than the general population average of 50.\nNOTE: The direction of the alternative hypothesis (“greater”, “less”, “two.sided”) will depend on the context of the research question. If you believe your drug lowers cholesterol, then you may have alternative = \"less\". If you genuinely do not know if the population mean is higher or lower, you can use alternative = \"two.sided\".\nWe could then use favstats(data) to get everything we need to plug into the formula and calculate the probabilities using the \\(t\\)-distribution.\n\nlibrary(mosaic)\n\n# we can use the t-distribution, pt(), just like pnorm() but must also add the degrees of freedom\n\ntest_scores &lt;- c(88,81,27,92,46,79,67,44,46,88,21,60,71,81,79,52,100,44,42,58,52,48,83,65,98)\n\n# Save the output of the favstats() function  \n\nsummary_stats &lt;- favstats(test_scores)\nsummary_stats\n\n min Q1 median Q3 max  mean       sd  n missing\n  21 46     65 81 100 64.48 21.96232 25       0\n\n# Use the output to extract the important values for calculating t:  \nxbar &lt;- summary_stats$mean\ns &lt;- summary_stats$sd\nn &lt;- summary_stats$n\n\n# Calculate the standard deviation of a sample mean:  \ns_xbar = s / sqrt(n)\n\n# Hypothesized Mean:\nmu_0 &lt;- 50\n\n\nt &lt;- (xbar - mu_0) / s_xbar\nt\n\n[1] 3.296556\n\n# Probability of getting a test statistic at least as extreme as the one we observed if the null hypothesis is true\np_value &lt;- 1-pt(t, df = n-1)\np_value\n\n[1] 0.00151866\n\n\nQuestion: What is the test statistic, \\(t\\)?\nAnswer:\nQuestion: What is the probability of observing \\(t\\) “greater” then the one we observed if the population mean was really 50? (The P-value)\nAnswer:"
+    "text": "Calculating P-values by hand with the T-distribution (One out of ten. Would NOT RECOMMENDED)\nHere is an example of performing a hypothesis test using the \\(t\\)-distribution by hand.\nSuppose we have a sample of 25 test scores of Stat 225 students. We believe that the true population mean of Stat 225 students is significantly higher than overall average of 50.\nOur null and alternative hypothesis are as follows:\n\\[ H_0:  \\mu_{\\text{M221 Students}} = 50 \\] We would read this: The population average test score of Stat 225 students is equal to the general population average of 50.\n\\[ H_a: \\mu_{\\text{M221 Students}} &gt; 50 \\] We would read this: The population average test score of Stat 225 students is greater than the general population average of 50.\nNOTE: The direction of the alternative hypothesis (“greater”, “less”, “two.sided”) will depend on the context of the research question. If you believe your drug lowers cholesterol, then you may have alternative = \"less\". If you genuinely do not know if the population mean is higher or lower, you can use alternative = \"two.sided\".\nWe could then use favstats(data) to get everything we need to plug into the formula and calculate the probabilities using the \\(t\\)-distribution.\n\nlibrary(mosaic)\n\n# we can use the t-distribution, pt(), just like pnorm() but must also add the degrees of freedom\n\ntest_scores &lt;- c(88,81,27,92,46,79,67,44,46,88,21,60,71,81,79,52,100,44,42,58,52,48,83,65,98)\n\n# Save the output of the favstats() function  \n\nsummary_stats &lt;- favstats(test_scores)\nsummary_stats\n\n min Q1 median Q3 max  mean       sd  n missing\n  21 46     65 81 100 64.48 21.96232 25       0\n\n# Use the output to extract the important values for calculating t:  \nxbar &lt;- summary_stats$mean\ns &lt;- summary_stats$sd\nn &lt;- summary_stats$n\n\n# Calculate the standard deviation of a sample mean:  \ns_xbar = s / sqrt(n)\n\n# Hypothesized Mean:\nmu_0 &lt;- 50\n\n\nt &lt;- (xbar - mu_0) / s_xbar\nt\n\n[1] 3.296556\n\n# Probability of getting a test statistic at least as extreme as the one we observed if the null hypothesis is true\np_value &lt;- 1-pt(t, df = n-1)\np_value\n\n[1] 0.00151866\n\n\nQuestion: What is the test statistic, \\(t\\)?\nAnswer:\nQuestion: What is the probability of observing \\(t\\) “greater” then the one we observed if the population mean was really 50? (The P-value)\nAnswer:"
   },
   {
     "objectID": "4-Foundations_Statistical_Inference/9-One_Sample_ttest.html#body-temperature-data",
@@ -683,7 +683,7 @@
     "href": "4-Foundations_Statistical_Inference/7b-Confidence_Intervals_for_Means_Practice.html",
     "title": "Confidence Intervals For Means - Practice",
     "section": "",
-    "text": "Introduction\nIn this exercise, you will create several confidence intervals for an unknown population mean, \\(\\mu\\), based on your sample mean, \\(\\bar x\\).\nStart by loading the libraries:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\n\n\nCreativity\nCreate a 95% confidence interval for the true population average creativity percentile (Creativity_Percentile) of Brother Cannon’s students (\\(\\mu_{\\text{creativity}}\\)):\n\ncreativity &lt;- read_csv('https://github.com/byuistats/Math221D_Course/raw/main/Data/creativity_personality_Clean.csv')\n\nt.test(, conf.level = )$conf.int\n\nError in t_test.default(, conf.level = ): argument \"x\" is missing, with no default\n\n\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:\nCreate a 93% confidence interval for the true population average number of siblings (How_Many_Siblings) of Brother Cannon’s students(\\(\\mu_{\\text{number of siblings}}\\)):\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:\n\n\nMedical Malpractice Lawsuits\nCreate a 99% Confidence interval for the true population average payout for operating on the wrong patient (Wrong_Patient) in malpractice lawsuits (\\(\\mu_{\\text{payout}}\\)):\n\nmalpractice &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")\n\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:\n\n\nOld Faithful\nCreate a 90% Confidence Interval for the true population average wait time for an Old Faithful eruption (\\(\\mu_{\\text{wait time}}\\)):\n\nold_faithful &lt;- rio::import(\"https://byuistats.github.io/M221R/Data/old_faithful.xlsx\")\n\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:"
+    "text": "Introduction\nIn this exercise, you will create several confidence intervals for an unknown population mean, \\(\\mu\\), based on your sample mean, \\(\\bar x\\).\nStart by loading the libraries:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\n\n\nCreativity\nCreate a 95% confidence interval for the true population average creativity percentile (Creativity_Percentile) of Stat 225 students (\\(\\mu_{\\text{creativity}}\\)):\n\ncreativity &lt;- read_csv('https://github.com/byuistats/Math221D_Course/raw/main/Data/creativity_personality_Clean.csv')\n\nt.test(, conf.level = )$conf.int\n\nError in t_test.default(, conf.level = ): argument \"x\" is missing, with no default\n\n\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:\nCreate a 93% confidence interval for the true population average number of siblings (How_Many_Siblings) of Stat 225 students(\\(\\mu_{\\text{number of siblings}}\\)):\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:\n\n\nMedical Malpractice Lawsuits\nCreate a 99% Confidence interval for the true population average payout for operating on the wrong patient (Wrong_Patient) in malpractice lawsuits (\\(\\mu_{\\text{payout}}\\)):\n\nmalpractice &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")\n\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:\n\n\nOld Faithful\nCreate a 90% Confidence Interval for the true population average wait time for an Old Faithful eruption (\\(\\mu_{\\text{wait time}}\\)):\n\nold_faithful &lt;- rio::import(\"https://byuistats.github.io/M221R/Data/old_faithful.xlsx\")\n\nQUESTION: Explain the confidence interval in context of the research question:\nANSWER:"
   },
   {
     "objectID": "4-Foundations_Statistical_Inference/7-Confidence_Intervals_for_Means.html",
@@ -921,14 +921,14 @@
     "href": "2-Descriptive_Statistics/Numerical_Summaries_Quantitative_Data.html",
     "title": "Quantitative Data Summaries",
     "section": "",
-    "text": "In this section we discuss data summaries for quantitative data. After this lesson, you should be able to:\n\nUnderstand common measures of center (mean, median, mode)\n\nUnderstand common measures of spread (standard deviation, variance, percentiles), why they are important, and how to interpret them\n\nUse R to calculate measures of center and spread\n\nCreate a table of summary statistics (favstats()) for multiple groups\n\n\n\nWe will use the Big 5 Personality data of a random sample of Brother Cannon’s students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
+    "text": "In this section we discuss data summaries for quantitative data. After this lesson, you should be able to:\n\nUnderstand common measures of center (mean, median, mode)\n\nUnderstand common measures of spread (standard deviation, variance, percentiles), why they are important, and how to interpret them\n\nUse R to calculate measures of center and spread\n\nCreate a table of summary statistics (favstats()) for multiple groups\n\n\n\nWe will use the Big 5 Personality data of a random sample of Stat 225 students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
   },
   {
     "objectID": "2-Descriptive_Statistics/Numerical_Summaries_Quantitative_Data.html#load-the-data-and-libraries",
     "href": "2-Descriptive_Statistics/Numerical_Summaries_Quantitative_Data.html#load-the-data-and-libraries",
     "title": "Quantitative Data Summaries",
     "section": "",
-    "text": "We will use the Big 5 Personality data of a random sample of Brother Cannon’s students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
+    "text": "We will use the Big 5 Personality data of a random sample of Stat 225 students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
   },
   {
     "objectID": "2-Descriptive_Statistics/Numerical_Summaries_Quantitative_Data.html#mean",
@@ -1036,151 +1036,74 @@
     "text": "Scatter plot\nMake a scatter plot showing the relationship between wait time and the duration of the next eruption.\nDeciding which is the response variable in this data is a bit tricky. To remain consistent, assume that the wait time between eruptions explains how long the subsequent eruption will last.\nCreate a scatterplot of the relationship between wait time and duration. Remember to use the formula y ~ x\nQuestion: Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.\nAnswer:\nQuestion: What’s your best guess at, \\(r\\) based on the scatter plot?\nAnswer:\nQuestion: Does it look linear?\nAnswer:\nCalculate the Correlation Coefficient, \\(r\\):\nQuestion: How far off was your guess?\nAnswer:"
   },
   {
-    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html",
-    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html",
-    "title": "Quantitative Data Summaries - Multiple Groups",
+    "objectID": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html",
+    "href": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html",
+    "title": "Response and Explanatory Variables",
     "section": "",
-    "text": "In this section, we will review data types (categorical and quantitative) and demonstrate how to numerically and visually summarize a quantitative response variable for each level of a categorical explanatory variable.\n\n\n\nCreate a table of summary statistics (favstats()) for multiple groups\n\nCreate side-by-side boxplots comparing multiple groups\n\nInterpret side-by-side boxplots for group comparisons\n\n\n\n\nWe will use the Big 5 Personality data of a random sample of Brother Cannon’s students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
+    "text": "In this section, we will:\n\nReview the definitions of Response/Dependent variables and Explanatory/Independent variables\n\nLearn some R tools to help us look at the data (View(), glimpse(), names())\n\nLook at several datasets and identify the response variables and explanatory variables\n\nIdentify data types (categorical or quantitative)\n\nIdentify each level of a categorical variable\n\n\n\nDon’t forget, before we can use the tools in the different toolboxes, we need to retrieve them from the shed. In R, that means, loading the libraries:\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(car)\nlibrary(rio)"
   },
   {
-    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#lesson-outcomes",
-    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#lesson-outcomes",
-    "title": "Quantitative Data Summaries - Multiple Groups",
+    "objectID": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#load-the-libraries",
+    "href": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#load-the-libraries",
+    "title": "Response and Explanatory Variables",
     "section": "",
-    "text": "Create a table of summary statistics (favstats()) for multiple groups\n\nCreate side-by-side boxplots comparing multiple groups\n\nInterpret side-by-side boxplots for group comparisons"
+    "text": "Don’t forget, before we can use the tools in the different toolboxes, we need to retrieve them from the shed. In R, that means, loading the libraries:\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(car)\nlibrary(rio)"
   },
   {
-    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#load-the-data-and-libraries",
-    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#load-the-data-and-libraries",
-    "title": "Quantitative Data Summaries - Multiple Groups",
+    "objectID": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#data",
+    "href": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#data",
+    "title": "Response and Explanatory Variables",
+    "section": "Data",
+    "text": "Data\nDatasets contain rows and columns. Rows in a dataset represent individual observations or records. Each row contains all the relevant data for a single case, instance, or subject being studied. For example, in a dataset about students, each row might represent a different student, with all their associated data (such as name, age, and grade) contained within that row.\nColumns in a dataset represent the different variables or attributes being measured or recorded. Each column contains one specific type of data across all the observations. For example, in the same student dataset, there could be a column for “Name,” a column for “Age,” and another for “Grade.”\nNOTE: Column names in a dataset are considered variables.\nTogether, rows and columns provide a structured format that makes it easy to organize, analyze, and visualize the data.\n\nData Types (Review)\nIn this class, we will use the broad categories of “quantitative” and “categorical” variables to distinguish between numerical values and data that represent group information respectively. As we will see below, it’s not always as easy as it seems to tell the difference.\n\n\nQuantitative Variables\nVariables that are quantitative consists of values that represent measurable quantities.\n\n\nCategroical Variables\nCategorical data consists of values that represent categories or groups. We refer to each of the categories as “levels” of the variable.\nTo see all of the levels of a categorical variable, we can use the unique() function. The code chunk below has a list of favorite pets. The unique() function takes as an input a categorical variable and returns a list of the distinct values.\n\nfavorite_pet &lt;- c(\"cat\", \"cat\", \"dog\", \"ferret\", \"cat\", \"cat\", \"dog\", \"lizard\", \"dog\")\n\nunique(favorite_pet)\n\n[1] \"cat\"    \"dog\"    \"ferret\" \"lizard\"\n\n\nThis lists all the “levels” of a categorical variable."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#responsedependent-variable",
+    "href": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#responsedependent-variable",
+    "title": "Response and Explanatory Variables",
+    "section": "Response/Dependent Variable",
+    "text": "Response/Dependent Variable\nThe response variable, also known as the dependent variable, is the outcome or the variable that researchers are interested in explaining or predicting. Its value depends on the influence of other variables. For example, in a study examining the effect of study time on exam scores, the exam score is the response variable because it changes in response to different amounts of study time."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#explanatoryindependent-variable",
+    "href": "2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html#explanatoryindependent-variable",
+    "title": "Response and Explanatory Variables",
+    "section": "Explanatory/Independent Variable",
+    "text": "Explanatory/Independent Variable\nThe explanatory variable, also known as the independent variable, is the variable that is manipulated or controlled in a statistical experiment to observe its effect on the response variable. It is considered the cause or predictor in the relationship being studied. In the example above, the amount of study time is the explanatory variable, as it is the factor that explains exam scores."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html",
+    "href": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html",
+    "title": "Practice: Graphical Summaries (Quant.)",
     "section": "",
-    "text": "We will use the Big 5 Personality data of a random sample of Brother Cannon’s students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
+    "text": "This is an opportunity for you to practice creating graphical summaries of quantitative data.\nWe will explore 2 datasets. The first contains information about the duration and the time between geyser eruptions at Old Faithful in Yellowstone National park.\nThe second is data collected about expressions of gratitude and their impact on subjective well-being.\nFor each dataset, you will create numerical summaries of the data."
   },
   {
-    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#summary-statistics",
-    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#summary-statistics",
-    "title": "Quantitative Data Summaries - Multiple Groups",
-    "section": "Summary Statistics",
-    "text": "Summary Statistics\nWe can easily extend favstats() to output our favorite statistics for multiple groups.\nWe first must identify the quantitative response variable we want to compare, then tell R which categorical explanatory variable we would like to compare.\nFor example, we could compare agreeableness between the sexes. In this case, Agreeableness is the quantitative response variable and Sex(M/F) is the categorical explanatory variable.\n\n# This gives us the summary statistics for Agreeableness across all groups\nfavstats(big5$Agreeableness)\n\n min Q1 median Q3 max     mean       sd   n missing\n  21 67     75 81 100 73.43457 13.24909 405       0\n\n# Adding the '~' tells R to break the data into groups (determined by the right side of the '~') and calculate the means of the variable on the left\nfavstats(big5$Agreeableness ~ big5$`Sex(M/F)`)\n\n  big5$`Sex(M/F)` min Q1 median Q3 max     mean       sd   n missing\n1               F  21 69     77 85 100 75.92035 12.94640 226       0\n2               M  25 63     73 79  94 70.29609 12.99218 179       0"
+    "objectID": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html#histogram",
+    "href": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html#histogram",
+    "title": "Practice: Graphical Summaries (Quant.)",
+    "section": "Histogram",
+    "text": "Histogram\nCreate a histogram and boxplot for happiness scores:\nQuestion: What is the general shape of the distribution?\nAnswer:"
   },
   {
-    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#visual-summaries-by-group",
-    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#visual-summaries-by-group",
-    "title": "Quantitative Data Summaries - Multiple Groups",
-    "section": "Visual Summaries by Group",
-    "text": "Visual Summaries by Group\nWe can use the exact same formula used for boxplot() as we used for favstats():\n\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`)\n\n\n\n\n\n\n\n\nNOTE: We will use the formula data$response ~ data$explanatory for LOTS of functions this semester. They will always take the form y ~ x."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#improving-graphs",
-    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#improving-graphs",
-    "title": "Quantitative Data Summaries - Multiple Groups",
-    "section": "Improving Graphs",
-    "text": "Improving Graphs\nThroughout this course, we will ease into making better visualizations. For now, here are some basic techniques that will usually apply to all graphing functions in R:\n\n# Changing color by sepecifying the `col = c()`\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, col = c(\"red\", \"blue\"))\n\n\n\n\n\n\n\n# R also assigns a numerical value to `col = `.  Try different numbers\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, col = c(2,3))\n\n\n\n\n\n\n\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, col = c(4,6))\n\n\n\n\n\n\n\n# Adding better axis labels using `xlab = ` and `ylab = `:\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, xlab = \"Biosex\", ylab = \"Trait Agreeableness\")\n\n\n\n\n\n\n\n# Adding a title:\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, main = \"Comparing Agreeableness by Biosex\")\n\n\n\n\n\n\n\n# Putting it all together:\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`,main = \"Comparing Agreeableness by Biosex\", xlab = \"Biosex\", ylab = \"Trait Agreeableness\", col = c(3, 4))"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html",
-    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html",
-    "title": "Graphical Quantitative Data Summaries",
+    "objectID": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html",
+    "href": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html",
+    "title": "Practice: Numerical Summaries (Quant.)",
     "section": "",
-    "text": "In this section, you will learn the basic visualizations for quantitative variables. After completion, you should be able to:\n\nInterpret data presented in a histogram\n\nIdentify left-skewed, right-skewed and symmetric distributions from histograms\n\nInterpret a boxplot\n\nCreate histograms and boxplots in R\n\n\n\nWe will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
+    "text": "This is an opportunity for you to practice creating numerical summaries of quantitative data.\nWe will explore 2 datasets. The first contains information about the duration and the time between geyser eruptions at Old Faithful in Yellowstone National park.\nThe second is data collected about expressions of gratitude and their impact on subjective well-being.\nFor each dataset, you will create numerical summaries of the data."
   },
   {
-    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#reading-data-into-r",
-    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#reading-data-into-r",
-    "title": "Graphical Quantitative Data Summaries",
-    "section": "",
-    "text": "We will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
+    "objectID": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-the-summary-statistics-for-duration",
+    "href": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-the-summary-statistics-for-duration",
+    "title": "Practice: Numerical Summaries (Quant.)",
+    "section": "Calculate the Summary Statistics for Duration",
+    "text": "Calculate the Summary Statistics for Duration\n\nfavstats()\n\nError in favstats(): argument \"x\" is missing, with no default\n\n\nQUESTION: What is the mean duration time of Old Faithful eruptions?\nANSWER:\nQUESTION: What is the standard deviation of duration?\nANSWER:"
   },
   {
-    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms",
-    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms",
-    "title": "Graphical Quantitative Data Summaries",
-    "section": "Histograms",
-    "text": "Histograms\nHistograms are commonly used to visualize a single, quantitative variable. It provides a way to visualize how data points are spread out.\nThe key components of a histogram are:\n\nBars: Histograms consist of adjacent bars, where each bar represents a range of values, known as a “bin.” The height of each bar indicates the frequency (or count) of data points that fall within that bin.\nBins: The x-axis is divided into equal intervals (bins). Each bin captures a specific range of values. For example, if you’re plotting test scores, a bin might cover scores at 5-point intervals.\nFrequency: The y-axis shows the frequency or number of observations that fall within each bin. This allows you to see how many data points lie in each bin.\n\n\nHow to Interpret a Histogram:\n\nShape of Distribution: The overall shape of the histogram can indicate the distribution of the data.\nCentral Tendency: You can often observe where most of the data points cluster, giving an idea of the central tendency (mean, median).\nSpread: You can see how spread out the data is, which provides insights into variability.\nOutliers: Histograms can help identify any potential outliers by showing bars with significantly lower frequencies compared to others.\n\n\n\nDescribing the “Shape” of a Distribution\nWe will describe the shape of the distribution of a data set using the following basic categories:\n\nSymmetric (bell-shaped)\n\nRight skewed\n\nLeft skewed\n\nA distribution is symmetric if both the left and right side of the distribution appear to be roughly a mirror image of each other. A special symmetric distribution is a bell-shaped distribution. When data follow a bell-shaped distribution, the histogram looks like a bell. Bell-shaped distributions play an important role in Statistics and will play a role in most of the future lessons.\nA distribution is right-skewed if a histogram of the distribution shows a long right tail. This can occur if there are some very large outliers on the right-hand side of the distribution. A distribution is left-skewed if a histogram shows that it has a long tail to the left.\n\n\n\nRight-skewed\n\n\nSymmetric & Bell-shaped\n\n\nLeft-skewed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMean: $10.45\nMedian: $9.04\nMean is to the right of the median.\n\n\nMean: 71.1 inches\nMedian: 71 inches\nMean and median are roughly equal.\n\n\nMean: 3.42\nMedian: 3.45\nMean is to the left of the median.\n\n\n\n\nIf a distribution has only one peak, it is said to be unimodal. The three distributions illustrated above are all unimodal distributions. Some people might argue that there are several peaks in the GPA data, so it should not be considered unimodal. Even though there are jagged bumps in the histogram, it is important to visualize the overall shape in the data. When interpreting a histogram, it can be helpful to blur your eyes and imagine the overall shape after smoothing out the bumps. If the overall trend indicates that there is more than one bump, then we do not consider the distribution to be unimodal. We will usually only work with unimodal data sets in this course.\nSome distributions have no distinct peak, others have more than one peak. When there is no distinct peak, and the histogram shows a relatively flat shape, we might say the data follow a uniform distribution. If there are two distinct peaks, a distribution is called bimodal. If there are more than two peaks, we refer to the distribution as multimodal."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms-in-r",
-    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms-in-r",
-    "title": "Graphical Quantitative Data Summaries",
-    "section": "Histograms in R",
-    "text": "Histograms in R\nTo make a histogram in R, you can use the histogram() function. This takes as an input a single quantitative variable:\n\nhistogram(wrong_patient$Wrong_Patient)\n\n\n\n\n\n\n\n\nQUESTION: What is the basic shape of the wrong patient procedure lawsuits?\nANSWER:"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#summary",
-    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#summary",
-    "title": "Graphical Quantitative Data Summaries",
-    "section": "Summary",
-    "text": "Summary\n\nRemember…\n\n\n\nA percentile is calculated in R using quantile(data, 0.#) where the 0.# is the percentile written as a decimal number. So the 20th percentile would be written as 0.2.\nA percentile is a number such that a specified percentage of the data are at or below this number. For example, if say 80% of college students were shorter than (or equal to) 70 inches tall in height, then the 80th percentile of heights of college students would be 70 inches.\nStandard deviation is calculated in R for a sample of data using sd(data).\nThe standard deviation is a number that describes how spread out the data typically are from the mean of that data. A larger standard deviation means the data are more spread out from their mean than data with a smaller standard deviation. The standard deviation is never negative. A standard deviation of zero implies all values in the data set are exactly the same.\nTo compute any of the five-number summary values in R, use the R function favstats(data) which also includes the mean and standard deviation.\nThe five-number summary consists of (1) the minimum value in the data, (2) the first quartile (25th percentile) of the data, (3) the median of the data (50th percentile), (4) the third quartile (75th percentile) of the data, and (5) the maximum value occurring in the data.\nTo create a boxplot in R, use the boxplot(data) or for multiple columns boxplot(data1, data2, names=c(\"Name of Column 1\", \"Name of Column 2)).\nBoxplots are a visualization of the five-number summary of a data set."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "",
-    "text": "In this section we discuss data summaries for quantitative data. After this lesson, you should be able to:\n\nUnderstand common measures of center (mean, median, mode)\n\nUnderstand common measures of spread (standard deviation, variance, percentiles), why they are important, and how to interpret them\n\nUse R to calculate measures of center and spread\n\nThroughout this section, we will use the “wrong patient” dataset which contains information about malpractice lawsuits of operations performed on the wrong patient or the wrong site on the patient.\n\n\nWe will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#reading-data-into-r",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#reading-data-into-r",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "",
-    "text": "We will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mean",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mean",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Mean",
-    "text": "Mean\nThe sample mean or sample arithmetic mean is the most common tool to estimate the center of a distribution. It is referred to simply as the mean. It is computed by adding up the observed data and dividing by the number of observations in the data set.\nIn Statistics, important ideas are given a name. Very important ideas are given a symbol. The sample mean has both a name (mean) and a symbol (\\(\\bar x\\), called “x-bar”).\n\\[\n  \\bar{x} \\text{ is used to denote the sample mean}\n\\]\nYou may have heard people refer to the sample mean as the average. Technically, the word average refers to any number that is used to estimate the center of a distribution. The mean, median and mode are all examples of “averages.” To avoid confusion, it is best to use the words mean, median, and mode instead of the word average, so that it is clear which “average” your are referencing.\nCalculate the mean payout for operations done on the wrong patient:\n\nmean(wrong_patient$Wrong_Patient)\n\n[1] NA\n\n\nWhen there are missing values in the dataset, the mean() function will return NA. We can make R give us a mean by telling the function to remove the NA values:\n\nmean(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 46172.05\n\n\nNOTE: The mean is a good measure of center when there are few outliers and the data are fairly symmetric."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#median",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#median",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Median",
-    "text": "Median\nThe median is the middle value in a sorted data set. Half of the observations in the data set are below the median and half are above the median. To find the median, you:\n\nSort the values from smallest to largest\n\nDo one of the following:\n\nIf there are an odd number of values, the median is the middle value in the sorted list.\nIf there are an even number of values, the median is the mean of the two middle values in the sorted list.\n\n\n\nCalculate the Median payout for operations done on the wrong patient using the median() function:\n\nmedian(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 18882\n\n\nQUESTION: What does this mean?\nANSWER:\nQUESTION: Notice how much bigger the Mean is from the Median. Why is that the case?\nANSWER:\nQUESTION: Which do you think is most appropriate to use, the Mean or the Median? Why?\nANSWER:\nNOTE: The Median is a good measure of center when the data are skewed or there are large outliers."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mode",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mode",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Mode",
-    "text": "Mode\nThe most frequently occurring value is called the mode. This only works well when you have a few possible outcomes or are counting the frequency of categories. If you have truly quantitative data, such as dollar amounts of payouts, it is unlikely to have the exact same value paid out many times.\nIf no number occurs more than once in the data set, we say that there is no mode.\nBecause there is no meaningful mode in the wrong patient data, let’s look at another example to calculate the mode:\nCalculate a Mode\nWe can tabulate the frequency of specific values using the table() function:\n\n# Create a new dataset called data2:\ndata2 &lt;- c(3,4,9,5,2,3,5,4,2,3,1,5,3,1,2,6,2,4,6,2,2,2,9,1,2,7,8,100)\n\n# The `table()` function counts up all the times specific values show up.  This works for numbers or categories:\ntable(data2)\n\ndata2\n  1   2   3   4   5   6   7   8   9 100 \n  3   8   4   3   3   2   1   1   2   1 \n\n\nThe first row of the table() output is the value being counted. The second row is the frequency of occurrence.\nQUESTION: Which value is most frequently occurring?\nANSWER:\nQUESTION: How many times did that value occur?\nANSWER:"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#why-do-we-care",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#why-do-we-care",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Why do we care?",
-    "text": "Why do we care?\nImagine you are growing feed corn on 100 acres. There are 2 products you could purchase, both claim an average yield of 205 bushels/acre. Product A costs less than Product B. Which one would you plant?\nIf you were basing your decision exclusively on the average yield, you would obviously go with the cheaper option. But what if I told you that with Product A you could get anything from 85 bushels/acre to 250 bushels/acre. Product B ranges from 198 to 212 bushels/acre. Would that change your decision?\nProduct A looks much more risky now. Considering both the average AND the variability helps us make much more informed decisions.\nThe average is only half the story!"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#standard-deviation",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#standard-deviation",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Standard Deviation",
-    "text": "Standard Deviation\nThe standard deviation is a measure of the spread in the distribution. The standard deviation for a sample is denoted by the latin letter, \\(s\\). If the data tend to be close together, then the standard deviation is relatively small. If the data tend to be more spread out, then the standard deviation is relatively large.\nKEY POINT: Think of the standard deviation as the “average distance” of each data point away from the mean.\nWe can easily calculate the standard deviation in R using the sd() function:\n\nsd(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 105986.7\n\n\nThe standard deviation of the payouts is $105,986.70. This number contains information from all the lawsuits. If the payouts had been more diverse, the standard deviation would be larger. If the payouts were more uniform (i.e. closer together), then the standard deviation would have been smaller. If all the payouts somehow had the same amount, then the standard deviation would be zero.\n\nSummary\n\n  Standard Deviation\n  The standard deviation is one number that describes the spread in a set of data. If the data points are close together the standard deviation will be smaller than if they are spread out.\n  At this point, it may be difficult to understand the meaning and usefulness of the standard deviation. For now, it is enough for you to recognize the following points:\n\nThe standard deviation is a measure of how spread out the data are.\nIf the standard deviation is large, then the data are very spread out.\nIf the standard deviation is zero, then all the values are the identical–there is no spread in the data.\nThe standard deviation cannot be negative."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#variance",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#variance",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Variance",
-    "text": "Variance\nThe variance is the square of the standard deviation. The sample variance is denoted by the symbol \\(s^2\\). You found the sample standard deviation for payouts for operating on the wrong patient above is $105,986.70. So, the sample variance for this data set is \\(s^2 = 105,986.70^2 = 11,233,176,611\\).\nYou can also calculate the variance directly from data using the var() function.\n\nvar(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 11233176611\n\n\nThe standard deviation and the variance each have their own pros and cons.\nStandard Deviation is in the original units as the data which makes it easy to interpret.\nThe variance is more difficult to interpret but has many important mathematical attributes that make it more appropriate in certain situations not covered in this introductory course."
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#percentiles-and-quartiles",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#percentiles-and-quartiles",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Percentiles and Quartiles",
-    "text": "Percentiles and Quartiles\nA percentile is a number such that a specified percentage of the data are at or below this number. For example, the 99th percentile is a number such that 99% of the data are at or below this value. As another example, half (50%) of the data lie at or below the 50th percentile. The word percent means \\(\\div 100\\). This can help you remember that the percentiles divide the data into 100 equal groups.\nQuartiles are special percentiles. The word quartile is from the Latin quartus, which means “fourth.” The quartiles divide the data into four equal groups. The quartiles correspond to specific percentiles. The first quartile, Q1, is the 25th percentile. The second quartile, Q2, is the same as the 50th percentile or the median. The third quartile, Q3, is equivalent to the 75th percentile.\nNOTE: Percentiles can be used to describe the center and spread of any distribution and are particularly useful when the distribution is skewed or has outliers.\nUse R’s quantile() function to calculate percentiles. This functions requires two inputs separated by a comma: the data and the desired percentile input as a decimal.\n\nTo calculate the 25th percentile for the costs of surgery done on the Wrong Site:\n\n\nquantile(wrong_patient$Wrong_Site, .25, na.rm=TRUE)\n\n  25% \n29496 \n\n\nQUESTION: What does this number mean?\nANSWER:\nThe first quartile (\\(Q_1\\)) or 25th percentile (calculated in R) of the wrong-site data is: $29,496. (This result is illustrated in the figure below.) This means that 25 percent of the time hospitals lost a wrong-site lawsuit, they had to pay $29,496 or less. The 25th percentile can be written symbolically as: P25 = $29,496. Other percentiles can be written the same way. The 99th percentile can be written as P99.\nQUESTION: What is the 13th percentile of the wrong patient data?\n\nquantile()\n\nError in quantile(): argument \"x\" is missing, with no default\n\n\nQUESTION: Interpret this value:\nANSWER:\nQUESTION: Find P90.\n\nquantile()\n\nError in quantile(): argument \"x\" is missing, with no default\n\n\nQUESTION: Half of the wrong-site lawsuits judgments were less than or equal to what value?\n\nquantile()\n\nError in quantile(): argument \"x\" is missing, with no default\n\n## OR....\n\n\nThe Five-Number Summary\nAnother way to summarize data is with the five-number summary. The five-number summary is comprised of the minimum, the first quartile, the second quartile (or median), the third quartile, and the maximum.\nThere is a very easy way to get the Five-Number Summary along with the mean and standard deviation. The favstats() function in the mosaic library gives us all of our favorite statistics.\nAs before, we will have to install the mosaic library once, then load it when we want to use it.\nTo find the values for a five-number summary in R, do the following\n\nInput the data into the favstats() function:\n\n\nfavstats(wrong_patient$Wrong_Patient)\n\n min   Q1 median      Q3     max     mean       sd   n missing\n   0 3900  18882 50145.5 1250000 46172.05 105986.7 176     235"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#your-turn",
-    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#your-turn",
-    "title": "Numerical Quantitative Data Summaries",
-    "section": "Your Turn",
-    "text": "Your Turn\nCreate a summary statistics table for the cost of operating on the wrong site:"
+    "objectID": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-summary-statistics-for-wait-time",
+    "href": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-summary-statistics-for-wait-time",
+    "title": "Practice: Numerical Summaries (Quant.)",
+    "section": "Calculate Summary Statistics for Wait time",
+    "text": "Calculate Summary Statistics for Wait time\nQuestion: What is the mean wait time between eruptions?\nAnswer:\nQuestion: What is the maximum wait time between eruptions?\nAnswer:\nQuestion: The middle 50% of wait times will be between what 2 numbers?\nAnswer:"
   },
   {
     "objectID": "1-Getting_Started/Test.html",
@@ -1348,7 +1271,7 @@
     "href": "1-Getting_Started/1-Course_Intro.html#course-resources",
     "title": "Course Introduction",
     "section": "Course Resources",
-    "text": "Course Resources\nPeer Support\nYour experience in this course will be enhanced as you work with other students to learn and grow together.\nHelp Desk\nThe BYU-Idaho Help Desk has been established to help students with technological problems related to approved course software. You can access the Help Desk at any time in three ways: - Walk-in: The Help Desk is located in room 322 of the McKay Library - Call in: 208-496-1411 (toll free) - Email: helpdesk@byui.edu Additional information is available at the Help Desk web page: http://www.byui.edu/helpdesk/\nWhen you have technical problems with I-Learn, you should first try contacting the Help Desk before you contact your instructor. They are connected with the IT support staff who can resolve problems with I-Learn. Please take a moment now to look at the Help Desk web page. That way, if a problem does arise later on in the course, you will know where to go for help.\nTutoring Center\nThe BYU-Idaho Study Skills/Tutoring Center is a powerful resource for students who would like a little extra help with a course. The Tutoring Center is located in the McKay Library in room 272. This is in the east wing of the second floor.\nThe Tutoring Center provides many services to help students succeed: - Individual tutors - Walk-in tutoring in the Math Study Center (McKay 266 & 270) - Virtual tutoring\nPlease take 5 minutes to explore the Study Skills/Tutoring Center web site.\nData Science Lab\nThere is a Data Science Lab open for walk-ins. They are able to help with any R-related questions and programming, but you are also likely to find someone who has taken stats classes and can help you with the statistics as well.\nLocation and hours can be found at the link. It is usually in the STC 353, on most days but Wednesday.\nFaculty Support\nYour instructor is committed to your success. If you have any needs or concerns, please contact your instructor for help. If you feel yourself getting behind or struggling, talk to your teacher right away. If caught in time, a small problem can be addressed quickly before it grows."
+    "text": "Course Resources\nPeer Support\nYour experience in this course will be enhanced as you work with other students to learn and grow together.\nHelp Desk\nThe BYU-Idaho Help Desk has been established to help students with technological problems related to approved course software. You can access the Help Desk at any time in three ways: - Walk-in: The Help Desk is located in room 322 of the McKay Library - Call in: 208-496-1411 (toll free) - Email: helpdesk@byui.edu Additional information is available at the Help Desk web page: http://www.byui.edu/helpdesk/\nWhen you have technical problems with I-Learn, you should first try contacting the Help Desk before you contact your instructor. They are connected with the IT support staff who can resolve problems with I-Learn. Please take a moment now to look at the Help Desk web page. That way, if a problem does arise later on in the course, you will know where to go for help.\nTutoring Center\nThe BYU-Idaho Study Skills/Tutoring Center is a powerful resource for students who would like a little extra help with a course. The Tutoring Center is located in the McKay Library in room 272. This is in the east wing of the second floor.\nThe Tutoring Center provides many services to help students succeed: - Individual tutors - Walk-in tutoring in the Stat Study Center (McKay 266 & 270) - Virtual tutoring\nPlease take 5 minutes to explore the Study Skills/Tutoring Center web site.\nData Science Lab\nThere is a Data Science Lab open for walk-ins. They are able to help with any R-related questions and programming, but you are also likely to find someone who has taken stats classes and can help you with the statistics as well.\nLocation and hours can be found at the link. It is usually in the STC 353, on most days but Wednesday.\nFaculty Support\nYour instructor is committed to your success. If you have any needs or concerns, please contact your instructor for help. If you feel yourself getting behind or struggling, talk to your teacher right away. If caught in time, a small problem can be addressed quickly before it grows."
   },
   {
     "objectID": "1-Getting_Started/2-Installing_R.html",
@@ -1386,102 +1309,179 @@
     "text": "Introduction\nR has many built-in toolboxes. R also has access to a vast array of toolboxes that we must install if we want to use them. This is like going to the Home Depot to buy a specialized toolbox and then storing it in your garage. We only have to “buy” it once.\nWe will be using 4 main libraries throughout the semester. This code will walk you through how to install, load and use each of the libraries.\n\n\nInstalling Libraries\nTo install a library, we use the install.packages(\"\") command, where we specify the library we want in the quotes inside the parentheses.\nThis is something we only have to do once for each library. The 4 main libraries we will use in the class are the tidyverse, mosaic, rio, and car libraries.\nRun the code below by clicking the green arrow at the top right of the code chunk.\nYou can also run individual lines inside of a code chunk by pressing:\n\nPC: ctrl + Enter\nMac: CMD + Enter\n\n\ninstall.packages(\"rio\")\ninstall.packages(\"mosaic\")\ninstall.packages(\"tidyverse\")\ninstall.packages(\"car\")\n\nIt may take a few minutes to install everything once you run the above code. Be patient.\nAgain, the above code only needs to be executed once. It is like going to the Home Depot to purchase a tool box for specific purposes and storing them in a tool shed.\n\n\nLoading Libraries\nOnce the toolboxes are “purchased” we still need to get them out of the tool shed when we need to use them. This is something we have to do each time we open and use R Studio for a project.\nWe use the library() function in a code chunk and insert which library we want to use inside the parentheses:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nThe above code chunk is something that will become very familiar as we will load these libraries in every activity.\nEach of the above libraries has special tools for doing managing data, creating graphs, data summarization, etc. that we will learn as we go. While we won’t use all of them in each assignment, it is easier to get in the habit of loading them all for each activity.\n\nrio is useful for loading in data of different types using a single function, import()\nmosaic has many data summarization tools\ntidyverse has a vast range of tools that make it easy to wrangle and visualize data\ncar is a little more specific and is used in this class to do one specific type of chart later in the semester.\n\nNOTE: While you only have to install libraries once, you have to load them every time you want to use one. It’s like going to the garage to get the toolbox you need for the job.\n\n\nTesting, Testing\nAfter running the code chunks above, run the code below to verify that you can read in a dataset and make data summaries:\nUse the import() function to load the dataset by running the following code chunk:\n\nwrong_site &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\") %&gt;% tibble()\n\nwrong_site\n\n# A tibble: 411 × 3\n   Wrong_Site Wrong_Patient Comments                                            \n        &lt;dbl&gt;         &lt;dbl&gt; &lt;chr&gt;                                               \n 1      97465        250000 On rare occasions, a medical procedure is performed…\n 2      36141        106900 or on the wrong patient.  These are called wrong-si…\n 3     102362         62307 &lt;NA&gt;                                                \n 4      69951        192800 The Washington Post highlighted a few cases in a Ju…\n 5      83242         20769 * An ophthalmologist operated on the wrong eye of a…\n 6      12824          2680 * Some men have undergone prostate cancer surgery a…\n 7     129900          4300 * One third of the cases resulted in death or serio…\n 8      51764         30819 &lt;NA&gt;                                                \n 9     145976         23214 The medical field is trying to reduce the number of…\n10     152844         26099 &lt;NA&gt;                                                \n# ℹ 401 more rows\n\n\nYou should see a printout of the first few rows of a dataset. The output will either show up below the code chunk or in the “Console” window. Either way works. I can show you how to adjust the settings in class depending on your preference."
   },
   {
-    "objectID": "1-Getting_Started/5-Stat_Process_Practice.html",
-    "href": "1-Getting_Started/5-Stat_Process_Practice.html",
+    "objectID": "1-Getting_Started/5b-Stat_Process_Practice.html",
+    "href": "1-Getting_Started/5b-Stat_Process_Practice.html",
     "title": "Statistical Process Practice Problems",
     "section": "",
     "text": "These questions will help deepen your understanding of the statistical process that we refer to throughout the semester."
   },
   {
-    "objectID": "1-Getting_Started/5-Stat_Process_Practice.html#background",
-    "href": "1-Getting_Started/5-Stat_Process_Practice.html#background",
+    "objectID": "1-Getting_Started/5b-Stat_Process_Practice.html#background",
+    "href": "1-Getting_Started/5b-Stat_Process_Practice.html#background",
     "title": "Statistical Process Practice Problems",
     "section": "Background",
     "text": "Background\nA sample of 504 patients in early stages of Alzheimer’s disease is divided into two groups. One group receives an experimental drug and the other a placebo. The advance of the disease is tracked at one-month intervals over the next year.\nQUESTION: Is this a designed experiment or an observational study? Explain your answer.\nANSWER:"
   },
   {
-    "objectID": "1-Getting_Started/5-Stat_Process_Practice.html#new-drug",
-    "href": "1-Getting_Started/5-Stat_Process_Practice.html#new-drug",
+    "objectID": "1-Getting_Started/5b-Stat_Process_Practice.html#new-drug",
+    "href": "1-Getting_Started/5b-Stat_Process_Practice.html#new-drug",
     "title": "Statistical Process Practice Problems",
     "section": "New Drug",
     "text": "New Drug\n\nBackground\nSay that you are a researcher for a large pharmaceutical company that has produced a new drug that is believed to help reduce the risk of developing arthritis. You test the drug and compare it to a placebo by randomly choosing one group of men and women in their 50’s to take the drug and one group of men and women in their 50’s to take a placebo. Each participant takes the drug or placebo for a period of 10 years, after which the effects of the drug are measured against the effects of the placebo.\nQUESTION: What (or who) are the experimental units or subject?\nANSWER:\nQUESTION: What is the population of the study?\nANSWER:"
   },
   {
-    "objectID": "1-Getting_Started/5-Stat_Process_Practice.html#elections",
-    "href": "1-Getting_Started/5-Stat_Process_Practice.html#elections",
+    "objectID": "1-Getting_Started/5b-Stat_Process_Practice.html#elections",
+    "href": "1-Getting_Started/5b-Stat_Process_Practice.html#elections",
     "title": "Statistical Process Practice Problems",
     "section": "Elections",
     "text": "Elections\n\nBackground\nEach presidential election, many different groups want to know how popular each candidate is among the electorate. In the recent election, one marketing research firm was asked by a special interest group to help estimate the proportion of Americans who supported a particular candidate. From a list of all registered voters, 8000 names were randomly selected. An automated phone-call was made to each of the 8000 individuals selected asking them to answer a few questions indicating their voting preferences. The marketing firm received 2969 responses.\nQUESTION: What is the population of this study?\nANSWER:\nQUESTION: What is the sample of this study?\nANSWER:"
   },
   {
-    "objectID": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html",
-    "href": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html",
-    "title": "Response and Explanatory Variables",
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html",
+    "title": "Numerical Quantitative Data Summaries",
     "section": "",
-    "text": "In this section, we will:\n\nReview the definitions of Response/Dependent variables and Explanatory/Independent variables\n\nLearn some R tools to help us look at the data (View(), glimpse(), names())\n\nLook at several datasets and identify the response variables and explanatory variables\n\nIdentify data types (categorical or quantitative)\n\nIdentify each level of a categorical variable\n\n\n\nDon’t forget, before we can use the tools in the different toolboxes, we need to retrieve them from the shed. In R, that means, loading the libraries:\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(car)\nlibrary(rio)"
+    "text": "In this section we discuss data summaries for quantitative data. After this lesson, you should be able to:\n\nUnderstand common measures of center (mean, median, mode)\n\nUnderstand common measures of spread (standard deviation, variance, percentiles), why they are important, and how to interpret them\n\nUse R to calculate measures of center and spread\n\nThroughout this section, we will use the “wrong patient” dataset which contains information about malpractice lawsuits of operations performed on the wrong patient or the wrong site on the patient.\n\n\nWe will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
   },
   {
-    "objectID": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#load-the-libraries",
-    "href": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#load-the-libraries",
-    "title": "Response and Explanatory Variables",
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#reading-data-into-r",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#reading-data-into-r",
+    "title": "Numerical Quantitative Data Summaries",
     "section": "",
-    "text": "Don’t forget, before we can use the tools in the different toolboxes, we need to retrieve them from the shed. In R, that means, loading the libraries:\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(car)\nlibrary(rio)"
+    "text": "We will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
   },
   {
-    "objectID": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#data",
-    "href": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#data",
-    "title": "Response and Explanatory Variables",
-    "section": "Data",
-    "text": "Data\nDatasets contain rows and columns. Rows in a dataset represent individual observations or records. Each row contains all the relevant data for a single case, instance, or subject being studied. For example, in a dataset about students, each row might represent a different student, with all their associated data (such as name, age, and grade) contained within that row.\nColumns in a dataset represent the different variables or attributes being measured or recorded. Each column contains one specific type of data across all the observations. For example, in the same student dataset, there could be a column for “Name,” a column for “Age,” and another for “Grade.”\nNOTE: Column names in a dataset are considered variables.\nTogether, rows and columns provide a structured format that makes it easy to organize, analyze, and visualize the data.\n\nData Types (Review)\nIn this class, we will use the broad categories of “quantitative” and “categorical” variables to distinguish between numerical values and data that represent group information respectively. As we will see below, it’s not always as easy as it seems to tell the difference.\n\n\nQuantitative Variables\nVariables that are quantitative consists of values that represent measurable quantities.\n\n\nCategroical Variables\nCategorical data consists of values that represent categories or groups. We refer to each of the categories as “levels” of the variable.\nTo see all of the levels of a categorical variable, we can use the unique() function. The code chunk below has a list of favorite pets. The unique() function takes as an input a categorical variable and returns a list of the distinct values.\n\nfavorite_pet &lt;- c(\"cat\", \"cat\", \"dog\", \"ferret\", \"cat\", \"cat\", \"dog\", \"lizard\", \"dog\")\n\nunique(favorite_pet)\n\n[1] \"cat\"    \"dog\"    \"ferret\" \"lizard\"\n\n\nThis lists all the “levels” of a categorical variable."
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mean",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mean",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Mean",
+    "text": "Mean\nThe sample mean or sample arithmetic mean is the most common tool to estimate the center of a distribution. It is referred to simply as the mean. It is computed by adding up the observed data and dividing by the number of observations in the data set.\nIn Statistics, important ideas are given a name. Very important ideas are given a symbol. The sample mean has both a name (mean) and a symbol (\\(\\bar x\\), called “x-bar”).\n\\[\n  \\bar{x} \\text{ is used to denote the sample mean}\n\\]\nYou may have heard people refer to the sample mean as the average. Technically, the word average refers to any number that is used to estimate the center of a distribution. The mean, median and mode are all examples of “averages.” To avoid confusion, it is best to use the words mean, median, and mode instead of the word average, so that it is clear which “average” your are referencing.\nCalculate the mean payout for operations done on the wrong patient:\n\nmean(wrong_patient$Wrong_Patient)\n\n[1] NA\n\n\nWhen there are missing values in the dataset, the mean() function will return NA. We can make R give us a mean by telling the function to remove the NA values:\n\nmean(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 46172.05\n\n\nNOTE: The mean is a good measure of center when there are few outliers and the data are fairly symmetric."
   },
   {
-    "objectID": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#responsedependent-variable",
-    "href": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#responsedependent-variable",
-    "title": "Response and Explanatory Variables",
-    "section": "Response/Dependent Variable",
-    "text": "Response/Dependent Variable\nThe response variable, also known as the dependent variable, is the outcome or the variable that researchers are interested in explaining or predicting. Its value depends on the influence of other variables. For example, in a study examining the effect of study time on exam scores, the exam score is the response variable because it changes in response to different amounts of study time."
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#median",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#median",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Median",
+    "text": "Median\nThe median is the middle value in a sorted data set. Half of the observations in the data set are below the median and half are above the median. To find the median, you:\n\nSort the values from smallest to largest\n\nDo one of the following:\n\nIf there are an odd number of values, the median is the middle value in the sorted list.\nIf there are an even number of values, the median is the mean of the two middle values in the sorted list.\n\n\n\nCalculate the Median payout for operations done on the wrong patient using the median() function:\n\nmedian(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 18882\n\n\nQUESTION: What does this mean?\nANSWER:\nQUESTION: Notice how much bigger the Mean is from the Median. Why is that the case?\nANSWER:\nQUESTION: Which do you think is most appropriate to use, the Mean or the Median? Why?\nANSWER:\nNOTE: The Median is a good measure of center when the data are skewed or there are large outliers."
   },
   {
-    "objectID": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#explanatoryindependent-variable",
-    "href": "2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html#explanatoryindependent-variable",
-    "title": "Response and Explanatory Variables",
-    "section": "Explanatory/Independent Variable",
-    "text": "Explanatory/Independent Variable\nThe explanatory variable, also known as the independent variable, is the variable that is manipulated or controlled in a statistical experiment to observe its effect on the response variable. It is considered the cause or predictor in the relationship being studied. In the example above, the amount of study time is the explanatory variable, as it is the factor that explains exam scores."
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mode",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#mode",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Mode",
+    "text": "Mode\nThe most frequently occurring value is called the mode. This only works well when you have a few possible outcomes or are counting the frequency of categories. If you have truly quantitative data, such as dollar amounts of payouts, it is unlikely to have the exact same value paid out many times.\nIf no number occurs more than once in the data set, we say that there is no mode.\nBecause there is no meaningful mode in the wrong patient data, let’s look at another example to calculate the mode:\nCalculate a Mode\nWe can tabulate the frequency of specific values using the table() function:\n\n# Create a new dataset called data2:\ndata2 &lt;- c(3,4,9,5,2,3,5,4,2,3,1,5,3,1,2,6,2,4,6,2,2,2,9,1,2,7,8,100)\n\n# The `table()` function counts up all the times specific values show up.  This works for numbers or categories:\ntable(data2)\n\ndata2\n  1   2   3   4   5   6   7   8   9 100 \n  3   8   4   3   3   2   1   1   2   1 \n\n\nThe first row of the table() output is the value being counted. The second row is the frequency of occurrence.\nQUESTION: Which value is most frequently occurring?\nANSWER:\nQUESTION: How many times did that value occur?\nANSWER:"
   },
   {
-    "objectID": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html",
-    "href": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html",
-    "title": "Practice: Numerical Summaries (Quant.)",
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#why-do-we-care",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#why-do-we-care",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Why do we care?",
+    "text": "Why do we care?\nImagine you are growing feed corn on 100 acres. There are 2 products you could purchase, both claim an average yield of 205 bushels/acre. Product A costs less than Product B. Which one would you plant?\nIf you were basing your decision exclusively on the average yield, you would obviously go with the cheaper option. But what if I told you that with Product A you could get anything from 85 bushels/acre to 250 bushels/acre. Product B ranges from 198 to 212 bushels/acre. Would that change your decision?\nProduct A looks much more risky now. Considering both the average AND the variability helps us make much more informed decisions.\nThe average is only half the story!"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#standard-deviation",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#standard-deviation",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Standard Deviation",
+    "text": "Standard Deviation\nThe standard deviation is a measure of the spread in the distribution. The standard deviation for a sample is denoted by the latin letter, \\(s\\). If the data tend to be close together, then the standard deviation is relatively small. If the data tend to be more spread out, then the standard deviation is relatively large.\nKEY POINT: Think of the standard deviation as the “average distance” of each data point away from the mean.\nWe can easily calculate the standard deviation in R using the sd() function:\n\nsd(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 105986.7\n\n\nThe standard deviation of the payouts is $105,986.70. This number contains information from all the lawsuits. If the payouts had been more diverse, the standard deviation would be larger. If the payouts were more uniform (i.e. closer together), then the standard deviation would have been smaller. If all the payouts somehow had the same amount, then the standard deviation would be zero.\n\nSummary\n\n  Standard Deviation\n  The standard deviation is one number that describes the spread in a set of data. If the data points are close together the standard deviation will be smaller than if they are spread out.\n  At this point, it may be difficult to understand the meaning and usefulness of the standard deviation. For now, it is enough for you to recognize the following points:\n\nThe standard deviation is a measure of how spread out the data are.\nIf the standard deviation is large, then the data are very spread out.\nIf the standard deviation is zero, then all the values are the identical–there is no spread in the data.\nThe standard deviation cannot be negative."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#variance",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#variance",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Variance",
+    "text": "Variance\nThe variance is the square of the standard deviation. The sample variance is denoted by the symbol \\(s^2\\). You found the sample standard deviation for payouts for operating on the wrong patient above is $105,986.70. So, the sample variance for this data set is \\(s^2 = 105,986.70^2 = 11,233,176,611\\).\nYou can also calculate the variance directly from data using the var() function.\n\nvar(wrong_patient$Wrong_Patient, na.rm=TRUE)\n\n[1] 11233176611\n\n\nThe standard deviation and the variance each have their own pros and cons.\nStandard Deviation is in the original units as the data which makes it easy to interpret.\nThe variance is more difficult to interpret but has many important mathematical attributes that make it more appropriate in certain situations not covered in this introductory course."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#percentiles-and-quartiles",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#percentiles-and-quartiles",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Percentiles and Quartiles",
+    "text": "Percentiles and Quartiles\nA percentile is a number such that a specified percentage of the data are at or below this number. For example, the 99th percentile is a number such that 99% of the data are at or below this value. As another example, half (50%) of the data lie at or below the 50th percentile. The word percent means \\(\\div 100\\). This can help you remember that the percentiles divide the data into 100 equal groups.\nQuartiles are special percentiles. The word quartile is from the Latin quartus, which means “fourth.” The quartiles divide the data into four equal groups. The quartiles correspond to specific percentiles. The first quartile, Q1, is the 25th percentile. The second quartile, Q2, is the same as the 50th percentile or the median. The third quartile, Q3, is equivalent to the 75th percentile.\nNOTE: Percentiles can be used to describe the center and spread of any distribution and are particularly useful when the distribution is skewed or has outliers.\nUse R’s quantile() function to calculate percentiles. This functions requires two inputs separated by a comma: the data and the desired percentile input as a decimal.\n\nTo calculate the 25th percentile for the costs of surgery done on the Wrong Site:\n\n\nquantile(wrong_patient$Wrong_Site, .25, na.rm=TRUE)\n\n  25% \n29496 \n\n\nQUESTION: What does this number mean?\nANSWER:\nThe first quartile (\\(Q_1\\)) or 25th percentile (calculated in R) of the wrong-site data is: $29,496. (This result is illustrated in the figure below.) This means that 25 percent of the time hospitals lost a wrong-site lawsuit, they had to pay $29,496 or less. The 25th percentile can be written symbolically as: P25 = $29,496. Other percentiles can be written the same way. The 99th percentile can be written as P99.\nQUESTION: What is the 13th percentile of the wrong patient data?\n\nquantile()\n\nError in quantile(): argument \"x\" is missing, with no default\n\n\nQUESTION: Interpret this value:\nANSWER:\nQUESTION: Find P90.\n\nquantile()\n\nError in quantile(): argument \"x\" is missing, with no default\n\n\nQUESTION: Half of the wrong-site lawsuits judgments were less than or equal to what value?\n\nquantile()\n\nError in quantile(): argument \"x\" is missing, with no default\n\n## OR....\n\n\nThe Five-Number Summary\nAnother way to summarize data is with the five-number summary. The five-number summary is comprised of the minimum, the first quartile, the second quartile (or median), the third quartile, and the maximum.\nThere is a very easy way to get the Five-Number Summary along with the mean and standard deviation. The favstats() function in the mosaic library gives us all of our favorite statistics.\nAs before, we will have to install the mosaic library once, then load it when we want to use it.\nTo find the values for a five-number summary in R, do the following\n\nInput the data into the favstats() function:\n\n\nfavstats(wrong_patient$Wrong_Patient)\n\n min   Q1 median      Q3     max     mean       sd   n missing\n   0 3900  18882 50145.5 1250000 46172.05 105986.7 176     235"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#your-turn",
+    "href": "2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html#your-turn",
+    "title": "Numerical Quantitative Data Summaries",
+    "section": "Your Turn",
+    "text": "Your Turn\nCreate a summary statistics table for the cost of operating on the wrong site:"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html",
+    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html",
+    "title": "Graphical Quantitative Data Summaries",
     "section": "",
-    "text": "This is an opportunity for you to practice creating numerical summaries of quantitative data.\nWe will explore 2 datasets. The first contains information about the duration and the time between geyser eruptions at Old Faithful in Yellowstone National park.\nThe second is data collected about expressions of gratitude and their impact on subjective well-being.\nFor each dataset, you will create numerical summaries of the data."
+    "text": "In this section, you will learn the basic visualizations for quantitative variables. After completion, you should be able to:\n\nInterpret data presented in a histogram\n\nIdentify left-skewed, right-skewed and symmetric distributions from histograms\n\nInterpret a boxplot\n\nCreate histograms and boxplots in R\n\n\n\nWe will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
   },
   {
-    "objectID": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-the-summary-statistics-for-duration",
-    "href": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-the-summary-statistics-for-duration",
-    "title": "Practice: Numerical Summaries (Quant.)",
-    "section": "Calculate the Summary Statistics for Duration",
-    "text": "Calculate the Summary Statistics for Duration\n\nfavstats()\n\nError in favstats(): argument \"x\" is missing, with no default\n\n\nQUESTION: What is the mean duration time of Old Faithful eruptions?\nANSWER:\nQUESTION: What is the standard deviation of duration?\nANSWER:"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-summary-statistics-for-wait-time",
-    "href": "2-Descriptive_Statistics/1b-Numerical_Summaries_Quantitative_Data_Practice.html#calculate-summary-statistics-for-wait-time",
-    "title": "Practice: Numerical Summaries (Quant.)",
-    "section": "Calculate Summary Statistics for Wait time",
-    "text": "Calculate Summary Statistics for Wait time\nQuestion: What is the mean wait time between eruptions?\nAnswer:\nQuestion: What is the maximum wait time between eruptions?\nAnswer:\nQuestion: The middle 50% of wait times will be between what 2 numbers?\nAnswer:"
-  },
-  {
-    "objectID": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html",
-    "href": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html",
-    "title": "Practice: Graphical Summaries (Quant.)",
+    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#reading-data-into-r",
+    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#reading-data-into-r",
+    "title": "Graphical Quantitative Data Summaries",
     "section": "",
-    "text": "This is an opportunity for you to practice creating graphical summaries of quantitative data.\nWe will explore 2 datasets. The first contains information about the duration and the time between geyser eruptions at Old Faithful in Yellowstone National park.\nThe second is data collected about expressions of gratitude and their impact on subjective well-being.\nFor each dataset, you will create numerical summaries of the data."
+    "text": "We will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient’s body (the wrong site).\nLoad the libraries and the data into R:\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nwrong_patient &lt;- import(\"https://github.com/byuistats/Math221D_Course/raw/main/Data/WrongSiteWrongPatient.xlsx\")"
   },
   {
-    "objectID": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html#histogram",
-    "href": "2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html#histogram",
-    "title": "Practice: Graphical Summaries (Quant.)",
-    "section": "Histogram",
-    "text": "Histogram\nCreate a histogram and boxplot for happiness scores:\nQuestion: What is the general shape of the distribution?\nAnswer:"
+    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms",
+    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms",
+    "title": "Graphical Quantitative Data Summaries",
+    "section": "Histograms",
+    "text": "Histograms\nHistograms are commonly used to visualize a single, quantitative variable. It provides a way to visualize how data points are spread out.\nThe key components of a histogram are:\n\nBars: Histograms consist of adjacent bars, where each bar represents a range of values, known as a “bin.” The height of each bar indicates the frequency (or count) of data points that fall within that bin.\nBins: The x-axis is divided into equal intervals (bins). Each bin captures a specific range of values. For example, if you’re plotting test scores, a bin might cover scores at 5-point intervals.\nFrequency: The y-axis shows the frequency or number of observations that fall within each bin. This allows you to see how many data points lie in each bin.\n\n\nHow to Interpret a Histogram:\n\nShape of Distribution: The overall shape of the histogram can indicate the distribution of the data.\nCentral Tendency: You can often observe where most of the data points cluster, giving an idea of the central tendency (mean, median).\nSpread: You can see how spread out the data is, which provides insights into variability.\nOutliers: Histograms can help identify any potential outliers by showing bars with significantly lower frequencies compared to others.\n\n\n\nDescribing the “Shape” of a Distribution\nWe will describe the shape of the distribution of a data set using the following basic categories:\n\nSymmetric (bell-shaped)\n\nRight skewed\n\nLeft skewed\n\nA distribution is symmetric if both the left and right side of the distribution appear to be roughly a mirror image of each other. A special symmetric distribution is a bell-shaped distribution. When data follow a bell-shaped distribution, the histogram looks like a bell. Bell-shaped distributions play an important role in Statistics and will play a role in most of the future lessons.\nA distribution is right-skewed if a histogram of the distribution shows a long right tail. This can occur if there are some very large outliers on the right-hand side of the distribution. A distribution is left-skewed if a histogram shows that it has a long tail to the left.\n\n\n\nRight-skewed\n\n\nSymmetric & Bell-shaped\n\n\nLeft-skewed\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMean: $10.45\nMedian: $9.04\nMean is to the right of the median.\n\n\nMean: 71.1 inches\nMedian: 71 inches\nMean and median are roughly equal.\n\n\nMean: 3.42\nMedian: 3.45\nMean is to the left of the median.\n\n\n\n\nIf a distribution has only one peak, it is said to be unimodal. The three distributions illustrated above are all unimodal distributions. Some people might argue that there are several peaks in the GPA data, so it should not be considered unimodal. Even though there are jagged bumps in the histogram, it is important to visualize the overall shape in the data. When interpreting a histogram, it can be helpful to blur your eyes and imagine the overall shape after smoothing out the bumps. If the overall trend indicates that there is more than one bump, then we do not consider the distribution to be unimodal. We will usually only work with unimodal data sets in this course.\nSome distributions have no distinct peak, others have more than one peak. When there is no distinct peak, and the histogram shows a relatively flat shape, we might say the data follow a uniform distribution. If there are two distinct peaks, a distribution is called bimodal. If there are more than two peaks, we refer to the distribution as multimodal."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms-in-r",
+    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#histograms-in-r",
+    "title": "Graphical Quantitative Data Summaries",
+    "section": "Histograms in R",
+    "text": "Histograms in R\nTo make a histogram in R, you can use the histogram() function. This takes as an input a single quantitative variable:\n\nhistogram(wrong_patient$Wrong_Patient)\n\n\n\n\n\n\n\n\nQUESTION: What is the basic shape of the wrong patient procedure lawsuits?\nANSWER:"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#summary",
+    "href": "2-Descriptive_Statistics/2-Graphical_Summaries_Quantitative_Data.html#summary",
+    "title": "Graphical Quantitative Data Summaries",
+    "section": "Summary",
+    "text": "Summary\n\nRemember…\n\n\n\nA percentile is calculated in R using quantile(data, 0.#) where the 0.# is the percentile written as a decimal number. So the 20th percentile would be written as 0.2.\nA percentile is a number such that a specified percentage of the data are at or below this number. For example, if say 80% of college students were shorter than (or equal to) 70 inches tall in height, then the 80th percentile of heights of college students would be 70 inches.\nStandard deviation is calculated in R for a sample of data using sd(data).\nThe standard deviation is a number that describes how spread out the data typically are from the mean of that data. A larger standard deviation means the data are more spread out from their mean than data with a smaller standard deviation. The standard deviation is never negative. A standard deviation of zero implies all values in the data set are exactly the same.\nTo compute any of the five-number summary values in R, use the R function favstats(data) which also includes the mean and standard deviation.\nThe five-number summary consists of (1) the minimum value in the data, (2) the first quartile (25th percentile) of the data, (3) the median of the data (50th percentile), (4) the third quartile (75th percentile) of the data, and (5) the maximum value occurring in the data.\nTo create a boxplot in R, use the boxplot(data) or for multiple columns boxplot(data1, data2, names=c(\"Name of Column 1\", \"Name of Column 2)).\nBoxplots are a visualization of the five-number summary of a data set."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html",
+    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html",
+    "title": "Quantitative Data Summaries - Multiple Groups",
+    "section": "",
+    "text": "In this section, we will review data types (categorical and quantitative) and demonstrate how to numerically and visually summarize a quantitative response variable for each level of a categorical explanatory variable.\n\n\n\nCreate a table of summary statistics (favstats()) for multiple groups\n\nCreate side-by-side boxplots comparing multiple groups\n\nInterpret side-by-side boxplots for group comparisons\n\n\n\n\nWe will use the Big 5 Personality data of a random sample of Stat 225 students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#lesson-outcomes",
+    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#lesson-outcomes",
+    "title": "Quantitative Data Summaries - Multiple Groups",
+    "section": "",
+    "text": "Create a table of summary statistics (favstats()) for multiple groups\n\nCreate side-by-side boxplots comparing multiple groups\n\nInterpret side-by-side boxplots for group comparisons"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#load-the-data-and-libraries",
+    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#load-the-data-and-libraries",
+    "title": "Quantitative Data Summaries - Multiple Groups",
+    "section": "",
+    "text": "We will use the Big 5 Personality data of a random sample of Stat 225 students.\n\nlibrary(rio)\nlibrary(mosaic)\nlibrary(tidyverse)\nlibrary(car)\n\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#summary-statistics",
+    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#summary-statistics",
+    "title": "Quantitative Data Summaries - Multiple Groups",
+    "section": "Summary Statistics",
+    "text": "Summary Statistics\nWe can easily extend favstats() to output our favorite statistics for multiple groups.\nWe first must identify the quantitative response variable we want to compare, then tell R which categorical explanatory variable we would like to compare.\nFor example, we could compare agreeableness between the sexes. In this case, Agreeableness is the quantitative response variable and Sex(M/F) is the categorical explanatory variable.\n\n# This gives us the summary statistics for Agreeableness across all groups\nfavstats(big5$Agreeableness)\n\n min Q1 median Q3 max     mean       sd   n missing\n  21 67     75 81 100 73.43457 13.24909 405       0\n\n# Adding the '~' tells R to break the data into groups (determined by the right side of the '~') and calculate the means of the variable on the left\nfavstats(big5$Agreeableness ~ big5$`Sex(M/F)`)\n\n  big5$`Sex(M/F)` min Q1 median Q3 max     mean       sd   n missing\n1               F  21 69     77 85 100 75.92035 12.94640 226       0\n2               M  25 63     73 79  94 70.29609 12.99218 179       0"
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#visual-summaries-by-group",
+    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#visual-summaries-by-group",
+    "title": "Quantitative Data Summaries - Multiple Groups",
+    "section": "Visual Summaries by Group",
+    "text": "Visual Summaries by Group\nWe can use the exact same formula used for boxplot() as we used for favstats():\n\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`)\n\n\n\n\n\n\n\n\nNOTE: We will use the formula data$response ~ data$explanatory for LOTS of functions this semester. They will always take the form y ~ x."
+  },
+  {
+    "objectID": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#improving-graphs",
+    "href": "2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html#improving-graphs",
+    "title": "Quantitative Data Summaries - Multiple Groups",
+    "section": "Improving Graphs",
+    "text": "Improving Graphs\nThroughout this course, we will ease into making better visualizations. For now, here are some basic techniques that will usually apply to all graphing functions in R:\n\n# Changing color by sepecifying the `col = c()`\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, col = c(\"red\", \"blue\"))\n\n\n\n\n\n\n\n# R also assigns a numerical value to `col = `.  Try different numbers\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, col = c(2,3))\n\n\n\n\n\n\n\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, col = c(4,6))\n\n\n\n\n\n\n\n# Adding better axis labels using `xlab = ` and `ylab = `:\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, xlab = \"Biosex\", ylab = \"Trait Agreeableness\")\n\n\n\n\n\n\n\n# Adding a title:\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`, main = \"Comparing Agreeableness by Biosex\")\n\n\n\n\n\n\n\n# Putting it all together:\nboxplot(big5$Agreeableness ~ big5$`Sex(M/F)`,main = \"Comparing Agreeableness by Biosex\", xlab = \"Biosex\", ylab = \"Trait Agreeableness\", col = c(3, 4))"
   },
   {
     "objectID": "2-Descriptive_Statistics/3b-Quantitative_Data_Summaries_Multiple_Groups_Practice.html",
@@ -1824,7 +1824,7 @@
     "href": "4-Foundations_Statistical_Inference/7-Introducing_T-Distribution.html#confidence-intervals-in-r",
     "title": "Introducing the T-Distribution",
     "section": "Confidence Intervals in R",
-    "text": "Confidence Intervals in R\nFortunately, R handles all these calculations automatically. There’s no need to look up these values. For now, it’s only important to understand a little about what’s happening behind the scenes in R.\nThe t.test() function in R can be used to calculate confidence intervals based on the \\(t\\)-distribution. Generically, we input the sample data we want to use to create a confidence interval for the population mean, and specify the confidence level (as a decimal) as follows:\nt.test(data$y, conf.level = 0.95)$conf.int\n\nNOTE: The t.test() function will be used for more than confidence intervals and will provide lots of output that isn’t currently needed. For now, we can use the selector, $, to instruct R to only return the confidence interval and avoid the unnecessary output.\nLet’s create a 99% confidence interval for the average extroversion score for Math 221 students.\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\n\n# Read in data\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')\n\nUsing the t.test() function:\n\nt.test(big5$Extroversion, conf.level = 0.99)$conf.int\n\n[1] 54.26631 59.69903\nattr(,\"conf.level\")\n[1] 0.99\n\n\nInterpretation: We are 99% confident that the true mean Extroversion percentile of Math 221 students is between 54.27 and 59.70."
+    "text": "Confidence Intervals in R\nFortunately, R handles all these calculations automatically. There’s no need to look up these values. For now, it’s only important to understand a little about what’s happening behind the scenes in R.\nThe t.test() function in R can be used to calculate confidence intervals based on the \\(t\\)-distribution. Generically, we input the sample data we want to use to create a confidence interval for the population mean, and specify the confidence level (as a decimal) as follows:\nt.test(data$y, conf.level = 0.95)$conf.int\n\nNOTE: The t.test() function will be used for more than confidence intervals and will provide lots of output that isn’t currently needed. For now, we can use the selector, $, to instruct R to only return the confidence interval and avoid the unnecessary output.\nLet’s create a 99% confidence interval for the average extroversion score for Stat 225 students.\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\n\n# Read in data\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')\n\nUsing the t.test() function:\n\nt.test(big5$Extroversion, conf.level = 0.99)$conf.int\n\n[1] 54.26631 59.69903\nattr(,\"conf.level\")\n[1] 0.99\n\n\nInterpretation: We are 99% confident that the true mean Extroversion percentile of Stat 225 students is between 54.27 and 59.70."
   },
   {
     "objectID": "4-Foundations_Statistical_Inference/8-Introducing_Hypothesis_Tests.html",
@@ -1880,7 +1880,7 @@
     "href": "4-Foundations_Statistical_Inference/AA-One_Sample_ttests_and_CIs.html",
     "title": "Don’t Take it Personally",
     "section": "",
-    "text": "Introduction\nIn this activity, you will execute statistical hypothesis tests and generate confidence intervals for each of the Big 5 personality traits using data collected from a random sample of Brother Cannon’s Math 221 students.\nQuestion: What is the population of this analysis?\nAnswer:\nFor each personality trait, include:\n\nA statement of the null and alternative hypotheses and why you chose the alternative you did.\nChoose alpha, $= $\nCheck that you can trust the normality of the mean (n &gt; 30 or qqPlot(respons_variable))\nRun the one-sample t-test and state your conclusion (technical and contextual explanation)\nCalculate a \\(1-\\alpha\\) level confidence interval and describe in words what it means in context of the research question\n\nRecall that we can use favstats() to get summary statistics, boxplot() and histogram() to get visualizations, and the t.test() function to get hypothesis tests and confidence intervals. Be sure to label your plots’ axes and include a title.\n\n# Load Libraries\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\n\n# Load Data\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')\n\n\n\nExtroversion\nState your null and alternative hypotheses:\n\\[H_o:  \\mu = 50\\]\n\\[H_a:  \\mu &gt; 50\\]\n\\[\\alpha = 0.025 \\]\n1. Create a table of summary statistics:\n\n# Extroversion\n\nfavstats(big5$Extroversion) %&gt;% knitr::kable()\n\n\n\n\n\nmin\nQ1\nmedian\nQ3\nmax\nmean\nsd\nn\nmissing\n\n\n\n\n\n1\n42\n58\n73\n100\n56.98267\n21.09599\n404\n1\n\n\n\n\n\n\nCreate a histogram of Extroversion:\n\n\n### I'm making a single variable called \"extrov\" that drops the missing values.  You can do the same thing with the other traits to make analysis a little easier\nextrov &lt;- na.omit(big5$Extroversion) \n\nhistogram(extrov, xlab = \"Extroversion\", main = \"Histogram of Extroversion Percentiles\")\n\n\n\n\n\n\n\n\n\nPerform the one-sample t.test:\n\n\n# For Hypothesis Test:\nt.test(extrov, mu = 50, alternative = \"greater\")\n\n\n    One Sample t-test\n\ndata:  extrov\nt = 6.6529, df = 403, p-value = 4.697e-11\nalternative hypothesis: true mean is greater than 50\n95 percent confidence interval:\n 55.25232      Inf\nsample estimates:\nmean of x \n 56.98267 \n\n\n\nExplain your conclusion:\n\nTechnical: Because the p-value is less than \\(\\alpha\\), I reject the null hypothesis.\nContextual: I have sufficient evidence to suggest that Brother Cannon’s students are, on average, more Extroverted than the general population.\n\nCreate a Confidence Interval for the average extroversion of Brother Cannon’s students:\n\n\n# For a Confidence Interval:\nt.test(extrov, conf.level = 1-.025)$conf.int\n\n[1] 54.62135 59.34399\nattr(,\"conf.level\")\n[1] 0.975\n\n\n\nExplain your confidence interval:\n\nI am 97.5% confident that the true average extroversion of Brother Cannon’s students is somewhere between the 54.62 and 59.34 percentiles.\n\n\nAgreeableness\nState your null and alternative hypotheses. For example, do you think Brother Cannon’s students are more, less, or just different than the general population?\n\\[H_o:  \\mu  \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha =  \\]\n1. Create a table of summary statistics for Agreeableness:\n\nCreate a histogram of Agreeableness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average agreeableness of Brother Cannon’s students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nOpenness\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha = \\]\n\nCreate a table of summary statistics for Openness:\n\n\nCreate a histogram of Openness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average openness of Brother Cannon’s students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nNeuroticism\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha =  \\]\n1. Create a table of summary statistics for Neuroticism:\n\nCreate a histogram of Neuroticism:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average neuroticism of Brother Cannon’s students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nConscientiousness\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha = \\]\n1. Create a table of summary statistics:\n\nCreate a histogram of Conscientiousness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average conscientiousness of Brother Cannon’s students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:"
+    "text": "Introduction\nIn this activity, you will execute statistical hypothesis tests and generate confidence intervals for each of the Big 5 personality traits using data collected from a random sample of Stat 225 sstudents.\nQuestion: What is the population of this analysis?\nAnswer:\nFor each personality trait, include:\n\nA statement of the null and alternative hypotheses and why you chose the alternative you did.\nChoose alpha, $= $\nCheck that you can trust the normality of the mean (n &gt; 30 or qqPlot(respons_variable))\nRun the one-sample t-test and state your conclusion (technical and contextual explanation)\nCalculate a \\(1-\\alpha\\) level confidence interval and describe in words what it means in context of the research question\n\nRecall that we can use favstats() to get summary statistics, boxplot() and histogram() to get visualizations, and the t.test() function to get hypothesis tests and confidence intervals. Be sure to label your plots’ axes and include a title.\n\n# Load Libraries\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\n\n# Load Data\nbig5 &lt;- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/All_class_combined_personality_data.csv')\n\n\n\nExtroversion\nState your null and alternative hypotheses:\n\\[H_o:  \\mu = 50\\]\n\\[H_a:  \\mu &gt; 50\\]\n\\[\\alpha = 0.025 \\]\n1. Create a table of summary statistics:\n\n# Extroversion\n\nfavstats(big5$Extroversion) %&gt;% knitr::kable()\n\n\n\n\n\nmin\nQ1\nmedian\nQ3\nmax\nmean\nsd\nn\nmissing\n\n\n\n\n\n1\n42\n58\n73\n100\n56.98267\n21.09599\n404\n1\n\n\n\n\n\n\nCreate a histogram of Extroversion:\n\n\n### I'm making a single variable called \"extrov\" that drops the missing values.  You can do the same thing with the other traits to make analysis a little easier\nextrov &lt;- na.omit(big5$Extroversion) \n\nhistogram(extrov, xlab = \"Extroversion\", main = \"Histogram of Extroversion Percentiles\")\n\n\n\n\n\n\n\n\n\nPerform the one-sample t.test:\n\n\n# For Hypothesis Test:\nt.test(extrov, mu = 50, alternative = \"greater\")\n\n\n    One Sample t-test\n\ndata:  extrov\nt = 6.6529, df = 403, p-value = 4.697e-11\nalternative hypothesis: true mean is greater than 50\n95 percent confidence interval:\n 55.25232      Inf\nsample estimates:\nmean of x \n 56.98267 \n\n\n\nExplain your conclusion:\n\nTechnical: Because the p-value is less than \\(\\alpha\\), I reject the null hypothesis.\nContextual: I have sufficient evidence to suggest that Stat 225 students are, on average, more Extroverted than the general population.\n\nCreate a Confidence Interval for the average extroversion of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test(extrov, conf.level = 1-.025)$conf.int\n\n[1] 54.62135 59.34399\nattr(,\"conf.level\")\n[1] 0.975\n\n\n\nExplain your confidence interval:\n\nI am 97.5% confident that the true average extroversion of Stat 225 students is somewhere between the 54.62 and 59.34 percentiles.\n\n\nAgreeableness\nState your null and alternative hypotheses. For example, do you think Stat 225 students are more, less, or just different than the general population?\n\\[H_o:  \\mu  \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha =  \\]\n1. Create a table of summary statistics for Agreeableness:\n\nCreate a histogram of Agreeableness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average agreeableness of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nOpenness\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha = \\]\n\nCreate a table of summary statistics for Openness:\n\n\nCreate a histogram of Openness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average openness of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nNeuroticism\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha =  \\]\n1. Create a table of summary statistics for Neuroticism:\n\nCreate a histogram of Neuroticism:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average neuroticism of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:\n\n\n\nConscientiousness\nState your null and alternative hypotheses:\n\\[H_o:  \\mu \\]\n\\[H_a:  \\mu \\]\n\\[\\alpha = \\]\n1. Create a table of summary statistics:\n\nCreate a histogram of Conscientiousness:\n\n\nPerform the one-sample t.test:\n\n\nExplain your conclusion:\n\nTechnical:\nContextual:\n\nCreate a Confidence Interval for the average conscientiousness of Stat 225 students:\n\n\n# For a Confidence Interval:\nt.test()$conf.int\n\nError in t_test.default(): argument \"x\" is missing, with no default\n\n\n\nExplain your confidence interval:"
   },
   {
     "objectID": "5-Statistical_Tests_Part1/1b-Conf_Int_Hyp_Test_for_Proportions_Practice.html",
@@ -2090,7 +2090,7 @@
     "href": "6-Statistical_Tests_Part2/1-Regression.html",
     "title": "Simple Linear Regression",
     "section": "",
-    "text": "Consider the relationship between Score on a math exam and a student’s self-reported Confidence Rating.\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\nmath &lt;- import('https://byuistats.github.io/BYUI_M221_Book/Data/MathSelfEfficacy.xlsx')\n\nQuestion: What is the explanatory variable, \\(x\\)?\nAnswer:\nQuestion: What is the response variable, \\(y\\)?\nAnswer:\nPlot the relationship:\n\nggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +\n  geom_point(color = \"darkblue\") +\n  theme_bw() +\n  labs(\n    title = \"Relationship between Student Confidence Rating in Math and Test Score\"\n  ) \n\n\n\n\n\n\n\n\nQuestion: Based on the scatterplot, does the relationship appear roughly linear?\nAnswer:\nQuestion: What is the direction of the relationship? Answer:\nQuestion: What do you think is the strength of the relationship? (Strong/Moderate/Weak) Answer:\nQuestion: What is the correlation coefficient, r? Answer:\n\ncor(Score ~ ConfidenceRatingMean, data = math)\n\n[1] 0.7278648"
+    "text": "Consider the relationship between score on a math exam and a student’s self-reported Confidence Rating.\n\nlibrary(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\nmath &lt;- import('https://byuistats.github.io/BYUI_M221_Book/Data/MathSelfEfficacy.xlsx')\n\nQuestion: What is the explanatory variable, \\(x\\)?\nAnswer:\nQuestion: What is the response variable, \\(y\\)?\nAnswer:\nPlot the relationship:\n\nggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +\n  geom_point(color = \"darkblue\") +\n  theme_bw() +\n  labs(\n    title = \"Relationship between Student Confidence Rating in Math and Test Score\"\n  ) \n\n\n\n\n\n\n\n\nQuestion: Based on the scatterplot, does the relationship appear roughly linear?\nAnswer:\nQuestion: What is the direction of the relationship? Answer:\nQuestion: What do you think is the strength of the relationship? (Strong/Moderate/Weak) Answer:\nQuestion: What is the correlation coefficient, r? Answer:\n\ncor(Score ~ ConfidenceRatingMean, data = math)\n\n[1] 0.7278648"
   },
   {
     "objectID": "6-Statistical_Tests_Part2/1-Regression.html#plotting-the-regression-line",
@@ -2104,7 +2104,7 @@
     "href": "6-Statistical_Tests_Part2/1-Regression.html#ggplot",
     "title": "Simple Linear Regression",
     "section": "GGPlot",
-    "text": "GGPlot\nUsing ggplot(), we can simply add a geom_smooth() geometry and specify the method of “smoothing” as a linear model:\n\nggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +\n  geom_point(color = \"darkblue\") +\n  theme_bw() +\n  labs(\n    title = \"Relationship between Student Confidence Rating in Math and Test Score\"\n  ) +\n  geom_smooth(method=\"lm\")\n\n\n\n\n\n\n\n\nBy default, this gives us a confidence interval for the slope of the regression line. We can turn that off by forcing the “standard error” to be FALSE:\n\nggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +\n  geom_point(color = \"darkblue\") +\n  theme_bw() +\n  labs(\n    title = \"Relationship between Student Confidence Rating in Math and Test Score\"\n  ) +\n  geom_smooth(method=\"lm\", se = FALSE)"
+    "text": "GGPlot\nUsing ggplot(), we can simply add a geom_smooth() geometry and specify the method of “smoothing” as a linear model:\n\nggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +\n  geom_point(color = \"darkblue\") +\n  theme_bw() +\n  labs(\n    title = \"Relationship between Student Confidence Rating in Math and Test Score\"\n  ) +\n  geom_smooth(method=\"lm\")\n\n\n\n\n\n\n\n\nBy default, this gives us a confidence interval for the slope of the regression line. We can turn that off by forcing the “standard error” to be FALSE:\n\nggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +\n  geom_point(color = \"darkblue\") +\n  theme_bw() +\n  labs(\n    title = \"Relationship between Student Confidence Rating in Stat and Test Score\"\n  ) +\n  geom_smooth(method=\"lm\", se = FALSE)"
   },
   {
     "objectID": "6-Statistical_Tests_Part2/1-Regression.html#hypothesis-testing-for-regression",
@@ -2272,7 +2272,7 @@
     "href": "8-References/Hypothesis_Test_ProcessB.html",
     "title": "Hypothesis Test Process",
     "section": "",
-    "text": "Hypothesis Testing Process\n\nState \\(H_0\\), \\(H_a\\), and pick \\(\\alpha\\)\n\nCalculate the Test Statistic (evidence against \\(H_0\\))\n\nCalculate the P-Value (the probability of observing our test statistic or more extreme, if \\(H_0\\) were true)\n\nCompare P-value to \\(\\alpha\\)\n\nCheck the test requirements\n\nMake a conclusion\n\n\n\nHypothesis Test Conclusions\n\n\\(\\text{P-value} &lt; \\alpha\\):\n\nReject the null hypothesis, \\(H_0\\), in favor of the alternative\n\n“When \\(P\\) is low, reject \\(H_0\\)”\n\nSufficient Evidence to support the alternative\n\nBring back to context of the research question. For example: I have sufficient evidence to suggest that Brother Cannon’s students are, on average, more agreeable than the general population.\n\n\nOpportunity for a Type I Error, rejecting a true null hypothesis\n\n\\(\\text{P-value} \\ge \\alpha\\):\n\nFail to Reject the null hypothesis, \\(H_0\\)\n\nInsufficient Evidence to support the alternative\n\nBring back to context of the research question. For example: I have insufficient evidence to suggest that Brother Cannon’s students are, on average, less open than the general population."
+    "text": "Hypothesis Testing Process\n\nState \\(H_0\\), \\(H_a\\), and pick \\(\\alpha\\)\n\nCalculate the Test Statistic (evidence against \\(H_0\\))\n\nCalculate the P-Value (the probability of observing our test statistic or more extreme, if \\(H_0\\) were true)\n\nCompare P-value to \\(\\alpha\\)\n\nCheck the test requirements\n\nMake a conclusion\n\n\n\nHypothesis Test Conclusions\n\n\\(\\text{P-value} &lt; \\alpha\\):\n\nReject the null hypothesis, \\(H_0\\), in favor of the alternative\n\n“When \\(P\\) is low, reject \\(H_0\\)”\n\nSufficient Evidence to support the alternative\n\nBring back to context of the research question. For example: I have sufficient evidence to suggest that Stat 225 students are, on average, more agreeable than the general population.\n\n\nOpportunity for a Type I Error, rejecting a true null hypothesis\n\n\\(\\text{P-value} \\ge \\alpha\\):\n\nFail to Reject the null hypothesis, \\(H_0\\)\n\nInsufficient Evidence to support the alternative\n\nBring back to context of the research question. For example: I have insufficient evidence to suggest that Stat 225 students are, on average, less open than the general population."
   },
   {
     "objectID": "Spaced_Learning_Activities/Bar_Chart_Party_Affiliation_and_gender.html",

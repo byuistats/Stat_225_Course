@@ -49,7 +49,7 @@ Brother Cannon has taught all the different types of sections offered for introd
 
 __HYPOTHESIS__:  These self-selecting groups have different distributions of personality traits.  
 
-Let's create a side-by-side boxplot of Agreeableness for each Math 221 Course Section Type.   
+Let's create a side-by-side boxplot of Agreeableness for each Stat 225 Course Section Type.   
 
 
 The first argument in the ggplot() function is the data layer:  

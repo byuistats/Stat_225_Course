@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRU
 
 # Review
 
-Consider the relationship between Score on a math exam and a student's self-reported Confidence Rating.
+Consider the relationship between score on a math exam and a student's self-reported Confidence Rating.
 
 
 ```{r}
@@ -193,7 +193,7 @@ ggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +
   geom_point(color = "darkblue") +
   theme_bw() +
   labs(
-    title = "Relationship between Student Confidence Rating in Math and Test Score"
+    title = "Relationship between Student Confidence Rating in Stat and Test Score"
   ) +
   geom_smooth(method="lm", se = FALSE)
 

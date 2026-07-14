@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Don’t Take it Personally – Math221D Notebook</title>
+<title>Don’t Take it Personally – Stat 225 - Intro to Stats in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Math221D Notebook</span>
+    <span class="navbar-title">Stat 225 - Intro to Stats in R</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -179,7 +179,7 @@ window.Quarto = {
  <span class="dropdown-text">The Statistical Process</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../1-Getting_Started/5-Stat_Process_Practice.html">
+    <a class="dropdown-item" href="../1-Getting_Started/5b-Stat_Process_Practice.html">
  <span class="dropdown-text">Statistical Process Practice Problems</span></a>
   </li>  
     </ul>
@@ -190,10 +190,6 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-descriptive-stats">    
         <li class="dropdown-header">Descriptive Statistics</li>
-        <li>
-    <a class="dropdown-item" href="../2-Descriptive_Statistics/0-Response_and_Explanatory_Variables.html">
- <span class="dropdown-text">Response and Explanatory Variables</span></a>
-  </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/1-Numerical_Summaries_Quantitative_Data.html">
  <span class="dropdown-text">Numerical Quantitative Data Summaries</span></a>
@@ -209,6 +205,10 @@ window.Quarto = {
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/2b-Graphical_Summaries_Quantitative_Data_Practice.html">
  <span class="dropdown-text">Practice: Graphical Summaries (Quant.)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../2-Descriptive_Statistics/3-_Response_and_Explanatory_Variables.html">
+ <span class="dropdown-text">Response and Explanatory Variables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../2-Descriptive_Statistics/3-Quantitative_Data_Summaries_Multiple_Groups.html">
@@ -390,7 +390,7 @@ window.Quarto = {
  <span class="dropdown-text">Simple Linear Regression</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1-Regression_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/1b-Regression_Practice.html">
  <span class="dropdown-text">Regression Practice</span></a>
   </li>  
         <li>
@@ -398,7 +398,7 @@ window.Quarto = {
  <span class="dropdown-text">Analysis of Variance (ANOVA)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2-ANOVA_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/2b-ANOVA_Practice.html">
  <span class="dropdown-text">ANOVA Practice</span></a>
   </li>  
         <li>
@@ -406,7 +406,7 @@ window.Quarto = {
  <span class="dropdown-text">Chi-square Test of Independence</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3-Chi_Square_Test_of_Independence_Practice.html">
+    <a class="dropdown-item" href="../6-Statistical_Tests_Part2/3b-Chi_Square_Test_of_Independence_Practice.html">
  <span class="dropdown-text">Chi-Square Practice</span></a>
   </li>  
     </ul>
@@ -429,7 +429,7 @@ window.Quarto = {
  <span class="dropdown-text">Semester Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Final_Report.html">
+    <a class="dropdown-item" href="../7-Semester_Project/2-Semester_Project_Template_Part2.html">
  <span class="dropdown-text">Semester Project</span></a>
   </li>  
     </ul>
@@ -512,7 +512,7 @@ window.Quarto = {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>In this activity, you will execute statistical hypothesis tests and generate confidence intervals for each of the Big 5 personality traits using data collected from a random sample of Brother Cannon’s Math 221 students.</p>
+<p>In this activity, you will execute statistical hypothesis tests and generate confidence intervals for each of the Big 5 personality traits using data collected from a random sample of Stat 225 sstudents.</p>
 <p><strong>Question</strong>: What is the population of this analysis?<br>
 <strong>Answer</strong>:</p>
 <p>For each personality trait, include:</p>
@@ -621,9 +621,9 @@ mean of x
 <li>Explain your conclusion:</li>
 </ol>
 <p>Technical: Because the p-value is less than <span class="math inline">\(\alpha\)</span>, I reject the null hypothesis.</p>
-<p>Contextual: I have sufficient evidence to suggest that Brother Cannon’s students are, on average, more Extroverted than the general population.</p>
+<p>Contextual: I have sufficient evidence to suggest that Stat 225 students are, on average, more Extroverted than the general population.</p>
 <ol start="5" type="1">
-<li>Create a Confidence Interval for the average extroversion of Brother Cannon’s students:</li>
+<li>Create a Confidence Interval for the average extroversion of Stat 225 students:</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For a Confidence Interval:</span></span>
@@ -637,11 +637,11 @@ attr(,"conf.level")
 <ol start="6" type="1">
 <li>Explain your confidence interval:</li>
 </ol>
-<p>I am 97.5% confident that the true average extroversion of Brother Cannon’s students is somewhere between the 54.62 and 59.34 percentiles.</p>
+<p>I am 97.5% confident that the true average extroversion of Stat 225 students is somewhere between the 54.62 and 59.34 percentiles.</p>
 </section>
 <section id="agreeableness" class="level1">
 <h1>Agreeableness</h1>
-<p>State your null and alternative hypotheses. For example, do you think Brother Cannon’s students are more, less, or just different than the general population?</p>
+<p>State your null and alternative hypotheses. For example, do you think Stat 225 students are more, less, or just different than the general population?</p>
 <p><span class="math display">\[H_o:  \mu  \]</span><br>
 <span class="math display">\[H_a:  \mu \]</span></p>
 <p><span class="math display">\[\alpha =  \]</span><br>
@@ -658,7 +658,7 @@ attr(,"conf.level")
 <p>Technical:</p>
 <p>Contextual:</p>
 <ol start="5" type="1">
-<li>Create a Confidence Interval for the average agreeableness of Brother Cannon’s students:</li>
+<li>Create a Confidence Interval for the average agreeableness of Stat 225 students:</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For a Confidence Interval:</span></span>
@@ -692,7 +692,7 @@ attr(,"conf.level")
 <p>Technical:</p>
 <p>Contextual:</p>
 <ol start="5" type="1">
-<li>Create a Confidence Interval for the average openness of Brother Cannon’s students:</li>
+<li>Create a Confidence Interval for the average openness of Stat 225 students:</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For a Confidence Interval:</span></span>
@@ -724,7 +724,7 @@ attr(,"conf.level")
 <p>Technical:</p>
 <p>Contextual:</p>
 <ol start="5" type="1">
-<li>Create a Confidence Interval for the average neuroticism of Brother Cannon’s students:</li>
+<li>Create a Confidence Interval for the average neuroticism of Stat 225 students:</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For a Confidence Interval:</span></span>
@@ -756,7 +756,7 @@ attr(,"conf.level")
 <p>Technical:</p>
 <p>Contextual:</p>
 <ol start="5" type="1">
-<li>Create a Confidence Interval for the average conscientiousness of Brother Cannon’s students:</li>
+<li>Create a Confidence Interval for the average conscientiousness of Stat 225 students:</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># For a Confidence Interval:</span></span>

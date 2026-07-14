@@ -18,7 +18,7 @@ In this section we discuss data summaries for quantitative data.  After this les
 
 ## Load the data and libraries
 
-We will use the Big 5 Personality data of a random sample of Brother Cannon's students.  
+We will use the Big 5 Personality data of a random sample of Stat 225 students.  
 
 ```{r}
 

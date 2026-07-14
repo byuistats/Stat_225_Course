@@ -70,7 +70,7 @@ t.test(data$y, conf.level = 0.95)$conf.int
 
 __NOTE__:  The `t.test()` function will be used for more than confidence intervals and will provide lots of output that isn't currently needed.  For now, we can use the selector, `$`, to instruct R to only return the confidence interval and avoid the unnecessary output.    
 
-Let's create a 99% confidence interval for the average extroversion score for Math 221 students.  
+Let's create a 99% confidence interval for the average extroversion score for Stat 225 students.  
 
 ```{r}
 
@@ -92,11 +92,11 @@ Using the `t.test()` function:
 t.test(big5$Extroversion, conf.level = 0.99)$conf.int
 ```
 
-__Interpretation__:  We are 99% confident that the true mean Extroversion percentile of Math 221 students is between 54.27 and 59.70.  
+__Interpretation__:  We are 99% confident that the true mean Extroversion percentile of Stat 225 students is between 54.27 and 59.70.  
 
 # Your Turn
 
-Creating a 93% confidence interval for the true mean Neuroticism percentile of Math 221 students:  
+Creating a 93% confidence interval for the true mean Neuroticism percentile of Stat 225 students:  
 
 ```{r}
 t.test()

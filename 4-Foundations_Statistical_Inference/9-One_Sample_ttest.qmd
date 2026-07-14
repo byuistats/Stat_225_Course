@@ -63,16 +63,16 @@ $$df  = n-1 $$
 
 Here is an example of performing a hypothesis test using the $t$-distribution by hand.  
 
-Suppose we have a sample of 25 test scores of Math 221 students.  We believe that the true population mean of Math 221 students is significantly **higher** than overall average of 50.  
+Suppose we have a sample of 25 test scores of Stat 225 students.  We believe that the true population mean of Stat 225 students is significantly **higher** than overall average of 50.  
 
 Our null and alternative hypothesis are as follows: 
 
 $$ H_0:  \mu_{\text{M221 Students}} = 50 $$
-We would read this:  The population average test score of Math 221 students is equal to the general population average of 50.  
+We would read this:  The population average test score of Stat 225 students is equal to the general population average of 50.  
 
 
 $$ H_a: \mu_{\text{M221 Students}} > 50 $$
-We would read this:  The population average test score of Math 221 students is *greater* than the general population average of 50.  
+We would read this:  The population average test score of Stat 225 students is *greater* than the general population average of 50.  
 
 
 __NOTE__: The direction of the alternative hypothesis ("greater", "less", "two.sided")  will depend on the context of the research question.  If you believe your drug lowers cholesterol, then you may have `alternative = "less"`.  If you genuinely do not know if the population mean is higher or lower, you can use `alternative = "two.sided"`.  
@@ -159,7 +159,7 @@ __QUESTION__:  What is your conclusion based on $\alpha=0.05$?
 __ANSWER__:  Because P-value < 0.05 we reject the null hypothesis in favor of the alternative.  
 
 __Question__:  State your conclusion in context of our research question?  
-__Answer__:  We have sufficient evidence to conclude that Math 221 students are more extroverted than the general population, on average.  
+__Answer__:  We have sufficient evidence to conclude that Stat 225 students are more extroverted than the general population, on average.  
 
 
 
@@ -179,7 +179,7 @@ t.test(test_scores, conf.level = .99)$conf.int
 ```
 
 __Question__:  Describe in words the interpretation of the confidence interval in context of Extroversion.  
-__Answer__:  I am 99% confident that the true population mean test score for Math 221 students is between 52.19455 and 76.76545.  
+__Answer__:  I am 99% confident that the true population mean test score for Stat 225 students is between 52.19455 and 76.76545.  
 
 
 ### Checking Requirements
