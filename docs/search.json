@@ -1250,7 +1250,7 @@
     "href": "1-Getting_Started/1-2-1-Installing_R.html",
     "title": "Installing R",
     "section": "",
-    "text": "In this course, we will use RStudio to perform necessary visualizations and analyses and to create web-based reports.\nR and RStudio are not the same thing. R is like the engine in a car, and RStudio is the driver’s controls. We don’t need to know the guts of a combustion engine to drive, and we don’t need to know what’s going on in R, but we do need it on our computer.\nTo install R and RStudio on your computer, please follow these instructions:\n\nGo to the R-Studio page and follow the instructions:\na. Install R. The “Download and Install R” button will take you to the R website. You will have to click through a few links to get to the download.\n\nFor PC: “Download R for Windows” &gt; “Install R for the first time” &gt; Whatever the latest version is will be at the top.\n\nFor Mac: “Download R for Mac” &gt; There will be 2 options on the left with the latest version of R (R-4.4.3, for example). Which version you download depends on what kind of processor chip you have, but most will work with the version ending in “arm64.pkg”\n\nReturn to the R-studio download page and click the “Download RStudio Desktop” button. Run the downloaded program and accept the defaults.\n\nOnce the RStudio installer downloads, open the resulting file.\nClick “Continue” or “Okay” or “Accept” for all of the several various windows that will appear.\nOnce the installation finishes you can use your computer’s search bar to search for “RStudio” in your apps.\n\n\nNOTE: If you are using a Chromebook or other “web browsing only” computer that will not allow you to install software locally, then set up an account at RStudio Cloud instead of installing R and RStudio as shown above. Use your BYU-I email and user ID."
+    "text": "R is the software that runs your analyses. RStudio is the desktop app where you write and run R code. Install R first, then install RStudio.\n\n\n\nWindows: Download R from CRAN for Windows and run the installer.\nMac: Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open Apple menu &gt; About This Mac. If the window says Chip and lists an M-series chip, download the arm64 package. If it says Processor and lists Intel, download the x86_64 package. Apple shows where to find this information. Open the downloaded .pkg installer. You do not need to choose a processor type for RStudio; use the macOS download on the RStudio page.\n\n\n\n\nDownload RStudio Desktop. Choose the Windows .exe installer or the macOS .dmg installer. On Windows, run the installer and accept the defaults. On Mac, open the .dmg file and drag RStudio to Applications. The download page lists the current operating system requirements.\n\n\n\nUse Posit Cloud in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.\n\n\n\n\nCreate an easy-to-find folder, such as Stat225.\nDownload the course files, unzip them, and move the Student_Work folder into your course folder.\nIn RStudio, open Student_Work/1-Getting_Started/Test.qmd and click Render.\nIf the report opens in your browser, the installation is working. The Test.html file is saved beside Test.qmd; upload it to Canvas if your instructor requests it.\n\nIf RStudio cannot find R, install R first and restart RStudio. If you still have trouble, ask for help in class."
   },
   {
     "objectID": "1-Getting_Started/1-2-1-Installing_R.html#chromebooks-and-cloud-based-notebooks",
@@ -2315,5 +2315,33 @@
     "title": "GGPlot Practice",
     "section": "",
     "text": "library(tidyverse)\nlibrary(mosaic)\nlibrary(rio)\nlibrary(car)\n\n\ndata &lt;- import('https://online.stat.psu.edu/stat462/sites/onlinecourses.science.psu.edu.stat462/files/data/poverty/index.txt') %&gt;% tibble()"
+  },
+  {
+    "objectID": "1-Getting_Started/1-2-1-Installing_R.html#install-r",
+    "href": "1-Getting_Started/1-2-1-Installing_R.html#install-r",
+    "title": "Installing R",
+    "section": "",
+    "text": "Windows: Download R from CRAN for Windows and run the installer.\nMac: Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open Apple menu &gt; About This Mac. If the window says Chip and lists an M-series chip, download the arm64 package. If it says Processor and lists Intel, download the x86_64 package. Apple shows where to find this information. Open the downloaded .pkg installer. You do not need to choose a processor type for RStudio; use the macOS download on the RStudio page."
+  },
+  {
+    "objectID": "1-Getting_Started/1-2-1-Installing_R.html#install-rstudio-desktop",
+    "href": "1-Getting_Started/1-2-1-Installing_R.html#install-rstudio-desktop",
+    "title": "Installing R",
+    "section": "",
+    "text": "Download RStudio Desktop. Choose the Windows .exe installer or the macOS .dmg installer. On Windows, run the installer and accept the defaults. On Mac, open the .dmg file and drag RStudio to Applications. The download page lists the current operating system requirements."
+  },
+  {
+    "objectID": "1-Getting_Started/1-2-1-Installing_R.html#if-you-use-a-chromebook",
+    "href": "1-Getting_Started/1-2-1-Installing_R.html#if-you-use-a-chromebook",
+    "title": "Installing R",
+    "section": "",
+    "text": "Use Posit Cloud in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud."
+  },
+  {
+    "objectID": "1-Getting_Started/1-2-1-Installing_R.html#check-your-installation",
+    "href": "1-Getting_Started/1-2-1-Installing_R.html#check-your-installation",
+    "title": "Installing R",
+    "section": "",
+    "text": "Create an easy-to-find folder, such as Stat225.\nDownload the course files, unzip them, and move the Student_Work folder into your course folder.\nIn RStudio, open Student_Work/1-Getting_Started/Test.qmd and click Render.\nIf the report opens in your browser, the installation is working. The Test.html file is saved beside Test.qmd; upload it to Canvas if your instructor requests it.\n\nIf RStudio cannot find R, install R first and restart RStudio. If you still have trouble, ask for help in class."
   }
 ]
