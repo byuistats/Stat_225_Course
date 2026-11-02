@@ -568,31 +568,31 @@ window.Quarto = {
 <p>Take some time to familiarize yourself with the data. Check the <a href="https://www.kaggle.com/datasets/whenamancodes/student-performance">website</a> familiarize yourself with the study. See what the columns are.</p>
 <section id="response-variable-univariate-summary-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="response-variable-univariate-summary-statistics">Response Variable: Univariate Summary Statistics</h2>
-<p><strong>QUESTION</strong>: What is the primary response variable? (What are we trying to predict?)<br>
+<p><strong>QUESTION 1:</strong> What is the primary response variable? (What are we trying to predict?)<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Create a table of summary statistics for the primary response variable:</p>
+<p><strong>QUESTION 2:</strong> Create a table of summary statistics for the primary response variable:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">favstats</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in favstats(): argument "x" is missing, with no default</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What is the mean grade?<br>
+<p><strong>QUESTION 3:</strong> What is the mean grade?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the median grade?<br>
+<p><strong>QUESTION 4:</strong> What is the median grade?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the Standard Deviation of grades?<br>
+<p><strong>QUESTION 5:</strong> What is the Standard Deviation of grades?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Interpret in words what the standard deviation means?<br>
+<p><strong>QUESTION 6:</strong> Interpret in words what the standard deviation means?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the 75th percentile of grades?<br>
+<p><strong>QUESTION 7:</strong> What is the 75th percentile of grades?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Interpret in words what the 75th percentile means?<br>
+<p><strong>QUESTION 8:</strong> Interpret in words what the 75th percentile means?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create a histogram of the primary response variable:</p>
-<p><strong>QUESTION</strong>: What is the basic shape of the distribution?<br>
+<p><strong>QUESTION 9:</strong> What is the basic shape of the distribution?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What anomalies, if any, do you notice?<br>
+<p><strong>QUESTION 10:</strong> What anomalies, if any, do you notice?<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="explanatory-variables" class="level2">
@@ -619,23 +619,23 @@ window.Quarto = {
              ^</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What is the mean grade for females?<br>
+<p><strong>QUESTION 11:</strong> What is the mean grade for females?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create a side-by-side boxplot of final grades for each level of father’s job (<code>Fjob</code>):</p>
-<p><strong>QUESTION</strong>: Which level of Fjob tends to have students with the highest final grades?<br>
+<p><strong>QUESTION 12:</strong> Which level of Fjob tends to have students with the highest final grades?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create a side-by-side boxplot of final grades for each level of mother’s job (<code>Mjob</code>):</p>
-<p><strong>QUESTION</strong>: Which level of Mjob appears to have students with the highest final grades?<br>
+<p><strong>QUESTION 13:</strong> Which level of Mjob appears to have students with the highest final grades?<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="quantitative-x" class="level4">
 <h4 class="anchored" data-anchor-id="quantitative-x">Quantitative X</h4>
 <p>Create a scatter plot looking at the relationship between mid-term grade (G2) and final grade (G3):</p>
-<p><strong>QUESTION</strong>: Does the relationship appear roughly linear?<br>
+<p><strong>QUESTION 14:</strong> Does the relationship appear roughly linear?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What anomalies, if any, do you notice?<br>
+<p><strong>QUESTION 15:</strong> What anomalies, if any, do you notice?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Based on the scatter plot, guess the correlation coefficient:<br>
+<p><strong>QUESTION 16:</strong> Based on the scatter plot, guess the correlation coefficient:<br>
 <strong>ANSWER</strong>:</p>
 <p>Calculate the correlation coefficient, r:</p>
 </section>
@@ -643,7 +643,7 @@ window.Quarto = {
 </section>
 <section id="categorical-descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="categorical-descriptive-statistics">Categorical Descriptive Statistics</h2>
-<p><strong>QUESTION</strong>: What are the levels of mother’s profession?</p>
+<p><strong>QUESTION 17:</strong> What are the levels of mother’s profession?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -651,16 +651,16 @@ window.Quarto = {
 </div>
 </div>
 <p>Create a proportion table table for <code>sex</code></p>
-<p><strong>QUESTION</strong>: What percent of respondents are female?<br>
+<p><strong>QUESTION 18:</strong> What percent of respondents are female?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create a <em>SORTED</em> bar chart of the counts of reasons students chose their school (<code>reason</code>):</p>
-<p><strong>QUESTION</strong>: Which reason appears to be the most popular?<br>
+<p><strong>QUESTION 19:</strong> Which reason appears to be the most popular?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create and name a contingency table looking at the relationship between gender and whether or not they are in a romantic relationship.</p>
 <p>Then calculate the proportion of each gender in a romantic relationship (should sum to 1 for each gender):</p>
-<p><strong>QUESTION</strong>: What percent of female respondents are in a romantic relationship?<br>
+<p><strong>QUESTION 20:</strong> What percent of female respondents are in a romantic relationship?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What percent of male respondents are in a romantic relationship?<br>
+<p><strong>QUESTION 21:</strong> What percent of male respondents are in a romantic relationship?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create a bar chart that groups bars based on <code>sex</code> on the x-axis and adds a legend for the colors of the bars by <code>romantic</code>.</p>
 <div class="cell">

@@ -63,10 +63,10 @@ $$
 
 Use the probabilty rules above to answer the following questions.  
 
-__QUESTION__:  In a political poll, 40% of respondents favor candidate A, 35% favor candidate B, and the rest are undecided. If one respondent is selected at random, what is the probability that they either favor candidate A or are undecided?  
+**QUESTION 1:** In a political poll, 40% of respondents favor candidate A, 35% favor candidate B, and the rest are undecided. If one respondent is selected at random, what is the probability that they either favor candidate A or are undecided?  
 __ANSWER__:  
 
-__QUESTION__:  In a survey of 288 BYU-I students, 144 said they prefer Redneck Mixers from Great Scott's for their soda, 58 said they prefer Swig and 68 preferred Fixxology.  The rest are heathens with questionable orthodoxy who have a distaste for non-alcoholic sparkling drinks.  What is the probability of randomly selecting a student that hates delicious beverages?  
+**QUESTION 2:** In a survey of 288 BYU-I students, 144 said they prefer Redneck Mixers from Great Scott's for their soda, 58 said they prefer Swig and 68 preferred Fixxology.  The remaining students preferred another drink. What is the probability that a randomly selected student preferred none of the three listed drinks?  
 __ANSWER__:  
 
 
@@ -89,7 +89,7 @@ We will use the **Normal Distribution** to illustrate the probability rules for 
 The normal distribution is like a smooth histogram that is perfectly symmetric around the mean and has a standard deviation that determines how spread out the distribution is.  Consider below a histogram of Major League Baseball batting averages:  
 
 ![](https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson_03_Activity_06_Reading_1.jpg)
-The smooth line is a normal distribution superimposed onto the histogram of the data.  Using our data, we can calculate percentiles by adding up 
+The smooth line is a normal distribution superimposed onto the histogram of the data.  
 
 Suppose we want to estimate the probability that a randomly selected player will have a batting average that is greater than 0.280. One way to do this would be to find the proportion of players in the data set who have a batting average above 0.280. We can do this by finding the number of players who fall into each of the red-colored bins below and dividing this number by the total number of players.
 

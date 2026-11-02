@@ -16,14 +16,14 @@ party <- read_csv('https://github.com/byuistats/Math221D_Course/raw/refs/heads/m
 
 ```
 
-__QUESTION__:  Based on this survey of registered voters, what percent of females are Democrat?  
+**QUESTION 1:** Based on this survey of registered voters, what percent of females are Democrat?  
 
 ```{r}
 
 
 ```
 
-__QUESTION__:  What percent of Independents are male?  
+**QUESTION 2:** What percent of Independents are male?  
 
 ```{r}
 

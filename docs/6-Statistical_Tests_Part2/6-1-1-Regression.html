@@ -525,9 +525,9 @@ window.Quarto = {
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>math <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://byuistats.github.io/BYUI_M221_Book/Data/MathSelfEfficacy.xlsx'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Question</strong>: What is the explanatory variable, <span class="math inline">\(x\)</span>?<br>
+<p><strong>QUESTION 1:</strong> What is the explanatory variable, <span class="math inline">\(x\)</span>?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the response variable, <span class="math inline">\(y\)</span>?<br>
+<p><strong>QUESTION 2:</strong> What is the response variable, <span class="math inline">\(y\)</span>?<br>
 <strong>Answer</strong>:</p>
 <p>Plot the relationship:</p>
 <div class="cell">
@@ -545,11 +545,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p><strong>Question</strong>: Based on the scatterplot, does the relationship appear roughly linear?<br>
+<p><strong>QUESTION 3:</strong> Based on the scatterplot, does the relationship appear roughly linear?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the direction of the relationship? <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What do you think is the strength of the relationship? (Strong/Moderate/Weak) <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the correlation coefficient, r? <strong>Answer</strong>:</p>
+<p><strong>QUESTION 4:</strong> What is the direction of the relationship? <strong>Answer</strong>:</p>
+<p><strong>QUESTION 5:</strong> What do you think is the strength of the relationship? (Strong/Moderate/Weak) <strong>Answer</strong>:</p>
+<p><strong>QUESTION 6:</strong> What is the correlation coefficient, r? <strong>Answer</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(Score <span class="sc">~</span> ConfidenceRatingMean, <span class="at">data =</span> math)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -628,12 +628,12 @@ ConfidenceRatingMean 10.89262 14.49703</code></pre>
 </div>
 </div>
 <p>The <code>lm()</code> output includes only the slope and the intercept.</p>
-<p><strong>Question</strong>: How do we interpret the intercept of 18.69?<br>
+<p><strong>QUESTION 7:</strong> How do we interpret the intercept of 18.69?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: How do we interpret the slope of 12.69 in context?<br>
+<p><strong>QUESTION 8:</strong> How do we interpret the slope of 12.69 in context?<br>
 <strong>Answer</strong>:</p>
 <p>Now that we have an estimate of the slope and the intercept, we can plug in values of <span class="math inline">\(x\)</span> into our formula, <span class="math inline">\(\hat y = b_o + b_1x = 18.69 + 12.69*x\)</span>.</p>
-<p><strong>Question</strong>: What is the expected score on a test of someone who ranks themselves 5 in confidence?<br>
+<p><strong>QUESTION 9:</strong> What is the expected score on a test of someone who ranks themselves 5 in confidence?<br>
 <strong>Answer</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fl">18.69</span> <span class="sc">+</span> <span class="fl">12.69</span><span class="sc">*</span><span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -781,14 +781,14 @@ ConfidenceRatingMean 10.674297 14.71535</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>alcohol <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/life_expectancy_vs_alcohol_consumption.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Question</strong>: What is the response variable?<br>
+<p><strong>QUESTION 10:</strong> What is the response variable?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the explanatory variable?<br>
+<p><strong>QUESTION 11:</strong> What is the explanatory variable?<br>
 <strong>Answer</strong>:</p>
 <p>Make a presentation-worthy scatter plot using <code>ggplot()</code> including a regression line:</p>
-<p><strong>Question</strong>: Describe in words the nature of the relationship between the 2 variables (direction/strength/linearity) <strong>Answer</strong>:</p>
+<p><strong>QUESTION 12:</strong> Describe in words the nature of the relationship between the 2 variables (direction/strength/linearity) <strong>Answer</strong>:</p>
 <p>Calculate the correlation coefficient:</p>
-<p><strong>Question</strong>: What is the the correlation coefficient, <span class="math inline">\(r\)</span>?<br>
+<p><strong>QUESTION 13:</strong> What is the correlation coefficient, <span class="math inline">\(r\)</span>?<br>
 <strong>Answer</strong>:</p>
 <p>Perform a linear regression analysis for the relationship between alcohol consumption and life expectancy.</p>
 <div class="cell">
@@ -798,18 +798,18 @@ ConfidenceRatingMean 10.674297 14.71535</code></pre>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the normality of the residuals  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Question</strong>: What is the slope of the regression line?<br>
+<p><strong>QUESTION 14:</strong> What is the slope of the regression line?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: Interpret the slope of the regression line in context of the problem:<br>
+<p><strong>QUESTION 15:</strong> Interpret the slope of the regression line in context of the problem:<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the intercept of the regression line?<br>
+<p><strong>QUESTION 16:</strong> What is the intercept of the regression line?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: Interpret the intercept of the regression line in context of the problem:<br>
+<p><strong>QUESTION 17:</strong> Interpret the intercept of the regression line in context of the problem:<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What do you conclude about the slope of the regression line?<br>
+<p><strong>QUESTION 18:</strong> What do you conclude about the slope of the regression line?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the confidence interval for the slope?</p>
-<p><strong>Question</strong>: Give a 1-sentence interpretation of the confidence interval in context of your research question:<br>
+<p><strong>QUESTION 19:</strong> What is the confidence interval for the slope?</p>
+<p><strong>QUESTION 20:</strong> Give a 1-sentence interpretation of the confidence interval in context of your research question:<br>
 <strong>Answer</strong>:</p>
 
 

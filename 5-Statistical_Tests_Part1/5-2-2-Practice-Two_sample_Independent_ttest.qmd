@@ -45,10 +45,10 @@ dating <- read_csv('https://github.com/byuistats/Math221D_Course/raw/main/Data/d
 
 ## Explore the Data
 
-__QUESTION__:  What is the *response* variable?  
+**QUESTION 1:** What is the *response* variable?  
 __ANSWER__:  
 
-__QUESTION__:  What is the *explanatory* variable?  
+**QUESTION 2:** What is the *explanatory* variable?  
 __ANSWER__:  
 
 Create a side-by-side boxplot for the amount of reported importance of attractiveness for each biosex.
@@ -80,7 +80,7 @@ $$H_a:\mu_{F}???\mu_{M}$$
 __NOTE__: The default for R is to set group order alphabetically.  This means Group 1 = Female.
 
 
-__QUESTION__:  Check that the samples for both groups are normally distributed:
+**QUESTION 3:** Check that the samples for both groups are normally distributed:
 
 ```{r}
 
@@ -88,11 +88,11 @@ qqPlot()
 
 ```
 
-__QUESTION__:  Do the data for each group appear normally distributed?  
+**QUESTION 4:** Do the data for each group appear normally distributed?  
 __ANSWER__:  
 
 
-__QUESTION__:  Why is it OK to continue with the analysis?
+**QUESTION 5:** Why is it OK to continue with the analysis?
 __ANSWER__:  
 
 
@@ -103,16 +103,16 @@ Perform a t-test.
 
 ```
 
-__QUESTION__:  What is the value of the test statistic?  
+**QUESTION 6:** What is the value of the test statistic?  
 __ANSWER__:  
 
-__QUESTION__:  How many degrees of freedom for this test?  
+**QUESTION 7:** How many degrees of freedom are there for this test?  
 __ANSWER__:  
 
-__QUESTION__:  What is the p-value?  
+**QUESTION 8:** What is the p-value?  
 __ANSWER__:  
 
-__QUESTION__:  What do you conclude?  
+**QUESTION 9:** What do you conclude?  
 __ANSWER__:  
 
 ### Confidence Interval
@@ -140,10 +140,10 @@ dentist <- read_csv('https://github.com/byuistats/Math221D_Course/raw/main/Data/
 
 ## Review The Data
 
-__QUESTION__:  What is the *response* variable?  
+**QUESTION 10:** What is the *response* variable?  
 __ANSWER__:  
 
-__QUESTION__:  What is the *explanatory* variable?  
+**QUESTION 11:** What is the *explanatory* variable?  
 __ANSWER__:  
 
 
@@ -165,7 +165,7 @@ Check the normality of each group.
 
 ```
 
-__QUESTION__: Do the samples from both groups appear to be normally distributed?  If not, is it a cause for concern for our statistical inference?
+**QUESTION 12:** Do the samples from both groups appear to be normally distributed?  If not, is it a cause for concern for our statistical inference?
 
 ## Hypothesis Test
 
@@ -182,10 +182,10 @@ Perform the appropriate analysis:
 ```
 
 
-__QUESTION__:  What is the test statistic?  
+**QUESTION 13:** What is the test statistic?  
 __ANSWER__:
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 14:** What is the P-value?  
 __ANSWER__:  
 
 State your conclusion:  
@@ -218,10 +218,10 @@ birth_weights <- read_csv('https://github.com/byuistats/Math221D_Course/raw/main
 
 ## Review The Data
 
-__QUESTION__:  What is the *response* variable?  
+**QUESTION 15:** What is the *response* variable?  
 __ANSWER__:  
 
-__QUESTION__:  What is the *explanatory* variable?  
+**QUESTION 16:** What is the *explanatory* variable?  
 __ANSWER__:  
 
 
@@ -243,7 +243,7 @@ Check the normality of each group.
 
 ```
 
-__QUESTION__: Do the samples from both groups appear to be normally distributed?  If not, is it a cause for concern for our statistical inference?  
+**QUESTION 17:** Do the samples from both groups appear to be normally distributed?  If not, is it a cause for concern for our statistical inference?  
 __ASNWER__:  
 
 
@@ -262,10 +262,10 @@ Perform the appropriate analysis:
 ```
 
 
-__QUESTION__:  What is the test statistic?  
+**QUESTION 18:** What is the test statistic?  
 __ANSWER__:
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 19:** What is the P-value?  
 __ANSWER__:  
 
 State your conclusion:  

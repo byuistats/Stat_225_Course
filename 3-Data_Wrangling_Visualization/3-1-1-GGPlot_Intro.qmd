@@ -155,7 +155,7 @@ ggplot(data = iris, mapping = aes(x = Sepal.Length, y = Sepal.Width)) +
 
 ```
 
-__QUESTION__:  Based on this scatter plot, what would you guess the correlation coefficient is?  
+**QUESTION 1:** Based on this scatter plot, what would you guess the correlation coefficient is?  
 __ANSWER__:  
 
 Calculate the $r$:  
@@ -166,7 +166,7 @@ cor(iris$Sepal.Width ~ iris$Sepal.Length)
 
 ```
 
-__QUESTION__:  Describe in words what this means:  
+**QUESTION 2:** Describe in words what this means:  
 __ANSWER__:  
 
 ## Adding Color

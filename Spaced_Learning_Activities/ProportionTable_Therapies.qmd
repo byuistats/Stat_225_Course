@@ -32,9 +32,9 @@ Create a proportion table that shows the improvement level of each treatment.  (
 
 ```
 
-__QUESTION__:  What percent of CBT patients improved?  
+**QUESTION 1:** What percent of CBT patients improved?  
 __ANSWER__:  
 
 
-__QUESTION__:  What percent of CBT patients worsened?  
+**QUESTION 2:** What percent of CBT patients worsened?  
 __ANSWER__:  

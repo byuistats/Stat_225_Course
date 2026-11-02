@@ -14,7 +14,7 @@ Complete the following questions about testing differences between 2 proportions
 
 A random sample of BYU-Idaho students was surveyed and asked if they were in favor of retaining the penny as a form of currency in the United States. Out of the 116 women surveyed, 80 said that they were in favor of retaining the penny as a form of currency. Of the 137 men surveyed, 91 said that they were in favor of retaining the penny. For these questions, let group 1 represent women and group 2 represent men. 
 
-__Question__:  Are the requirements satisfied for assuming normality?  Explain.  
+**QUESTION 1:** For the confidence interval, do both groups meet the success-failure condition for a normal approximation? Show the checks for each group.  
 __Answer__:  
 
 
@@ -28,7 +28,7 @@ Create a 95\% confidence interval for the difference in the proportion of female
 
 ```
 
-__Question__:  Interpret the confidence interval in context of the question:  
+**QUESTION 2:** Interpret the confidence interval in context of the question:  
 __Answer__:  
 
 
@@ -41,15 +41,15 @@ State your null and alternative hypotheses:
 $$H_0: p_{female}???p_{male}$$  
 $$H_a: p_{female}???p_{male}$$  
 
-__Question__:  What is the test statistic?  
+**QUESTION 3:** What is the test statistic?  
 __Answer__:  
 
 
-__Question__:  What is the P-value?  
+**QUESTION 4:** What is the P-value?  
 __Answer__:  
 
 
-__Question__:  Based on your decision rule, state your conclusion in context of the problem:  
+**QUESTION 5:** Based on your decision rule, state your conclusion in context of the problem:  
 __Answer__:  
 
 
@@ -72,11 +72,11 @@ Perform the appropriate analysis:
 
 ```
 
-__Question__:  What is the P-value?  
+**QUESTION 6:** What is the P-value?  
 __Answer__:  
 
 
-__Question__:  Based on your decision rule, state your conclusion in context of the problem:  
+**QUESTION 7:** Based on your decision rule, state your conclusion in context of the problem:  
 __Answer__:  
 
 
@@ -88,6 +88,6 @@ Create a 95\% confidence interval for the difference in the proportion of divorc
 
 ```
 
-__Question__:  Interpret the confidence interval in context of the question:  
+**QUESTION 8:** Interpret the confidence interval in context of the question:  
 __Answer__:  
 

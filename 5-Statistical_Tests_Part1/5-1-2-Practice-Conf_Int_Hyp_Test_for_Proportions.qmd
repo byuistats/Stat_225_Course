@@ -9,7 +9,7 @@ A study was conducted to determine the proportion of American teenagers between 
 
 We want to explore if the study provide adequate evidence to conclude that the percentage of teenagers who smoke has changed since the original study (that is, is $p$ now *different* than 15%).  
 
-__QUESTION__:  What are the requirements for a valid hypothesis test for a proportion, and are they met?  
+**QUESTION 1:** What are the requirements for a valid hypothesis test for a proportion, and are they met?  
 __ANSWER__:  
 
 
@@ -33,13 +33,13 @@ $$\alpha = 0.$$
 
 ```
 
-__QUESTION__:  What is the value of the test statistic?  
+**QUESTION 2:** What is the value of the test statistic?  
 __ANSWER__:  
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 3:** What is the P-value?  
 __ANSWER__:  
 
-__QUESTION__:  Based on your selected $\alpha$ and $P$-value, what is your conclusion?  
+**QUESTION 4:** Based on your selected $\alpha$ and $P$-value, what is your conclusion?  
 __ANSWER__:  
 
 
@@ -57,7 +57,7 @@ Create a $(1-\alpha)$% confidence interval for the true population proportion of
 
 Suppose you would like to study the connection between creativity and left-handedness.  Your favorite generative AI told you that the estimated population of left-handed people in the United States is about 11\%. You sample 122 Visual Arts majors and find that 20 are left handed.  Is this enough evidence to demonstrate that visual arts majors have a *higher* proportion of left handed people than the general population?  
 
-__QUESTION__:  What is the estimated sample proportion, $\hat{p}$?  
+**QUESTION 5:** What is the estimated sample proportion, $\hat{p}$?  
 __ANSWER__:  
 
 
@@ -69,7 +69,7 @@ Create a 90% confidence interval for the true population proportion of left-hand
 
 ```
 
-__QUESTION__:  What are the requirements for a confidence interval for a proportion, and are they met?    
+**QUESTION 6:** What are the requirements for a confidence interval for a proportion, and are they met?    
 __ANSWER__:  
 
 
@@ -78,7 +78,7 @@ __ANSWER__:
 ```
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question.  
+**QUESTION 7:** Interpret the confidence interval in context of the research question.  
 __ANSWER__:  
 
 
@@ -91,17 +91,17 @@ Perform a hypothesis test to determine if the proportion of left-handed Visual A
 
 ```
 
-__QUESTION__:  What is the value of the test statistic?  
+**QUESTION 8:** What is the value of the test statistic?  
 __ANSWER__:  
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 9:** What is the P-value?  
 __ANSWER__:  
 
-__QUESTION__:  Based on the P-value and a confidence level of $\alpha=.05$, what is your conclusion?  
+**QUESTION 10:** Based on the P-value and significance level $\alpha=0.05$, what is your conclusion?  
 __ANSWER__:  
 
 
-__QUESTION__:  What are the requirements for a hypothesis test for a proportion, and are they met?  
+**QUESTION 11:** What are the requirements for a hypothesis test for a proportion, and are they met?  
 __ANSWER__:  
 
 
@@ -117,10 +117,10 @@ A health study surveyed 250 individuals about their exercise habits, and 140 rep
 ```
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question:  
+**QUESTION 12:** Interpret the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  Are the requirements for a valid confidence interval for $p$ met?  
+**QUESTION 13:** Are the requirements for a valid confidence interval for $p$ met?  
 __ANSWER__:  
 

@@ -91,7 +91,7 @@ We will discuss these theoretical properties in greater detail below.  Before we
 <div class="QuestionsHeading">Answer the following question:</div>
 <div class="Questions">
 
-__QUESTION__:  Given the 11 independent samples of 50 students, what would be your best guess of the **True population proportion** of students who prefer Dr. Pepper?  
+**QUESTION 1:** Given the 11 independent samples of 50 students, what would be your best guess of the **True population proportion** of students who prefer Dr. Pepper?  
 
 __NOTE__:  Because these results are based on a simulation, the true proportion is known.  
 

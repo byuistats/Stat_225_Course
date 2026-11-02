@@ -484,9 +484,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This example is taken from an experiment listed in the R help files under <code>?CO2</code>.</p>
 <p>“An experiment on the cold tolerance of the grass species Echinochloa crus-galli was conducted. The CO2 uptake of six plants from Quebec and six plants from Mississippi was measured at several levels of ambient CO2 concentration. Half the plants of each type were chilled overnight before the experiment was conducted.” Plants were considered tolerant to the cold if they were still able to achieve high CO2 uptake values after being chilled.</p>
 <p><strong>NOTE</strong>: Recall that the formula for separating a response variable by a category is to use the formula <code>(data$y ~ data$x)</code> which works for <code>favstats()</code> and <code>boxplot()</code></p>
-<p><strong>QUESTION</strong>: What is the response variable?<br>
+<p><strong>QUESTION 1:</strong> What is the response variable?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What are the levels of <code>Type</code>?</p>
+<p><strong>QUESTION 2:</strong> What are the levels of <code>Type</code>?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -505,11 +505,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
              ^</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What is the mean uptake for the Quebec type?<br>
+<p><strong>QUESTION 3:</strong> What is the mean uptake for the Quebec type?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the median of the Mississippi type?<br>
+<p><strong>QUESTION 4:</strong> What is the median of the Mississippi type?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Which type has the highest standard deviation?<br>
+<p><strong>QUESTION 5:</strong> Which type has the highest standard deviation?<br>
 <strong>ANsWER</strong>:</p>
 <p>Create a side-by-side boxplot of uptake comparing<code>Type</code>:</p>
 <div class="cell">
@@ -525,12 +525,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="impact-of-treatment-on-uptake" class="level2">
 <h2 class="anchored" data-anchor-id="impact-of-treatment-on-uptake">Impact of Treatment on Uptake</h2>
 <p>Create a table of summary statistics of uptake for each <code>Treatment</code> used in the experiment.</p>
-<p><strong>QUESTION</strong>: What is the mean uptake for the non-chilled treatment?<br>
+<p><strong>QUESTION 6:</strong> What is the mean uptake for the non-chilled treatment?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the mean of the chilled treatment?<br>
+<p><strong>QUESTION 7:</strong> What is the mean uptake for the chilled treatment?<br>
 <strong>ANSWER</strong>:</p>
 <p>Create a side-by-side boxplot of uptake for each <code>Treatment</code> used in the experiment.</p>
-<p><strong>QUESTION</strong>: Based on the above summaries, which combination of Type and Treatment do you think would result in the largest CO2 uptake?<br>
+<p><strong>QUESTION 8:</strong> Based on the above summaries, which combination of Type and Treatment do you think would result in the largest CO2 uptake?<br>
 <strong>ANSWER</strong>:</p>
 
 

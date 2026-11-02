@@ -81,10 +81,10 @@ The explanatory variable, also known as the independent variable, is the variabl
 
 This dataset contains information about properties in Madison County.  
 
-__QUESTION__:  Before looking at the data, what do you think is the purpose of collecting these data?  
+**QUESTION 1:** Before looking at the data, what do you think is the purpose of collecting these data?  
 __ANSWER__:  
 
-__QUESTION__:  What do you think the Response variable is?  
+**QUESTION 2:** What do you think the Response variable is?  
 __ASNWER__:  
 
 ```{r}
@@ -122,14 +122,14 @@ glimpse()
 ```
 
 
-__QUESTION__:  After looking at the data, what is the **response** variable?  (use the column name)  
+**QUESTION 3:** After looking at the data, what is the **response** variable?  (use the column name)  
 __ANSWER__:  
 
-__QUESTION__:  Is it quantitative or categorical?  
+**QUESTION 4:** Is it quantitative or categorical?  
 __ANsWER__:  
 
 
-__QUESTION__:  What variables do you think are the 5 most impactful **explanatory** variables?  List the column names and say whether or not each are categorical or quantitative.  
+**QUESTION 5:** Which five explanatory variables do you expect to be most strongly associated with the response variable? List their column names and identify each as categorical or quantitative.  
 
   1. 
   
@@ -164,14 +164,14 @@ cadillac_data <- import('https://github.com/byuistats/Math221D_Course/raw/refs/h
 
 ```
 
-__QUESTION__:  What is the response variable?  
+**QUESTION 6:** What is the response variable?  
 __ANSWER__:  
 
-__QUESTION__:  Is it quantitative or categorical?  
+**QUESTION 7:** Is it quantitative or categorical?  
 __ANSWER__:  
 
 
-__QUESTION__:  List some of the explanatory variables and say whether they are categorical or quantitative:  
+**QUESTION 8:** List some of the explanatory variables and say whether they are categorical or quantitative:  
 
 
 For any categorical variables, print out the levels:  
@@ -196,15 +196,15 @@ chocolate <- import('https://github.com/byuistats/Math221D_Course/raw/refs/heads
 
 ```
 
-__QUESTION__:  What is the response variable?  
+**QUESTION 9:** What is the response variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  Is it quantitative or categorical?  
+**QUESTION 10:** Is it quantitative or categorical?  
 __ANSWER__:  
 
 
-__QUESTION__:  List some of the explanatory variables and say whether they are categorical or quantitative:  
+**QUESTION 11:** List some of the explanatory variables and say whether they are categorical or quantitative:  
 
 
 
@@ -224,7 +224,7 @@ hs_survey <- import('https://github.com/byuistats/Math221D_Course/raw/refs/heads
 
 
 
-__QUESTION__:  What are some possible response variables?  List them and label them as categorical or quantitative:  
+**QUESTION 12:** What are some possible response variables?  List them and label them as categorical or quantitative:  
 
   1. 
   
@@ -235,7 +235,7 @@ __QUESTION__:  What are some possible response variables?  List them and label t
   4. 
 
 
-__QUESTION__:  For one of the above response variables, list some of the explanatory variables and say whether they are categorical or quantitative:  
+**QUESTION 13:** For one of the above response variables, list some of the explanatory variables and say whether they are categorical or quantitative:  
 
   1. 
   

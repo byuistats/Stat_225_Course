@@ -563,9 +563,9 @@ window.Quarto = {
 </ol>
 <section id="explore-the-data-on-your-own" class="level2">
 <h2 class="anchored" data-anchor-id="explore-the-data-on-your-own">Explore the data on your own</h2>
-<p><strong>QUESTION</strong>: What is/are some potential dependent/response variables?<br>
+<p><strong>QUESTION 1:</strong> What is/are some potential dependent/response variables?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What are some potential explanatory variables?<br>
+<p><strong>QUESTION 2:</strong> What are some potential explanatory variables?<br>
 <strong>ANSWER</strong>:</p>
 <p>Let’s look deeper into <code>bill_depth_mm</code>.</p>
 </section>
@@ -574,27 +574,27 @@ window.Quarto = {
 <h1>Bill Depth</h1>
 <section id="create-a-table-of-summary-statistics-favstats-for-bill_depth_mm" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-table-of-summary-statistics-favstats-for-bill_depth_mm">Create a table of summary statistics (<code>favstats()</code>) for bill_depth_mm:</h2>
-<p><strong>QUESTION</strong>: What is your sample mean?<br>
+<p><strong>QUESTION 3:</strong> What is your sample mean?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is your sample standard deviation?<br>
+<p><strong>QUESTION 4:</strong> What is your sample standard deviation?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is your sample median?<br>
+<p><strong>QUESTION 5:</strong> What is your sample median?<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="create-a-frequency-table-of-sex-table" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-frequency-table-of-sex-table">Create a frequency table of <code>sex</code> (<code>table()</code>):</h2>
-<p><strong>QUESTION</strong>: How many females in your sample?<br>
+<p><strong>QUESTION 6:</strong> How many females in your sample?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: How many males in your sample?<br>
+<p><strong>QUESTION 7:</strong> How many males in your sample?<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="create-a-table-of-species" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-table-of-species">Create a table of <code>species</code></h2>
-<p><strong>QUESTION</strong>: How many Adelie penguins do you have in your sample?<br>
+<p><strong>QUESTION 8:</strong> How many Adelie penguins do you have in your sample?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: How many Chinstrap penguins do you have in your sample?<br>
+<p><strong>QUESTION 9:</strong> How many Chinstrap penguins do you have in your sample?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: How many Gentoo penguins do you have in your sample?<br>
+<p><strong>QUESTION 10:</strong> How many Gentoo penguins do you have in your sample?<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="create-a-side-by-side-boxplot-of-bill_depth_mm-for-all-species" class="level2">
@@ -673,20 +673,20 @@ window.Quarto = {
 <div class="cell-output cell-output-stdout">
 <pre><code>                     median     mean       sd
 Population Parameter 17.300 17.15117 1.974793
-Mean of Sample Stat  17.249 17.07766 1.953175</code></pre>
+Mean of Sample Stat  17.396 17.16754 1.929430</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">favstats_simulation</span>(<span class="at">n_samples=</span><span class="dv">1000</span>, <span class="at">sample_size =</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                      median     mean       sd
 Population Parameter 17.3000 17.15117 1.974793
-Mean of Sample Stat  17.3737 17.16700 1.955921</code></pre>
+Mean of Sample Stat  17.3388 17.13008 1.970288</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Try a bigger sample size:  </span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">favstats_simulation</span>(<span class="at">n_samples=</span><span class="dv">1000</span>, <span class="at">sample_size =</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                       median     mean       sd
 Population Parameter 17.30000 17.15117 1.974793
-Mean of Sample Stat  17.35625 17.14602 1.974726</code></pre>
+Mean of Sample Stat  17.34415 17.14734 1.974926</code></pre>
 </div>
 </div>
 

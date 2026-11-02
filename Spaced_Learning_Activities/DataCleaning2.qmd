@@ -34,7 +34,7 @@ clean <- real_estate %>%
 
 ```
 
-__QUESTION__:  What are the mean and standard deviation of Taxes for these houses?  
+**QUESTION 1:** What are the mean and standard deviation of Taxes for these houses?  
 
 ```{r}
 

@@ -26,10 +26,10 @@ glimpse(CO2)
 
 ```
 
-__QUESTION__:  What is the response variable?  
+**QUESTION 1:** What is the response variable?  
 __ANSWER__:  
 
-__QUESTION__:  What are the levels of `Type`?
+**QUESTION 2:** What are the levels of `Type`?
 
 ```{r}
 
@@ -49,13 +49,13 @@ favstats(~)
 
 ```
 
-__QUESTION__:  What is the mean uptake for the Quebec type?  
+**QUESTION 3:** What is the mean uptake for the Quebec type?  
 __ANSWER__:  
 
-__QUESTION__:  What is the median of the Mississippi type?  
+**QUESTION 4:** What is the median of the Mississippi type?  
 __ANSWER__:  
 
-__QUESTION__:  Which type has the highest standard deviation?  
+**QUESTION 5:** Which type has the highest standard deviation?  
 __ANsWER__:  
 
 Create a side-by-side boxplot of uptake comparing`Type`:  
@@ -76,10 +76,10 @@ Create a table of summary statistics of uptake for each `Treatment` used in the 
 
 ```
 
-__QUESTION__:  What is the mean uptake for the non-chilled treatment?  
+**QUESTION 6:** What is the mean uptake for the non-chilled treatment?  
 __ANSWER__:  
 
-__QUESTION__:  What is the mean of the chilled treatment?  
+**QUESTION 7:** What is the mean uptake for the chilled treatment?  
 __ANSWER__:  
 
 
@@ -92,6 +92,6 @@ Create a side-by-side boxplot of uptake for each `Treatment` used in the experim
 ```
 
 
-__QUESTION__:  Based on the above summaries, which combination of Type and Treatment do you think would result in the largest CO2 uptake?  
+**QUESTION 8:** Based on the above summaries, which combination of Type and Treatment do you think would result in the largest CO2 uptake?  
 __ANSWER__:  
 

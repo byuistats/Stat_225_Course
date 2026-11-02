@@ -16,7 +16,7 @@ In this section, you will learn the basic visualizations for quantitative variab
 
 ## Reading Data into R
 
-We will use R to calculate measures of center and spread using data collected about costs incurred by hospitals due to certain lawsuits. The lawsuits in question were about surgeries performed on the wrong patient, or on the right patient but the wrong part of the patient's body (the wrong site).
+We will use histograms and boxplots to visualize the distribution of costs from wrong-patient and wrong-site surgeries.
 
 Load the libraries and the data into R:  
 
@@ -131,7 +131,7 @@ To make a histogram in R, you can use the `histogram()` function.  This takes as
 histogram(wrong_patient$Wrong_Patient)
 ```
 
-__QUESTION__:  What is the basic shape of the wrong patient procedure lawsuits?  
+**QUESTION 1:** What is the basic shape of the wrong patient procedure lawsuits?  
 __ANSWER__:  
 
 

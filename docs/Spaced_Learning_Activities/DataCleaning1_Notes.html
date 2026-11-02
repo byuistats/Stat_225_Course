@@ -517,7 +517,7 @@ $ FloodPlain   &lt;chr&gt; "N", "N", "N", "U", "N", "N", "N", "N", "N", "N", "N"
 $ Source       &lt;chr&gt; "http://snakerivermls.com/", "Accessed January 2010", NA,…</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: Make a Histogram of <code>ListPrice</code></p>
+<p><strong>QUESTION 1:</strong> Make a Histogram of <code>ListPrice</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(real_estate, <span class="fu">aes</span>(<span class="at">x =</span> ListPrice)) <span class="sc">+</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -529,9 +529,9 @@ $ Source       &lt;chr&gt; "http://snakerivermls.com/", "Accessed January 2010",
 </div>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What is the shape of the distribution of list prices?<br>
+<p><strong>QUESTION 2:</strong> What is the shape of the distribution of list prices?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Make a table of summary statistics for <code>ListPrice</code></p>
+<p><strong>QUESTION 3:</strong> Make a table of summary statistics for <code>ListPrice</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">favstats</span>(real_estate<span class="sc">$</span>ListPrice)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -539,7 +539,7 @@ $ Source       &lt;chr&gt; "http://snakerivermls.com/", "Accessed January 2010",
  1.47 139500 189900 259000 924500 218137.6 126135.8 149       0</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What is the minimum value for list prices?<br>
+<p><strong>QUESTION 4:</strong> What is the minimum value for list prices?<br>
 <strong>ANSWER</strong>: 1.47</p>
 <p>Create a clean dataset that:</p>
 <ol type="1">
@@ -580,7 +580,7 @@ $ Source       &lt;chr&gt; "http://snakerivermls.com/", "Accessed January 2010",
 # ℹ 60 more rows</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What percent of homes in the clean dataset are fixer-uppers?</p>
+<p><strong>QUESTION 5:</strong> What percent of homes in the clean dataset are fixer-uppers?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.table</span>(<span class="fu">table</span>(clean<span class="sc">$</span>IsFixerUpper))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -589,7 +589,7 @@ $ Source       &lt;chr&gt; "http://snakerivermls.com/", "Accessed January 2010",
 0.97142857 0.02857143 </code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: Use GGPLOT to create a boxplot for <code>ListPrice</code> that compares Elementary Schools?</p>
+<p><strong>QUESTION 6:</strong> Create a boxplot of <code>ListPrice</code> by elementary school using ggplot.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(clean, <span class="fu">aes</span>(<span class="at">y =</span> ListPrice, <span class="at">x =</span> <span class="fu">fct_reorder</span>(Elementary, ListPrice), <span class="at">fill=</span>Elementary)) <span class="sc">+</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
@@ -605,7 +605,7 @@ $ Source       &lt;chr&gt; "http://snakerivermls.com/", "Accessed January 2010",
 </div>
 </div>
 </div>
-<p><strong>QUESTION</strong>: Which Elementary school appears to have the lowest distribution of housing prices?<br>
+<p><strong>QUESTION 7:</strong> Which Elementary school appears to have the lowest distribution of housing prices?<br>
 <strong>ANSWER</strong>:</p>
 
 

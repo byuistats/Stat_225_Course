@@ -47,10 +47,10 @@ To look at the relationship between 2 quantitative variables, we use scatter plo
 To create a simple scatter plot, we use the `plot()` function and the same formula we've used for `boxplot()` and `favstats()`:  `data$response ~ data$explanatory`.  Only this time, the explanatory variable must be quantitative. 
 Create a scatter plot for the math confidence data.  
 
-__QUESTION__:  What is the response variable?  
+**QUESTION 1:** What is the response variable?  
 __ANWSER__:  
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 2:** What is the explanatory variable?  
 __ANSWER__:  
 
 ```{r}
@@ -78,10 +78,10 @@ Notice the panel in the bottom right corner.  There is clearly a perfect relatio
 
 We check for linearity by observation of the scatter plots.  
 
-__Question__:  What does the correlation coefficient, $r$, quantify?  
+**QUESTION 3:** What does the correlation coefficient, $r$, quantify?  
 __Answer__:  
 
-__Question__:  What does it mean if the correlation coefficient, $r$, is negative?  
+**QUESTION 4:** What does it mean if the correlation coefficient, $r$, is negative?  
 __Answer__:  
 
 
@@ -95,13 +95,13 @@ Review the scatter plot showing the relationship between students' self reported
 plot(math$Score ~ math$ConfidenceRatingMean)
 ```
 
-__Question__:  Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.  (strength, direction)  
+**QUESTION 5:** Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.  (strength, direction)  
 __Answer__:  
 
-__Question__:  Does it look linear?  
+**QUESTION 6:** Does it look linear?  
 __Answer__:  
 
-__Question__:  What's your best guess at, $r$ based on the scatterplot?  
+**QUESTION 7:** What's your best guess at, $r$ based on the scatterplot?  
 __Answer__:  
 
 Calculate the Correlation Coefficient, $r$:  
@@ -110,7 +110,7 @@ Calculate the Correlation Coefficient, $r$:
 cor(math$Score ~ math$ConfidenceRatingMean)
 ```
 
-__Question__:  How far off was your guess?  
+**QUESTION 8:** How far off was your guess?  
 __Answer__:  
 
 
@@ -129,13 +129,13 @@ Create a scatterplot of the relationship between wait time and duration.  Rememb
 
 ```
 
-__Question__:  Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.  
+**QUESTION 9:** Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.  
 __Answer__:  
 
-__Question__:  What's your best guess at, $r$ based on the scatter plot?  
+**QUESTION 10:** What's your best guess at, $r$ based on the scatter plot?  
 __Answer__:  
 
-__Question__:  Does it look linear?  
+**QUESTION 11:** Does it look linear?  
 __Answer__:  
 
 Calculate the Correlation Coefficient, $r$:  
@@ -145,5 +145,5 @@ Calculate the Correlation Coefficient, $r$:
 ```
 
 
-__Question__:  How far off was your guess?  
+**QUESTION 12:** How far off was your guess?  
 __Answer__:  

@@ -15,13 +15,13 @@ Answer the following questions, render the document and submit the `.html` repor
 
 Suppose you take a sample of size $n=5$ from a right skewed distribution with a population mean, $\mu=125$ and a standard deviation, $\sigma=12$
 
-__Question__: What is the mean of the distribution of sample means ($\mu_{\bar{x}}$)?  
+**QUESTION 1:** What is the mean of the distribution of sample means ($\mu_{\bar{x}}$)?  
 __Answer__:  
 
-__Question__: What is the standard deviation of sample means ($\sigma_{\bar{x}}$)?  
+**QUESTION 2:** What is the standard deviation of sample means ($\sigma_{\bar{x}}$)?  
 __Answer__:  
 
-__Question__:  What is the *shape* of the distribution of sample means and why?  
+**QUESTION 3:** What is the *shape* of the distribution of sample means and why?  
 __Answer__:  
 
 

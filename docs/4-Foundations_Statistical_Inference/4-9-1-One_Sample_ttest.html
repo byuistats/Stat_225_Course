@@ -629,9 +629,9 @@ window.Quarto = {
 <pre><code>[1] 0.00151866</code></pre>
 </div>
 </div>
-<p><strong>Question</strong>: What is the test statistic, <span class="math inline">\(t\)</span>?<br>
+<p><strong>QUESTION 1:</strong> What is the test statistic, <span class="math inline">\(t\)</span>?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the probability of observing <span class="math inline">\(t\)</span> “greater” then the one we observed if the population mean was really 50? (The P-value)<br>
+<p><strong>QUESTION 2:</strong> What is the probability of observing <span class="math inline">\(t\)</span> “greater” then the one we observed if the population mean was really 50? (The P-value)<br>
 <strong>Answer</strong>:</p>
 </section>
 </section>
@@ -659,14 +659,14 @@ mean of x
 </div>
 </div>
 <p>Dig through the output and answer the following questions:</p>
-<p><strong>Question</strong>: What is the test statistic, <span class="math inline">\(t\)</span>?<br>
+<p><strong>QUESTION 3:</strong> What is the test statistic, <span class="math inline">\(t\)</span>?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the P-value?<br>
+<p><strong>QUESTION 4:</strong> What is the P-value?<br>
 <strong>Answer</strong>:</p>
 <p>Check that your answers match the “by hand” method above.</p>
-<p><strong>QUESTION</strong>: What is your conclusion based on <span class="math inline">\(\alpha=0.05\)</span>?<br>
+<p><strong>QUESTION 5:</strong> What is your conclusion based on <span class="math inline">\(\alpha=0.05\)</span>?<br>
 <strong>ANSWER</strong>: Because P-value &lt; 0.05 we reject the null hypothesis in favor of the alternative.</p>
-<p><strong>Question</strong>: State your conclusion in context of our research question?<br>
+<p><strong>QUESTION 6:</strong> State your conclusion in context of our research question?<br>
 <strong>Answer</strong>: We have sufficient evidence to conclude that Stat 225 students are more extroverted than the general population, on average.</p>
 <section id="confidence-interval-review" class="level3">
 <h3 class="anchored" data-anchor-id="confidence-interval-review">Confidence Interval Review</h3>
@@ -681,7 +681,7 @@ attr(,"conf.level")
 [1] 0.99</code></pre>
 </div>
 </div>
-<p><strong>Question</strong>: Describe in words the interpretation of the confidence interval in context of Extroversion.<br>
+<p><strong>QUESTION 7:</strong> Describe in words the interpretation of the confidence interval in context of Extroversion.<br>
 <strong>Answer</strong>: I am 99% confident that the true population mean test score for Stat 225 students is between 52.19455 and 76.76545.</p>
 </section>
 <section id="checking-requirements" class="level3">
@@ -720,12 +720,10 @@ attr(,"conf.level")
 <section id="load-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="load-the-data">Load the data:</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># These lines load the data into the data frame body_temp:</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>body_temp <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">"https://byuistats.github.io/M221R/Data/body_temp.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in import("https://byuistats.github.io/M221R/Data/body_temp.xlsx"): could not find function "import"</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rio)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># These lines load the data into the data frame body_temp:</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>body_temp <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">"https://byuistats.github.io/M221R/Data/body_temp.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="review-the-data" class="level3">
@@ -735,7 +733,7 @@ attr(,"conf.level")
 <section id="visualize-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="visualize-the-data">Visualize the Data</h3>
 <p>Create a histogram to visualize the body temperature data.</p>
-<p><strong>Question</strong>: Describe the general shape of the distribution.<br>
+<p><strong>QUESTION 8:</strong> Describe the general shape of the distribution.<br>
 <strong>Answer</strong>:</p>
 </section>
 <section id="analyze-the-data" class="level3">
@@ -743,15 +741,15 @@ attr(,"conf.level")
 <p>It’s widely accepted that normal body temperature for healthy adults is 98.6 degrees Fahrenheit.</p>
 <p>Suppose we suspect that the average temperature is different than 98.6</p>
 <p>Use a significance level of <span class="math inline">\(\alpha = 0.01\)</span> to test whether the mean body temperature of healthy adults is equal to 98.6 degrees Fahrenheit.</p>
-<p><strong>Question</strong>: What is the P-value?<br>
+<p><strong>QUESTION 9:</strong> What is the P-value?<br>
 <strong>Answer</strong>:</p>
-<p><strong>QUESTION</strong>: What is your conclusion?<br>
+<p><strong>QUESTION 10:</strong> What is your conclusion?<br>
 <strong>ANSWER</strong>:</p>
 <section id="confidence-interval" class="level4">
 <h4 class="anchored" data-anchor-id="confidence-interval">Confidence Interval</h4>
 <p>Create a 99% confidence interval for the true population average temperature of healthy adults.</p>
 <p>Check the requirements for the t-test (<span class="math inline">\(n&gt;30\)</span> or <code>qqPlot()</code>):</p>
-<p><strong>QUESTION</strong>: Are the requirements for the t-test satisfied?<br>
+<p><strong>QUESTION 11:</strong> Are the requirements for the t-test satisfied?<br>
 <strong>ANSWER</strong>:</p>
 
 

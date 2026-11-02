@@ -59,11 +59,11 @@ addmargins(  table(sw$Gender, sw$`Are You a Fan of SW?`)  )
 
 This table can be used to calculate column or row percents
 
-__QUESTION__:  Using the table above, what percent of Females are fans of Star Wars?  
+**QUESTION 1:** Using the table above, what percent of Females are fans of Star Wars?  
 __ANSWER__:  
 
 
-__QUESTION__:  What percent of Star Wars Fans are Female?    
+**QUESTION 2:** What percent of Star Wars Fans are Female?    
 __ANSWER__:  
 
 
@@ -110,10 +110,10 @@ prop.table(table(sw$Gender, sw$`Are You a Fan of SW?`), margin = 1)
 
 ```
 
-__QUESTION__:  What percent of males are fans of Star Wars?  
+**QUESTION 3:** What percent of males are fans of Star Wars?  
 __ANSWER__:  
 
-__QUESTION__:  What percent of females are fans of Star Wars?  
+**QUESTION 4:** What percent of females are fans of Star Wars?  
 __ANSWER__:  
 
 
@@ -130,10 +130,10 @@ prop.table(table(sw$Gender, sw$`Are You a Fan of SW?`), margin = 2)
 ```
 
 
-__QUESTION__:  What percent of Star Wars fans are females?  
+**QUESTION 5:** What percent of Star Wars fans are females?  
 __ANSWER__:  
 
-__QUESTION__:  What percent of Star Wars fans are males ?  
+**QUESTION 6:** What percent of Star Wars fans are males ?  
 __ANSWER__:  
 
 
@@ -204,10 +204,10 @@ tbl3 <- table()
 
 ```
 
-__Question__:  What percent of female respondents are in the `150,000+` category?  
+**QUESTION 7:** What percent of female respondents are in the `150,000+` category?  
 __Answer__:  
 
-__Question__:  What percent of male respondents are in the `150,000+` category?  
+**QUESTION 8:** What percent of male respondents are in the `150,000+` category?  
 __Answer__:  
 
 Create a bar plot that compares the income distribution for each gender in the study: 

@@ -148,7 +148,7 @@ ggplot(data = new_student, mapping = aes(x = reason_factor)) +
 
 Practice creating a new column in the dataset that changes one of the categorical variables into a factor and changes the order of the levels.  
 
-__QUESTION__:  Create a `table()` of the father's job, `Fjob`.  
+**QUESTION 1:** Create a `table()` of the father's job, `Fjob`.  
 
 ```{r}
 
@@ -158,7 +158,7 @@ __QUESTION__:  Create a `table()` of the father's job, `Fjob`.
 
 Note this gives all the levels of the variable, `Fjob`.  
 
-__QUESTION__:  Create a new dataset that includes a new column which is a factor of `Fjob`.  Put the `other` category at the end.  
+**QUESTION 2:** Create a new dataset that includes a new column which is a factor of `Fjob`.  Put the `other` category at the end.  
 
 ```{r}
 
@@ -166,7 +166,7 @@ __QUESTION__:  Create a new dataset that includes a new column which is a factor
 
 ```
 
-__QUESTION__:  Create a bar plot using the new factor in the new dataset.  Check that `other` is at the end.  
+**QUESTION 3:** Create a bar plot using the new factor in the new dataset.  Check that `other` is at the end.  
 
 ```{r}
 

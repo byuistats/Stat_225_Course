@@ -555,9 +555,9 @@ window.Quarto = {
 <h1>Scatter Plots</h1>
 <p>To look at the relationship between 2 quantitative variables, we use scatter plots. This plots a point on an (x,y) axis, where y is the response and x is the explanatory variable.</p>
 <p>To create a simple scatter plot, we use the <code>plot()</code> function and the same formula we’ve used for <code>boxplot()</code> and <code>favstats()</code>: <code>data$response ~ data$explanatory</code>. Only this time, the explanatory variable must be quantitative. Create a scatter plot for the math confidence data.</p>
-<p><strong>QUESTION</strong>: What is the response variable?<br>
+<p><strong>QUESTION 1:</strong> What is the response variable?<br>
 <strong>ANWSER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the explanatory variable?<br>
+<p><strong>QUESTION 2:</strong> What is the explanatory variable?<br>
 <strong>ANSWER</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(math<span class="sc">$</span>Score <span class="sc">~</span> math<span class="sc">$</span>ConfidenceRatingMean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -581,9 +581,9 @@ window.Quarto = {
 </p>
 <p>Notice the panel in the bottom right corner. There is clearly a perfect relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, yet <span class="math inline">\(r=0\)</span>. This is because <span class="math inline">\(r\)</span> measures the strength and direction of a <em>linear</em> relationship. If the relationship is not linear, then <span class="math inline">\(r\)</span> can still be zero.</p>
 <p>We check for linearity by observation of the scatter plots.</p>
-<p><strong>Question</strong>: What does the correlation coefficient, <span class="math inline">\(r\)</span>, quantify?<br>
+<p><strong>QUESTION 3:</strong> What does the correlation coefficient, <span class="math inline">\(r\)</span>, quantify?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What does it mean if the correlation coefficient, <span class="math inline">\(r\)</span>, is negative?<br>
+<p><strong>QUESTION 4:</strong> What does it mean if the correlation coefficient, <span class="math inline">\(r\)</span>, is negative?<br>
 <strong>Answer</strong>:</p>
 </section>
 <section id="stat-confidence" class="level1">
@@ -601,11 +601,11 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p><strong>Question</strong>: Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship. (strength, direction)<br>
+<p><strong>QUESTION 5:</strong> Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship. (strength, direction)<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: Does it look linear?<br>
+<p><strong>QUESTION 6:</strong> Does it look linear?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What’s your best guess at, <span class="math inline">\(r\)</span> based on the scatterplot?<br>
+<p><strong>QUESTION 7:</strong> What’s your best guess at, <span class="math inline">\(r\)</span> based on the scatterplot?<br>
 <strong>Answer</strong>:</p>
 <p>Calculate the Correlation Coefficient, <span class="math inline">\(r\)</span>:</p>
 <div class="cell">
@@ -614,7 +614,7 @@ window.Quarto = {
 <pre><code>[1] 0.7278648</code></pre>
 </div>
 </div>
-<p><strong>Question</strong>: How far off was your guess?<br>
+<p><strong>QUESTION 8:</strong> How far off was your guess?<br>
 <strong>Answer</strong>:</p>
 </section>
 </section>
@@ -625,14 +625,14 @@ window.Quarto = {
 <p>Make a scatter plot showing the relationship between wait time and the duration of the next eruption.</p>
 <p>Deciding which is the response variable in this data is a bit tricky. To remain consistent, assume that the wait time between eruptions explains how long the subsequent eruption will last.</p>
 <p>Create a scatterplot of the relationship between wait time and duration. Remember to use the formula <code>y ~ x</code></p>
-<p><strong>Question</strong>: Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.<br>
+<p><strong>QUESTION 9:</strong> Before calculating the Correlation Coefficient, r, describe in words the direction and strength of the relationship.<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What’s your best guess at, <span class="math inline">\(r\)</span> based on the scatter plot?<br>
+<p><strong>QUESTION 10:</strong> What’s your best guess at, <span class="math inline">\(r\)</span> based on the scatter plot?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: Does it look linear?<br>
+<p><strong>QUESTION 11:</strong> Does it look linear?<br>
 <strong>Answer</strong>:</p>
 <p>Calculate the Correlation Coefficient, <span class="math inline">\(r\)</span>:</p>
-<p><strong>Question</strong>: How far off was your guess?<br>
+<p><strong>QUESTION 12:</strong> How far off was your guess?<br>
 <strong>Answer</strong>:</p>
 
 

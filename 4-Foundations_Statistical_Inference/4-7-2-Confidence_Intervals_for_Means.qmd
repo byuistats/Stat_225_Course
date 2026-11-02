@@ -87,7 +87,7 @@ Confidence intervals rely on the validity of the assumption that the distributio
 Recall that the distribution of sample means is normal when:  
 
   1. The underlying population is normally distributed
-  2. The sample size, n, is sufficiently large ($n<30$ for this class) for the Central Limit Theorem to apply
+  2. The sample size, n, is sufficiently large ($n>30$ for this class) for the Central Limit Theorem to apply
   
 
 __Thought Question__:  If we have a good sample from a population and can trust that the sampling distribution of the mean is approximately normal, how frequently would a sample mean be within 2 standard deviations from the true population mean?  
@@ -232,8 +232,8 @@ I am 99% confident that the true population mean GRE score for BYU-I students is
 
 # Margin of Error
 
-__QUESTION__:  What happens to the margin of error, $z^*\frac{\sigma}{\sqrt{n}}$, as the sample size, $n$, increases?  
+**QUESTION 1:** What happens to the margin of error, $z^*\frac{\sigma}{\sqrt{n}}$, as the sample size, $n$, increases?  
 
-__QUESTION__:  What happens to the margin of error, $z^*\frac{\sigma}{\sqrt{n}}$, as our confidence level increases?  (see table above about Z* and confidence level)
+**QUESTION 2:** What happens to the margin of error, $z^*\frac{\sigma}{\sqrt{n}}$, as our confidence level increases?  (see table above about Z* and confidence level)
 
 Consider that if I make a wide enough interval, I can be 100% confident.  But to get 100% confidence, my interval will be useless.  For example, I can be 100% confident that the true population average height of BYU-I students is between 2 feet and 100 feet.  More confidence means we need a wider interval.  

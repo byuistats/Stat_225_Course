@@ -22,18 +22,18 @@ real_estate <- read_csv('https://github.com/byuistats/Math221D_Course/raw/refs/h
 
 ```
 
-__QUESTION__:  Make a Histogram of `ListPrice`
+**QUESTION 1:** Make a Histogram of `ListPrice`
 
 ```{r}
 
 
 ```
 
-__QUESTION__:  What is the shape of the distribution of list prices?  
+**QUESTION 2:** What is the shape of the distribution of list prices?  
 __ANSWER__:  
 
 
-__QUESTION__:  Make a table of summary statistics for `ListPrice`
+**QUESTION 3:** Make a table of summary statistics for `ListPrice`
 
 ```{r}
 
@@ -42,7 +42,7 @@ __QUESTION__:  Make a table of summary statistics for `ListPrice`
 
 
 
-__QUESTION__:  What is the minimum value for list prices?  
+**QUESTION 4:** What is the minimum value for list prices?  
 __ANSWER__:  
 
 
@@ -62,7 +62,7 @@ Create a clean dataset that:
 ```
 
 
-__QUESTION__:  What percent of homes in the clean dataset are fixer-uppers?
+**QUESTION 5:** What percent of homes in the clean dataset are fixer-uppers?
 
 ```{r}
 
@@ -70,7 +70,7 @@ __QUESTION__:  What percent of homes in the clean dataset are fixer-uppers?
 
 ```
 
-__QUESTION__:  Use GGPLOT to create a boxplot for `ListPrice` that compares Elementary Schools?  
+**QUESTION 6:** Create a boxplot of `ListPrice` by elementary school using ggplot.  
 
 
 ```{r}
@@ -80,5 +80,5 @@ __QUESTION__:  Use GGPLOT to create a boxplot for `ListPrice` that compares Elem
 ```
 
 
-__QUESTION__:  Which Elementary school appears to have the lowest distribution of housing prices?  
+**QUESTION 7:** Which Elementary school appears to have the lowest distribution of housing prices?  
 __ANSWER__:  

@@ -565,9 +565,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="madison-countr-real-estate" class="level1">
 <h1>Madison Countr Real Estate</h1>
 <p>This dataset contains information about properties in Madison County.</p>
-<p><strong>QUESTION</strong>: Before looking at the data, what do you think is the purpose of collecting these data?<br>
+<p><strong>QUESTION 1:</strong> Before looking at the data, what do you think is the purpose of collecting these data?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What do you think the Response variable is?<br>
+<p><strong>QUESTION 2:</strong> What do you think the Response variable is?<br>
 <strong>ASNWER</strong>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>real_estate <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/MadisonCountyRealEstate.xlsx'</span>) <span class="sc">%&gt;%</span> <span class="fu">tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -598,11 +598,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>Error in glimpse.default(): argument "x" is missing, with no default</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: After looking at the data, what is the <strong>response</strong> variable? (use the column name)<br>
+<p><strong>QUESTION 3:</strong> After looking at the data, what is the <strong>response</strong> variable? (use the column name)<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
+<p><strong>QUESTION 4:</strong> Is it quantitative or categorical?<br>
 <strong>ANsWER</strong>:</p>
-<p><strong>QUESTION</strong>: What variables do you think are the 5 most impactful <strong>explanatory</strong> variables? List the column names and say whether or not each are categorical or quantitative.</p>
+<p><strong>QUESTION 5:</strong> Which five explanatory variables do you expect to be most strongly associated with the response variable? List their column names and identify each as categorical or quantitative.</p>
 <ol type="1">
 <li></li>
 <li></li>
@@ -629,11 +629,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cadillac_data <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/Cadillac.txt'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION</strong>: What is the response variable?<br>
+<p><strong>QUESTION 6:</strong> What is the response variable?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
+<p><strong>QUESTION 7:</strong> Is it quantitative or categorical?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: List some of the explanatory variables and say whether they are categorical or quantitative:</p>
+<p><strong>QUESTION 8:</strong> List some of the explanatory variables and say whether they are categorical or quantitative:</p>
 <p>For any categorical variables, print out the levels:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(cadillac_data<span class="sc">$</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -652,11 +652,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>chocolate <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/Chocolate.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION</strong>: What is the response variable?<br>
+<p><strong>QUESTION 9:</strong> What is the response variable?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Is it quantitative or categorical?<br>
+<p><strong>QUESTION 10:</strong> Is it quantitative or categorical?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: List some of the explanatory variables and say whether they are categorical or quantitative:</p>
+<p><strong>QUESTION 11:</strong> List some of the explanatory variables and say whether they are categorical or quantitative:</p>
 </section>
 <section id="high-school-survey" class="level1">
 <h1>High School Survey</h1>
@@ -665,14 +665,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>hs_survey <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">'https://github.com/byuistats/Math221D_Course/raw/refs/heads/main/Data/HighSchoolSeniors.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION</strong>: What are some possible response variables? List them and label them as categorical or quantitative:</p>
+<p><strong>QUESTION 12:</strong> What are some possible response variables? List them and label them as categorical or quantitative:</p>
 <ol type="1">
 <li></li>
 <li></li>
 <li></li>
 <li></li>
 </ol>
-<p><strong>QUESTION</strong>: For one of the above response variables, list some of the explanatory variables and say whether they are categorical or quantitative:</p>
+<p><strong>QUESTION 13:</strong> For one of the above response variables, list some of the explanatory variables and say whether they are categorical or quantitative:</p>
 <ol type="1">
 <li></li>
 <li></li>

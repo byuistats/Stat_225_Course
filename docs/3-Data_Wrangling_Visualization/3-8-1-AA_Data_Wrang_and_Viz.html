@@ -530,29 +530,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>ggpot() + geom_bar()</code> to look at bar charts for categorical data</li>
 </ol>
 <p><strong>NOTE</strong>: Unless specified, you may use base R functions OR GGPlot.</p>
-<p><strong>QUESTION</strong>: How many students have responded to this survey? (i.e.&nbsp;how many rows)<br>
+<p><strong>QUESTION 1:</strong> How many students have responded to this survey? (i.e.&nbsp;how many rows)<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the maximum number of languages spoken among respondents?<br>
+<p><strong>QUESTION 2:</strong> What is the maximum number of languages spoken among respondents?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Create a histogram of Extroversion. Be sure to label your graph with a title and improved x and y axis labels.</p>
+<p><strong>QUESTION 3:</strong> Create a histogram of Extroversion. Be sure to label your graph with a title and improved x and y axis labels.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put your histogram code here:  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION</strong>: What is the highest score for Extroversion?<br>
+<p><strong>QUESTION 4:</strong> What is the highest score for Extroversion?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What problems, if any, do you notice?<br>
+<p><strong>QUESTION 5:</strong> What problems, if any, do you notice?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Make a table of birth months:</p>
+<p><strong>QUESTION 6:</strong> Make a table of birth months:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION</strong>: Make a bar plot of birth months:</p>
+<p><strong>QUESTION 7:</strong> Make a bar plot of birth months:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Answer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION</strong>: What problems, if any, do you notice?<br>
+<p><strong>QUESTION 8:</strong> What problems, if any, do you notice?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Which month has the most births for this sample of students?<br>
+<p><strong>QUESTION 9:</strong> Which month has the most births for this sample of students?<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="prepare-data-for-analysis-and-create-visualization" class="level1">
@@ -565,7 +565,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <section id="extroversion" class="level2">
 <h2 class="anchored" data-anchor-id="extroversion">Extroversion</h2>
-<p><strong>QUESTION</strong>: Create a new dataset called <code>extro</code> that includes only columns for birth month and extroversion scores. Make sure it only has values that are real.</p>
+<p><strong>QUESTION 10:</strong> Create a new dataset called <code>extro</code> that includes only columns for birth month and extroversion scores. Make sure it only has values that are real.</p>
 <p>HINT: Extroversion is measured in percentiles, and you should already know what the months of the year are.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>extro <span class="ot">&lt;-</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -576,7 +576,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ^</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: <strong>USE GGPLOT</strong> to create a side-by-side boxplot of Extroversion scores for all birth months.</p>
+<p><strong>QUESTION 11:</strong> <strong>USE GGPLOT</strong> to create a side-by-side boxplot of Extroversion scores for all birth months.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -587,14 +587,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p><strong>QUESTION</strong>: Based on the boxplot, which month appears to be the least extroverted? Explain your reasoning.<br>
+<p><strong>QUESTION 12:</strong> Which birth month has the lowest median Extroversion score in this sample? Explain how the boxplot supports your answer.<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Based on the boxplot, which month appears to be the most extroverted? Explain your reasoning.<br>
+<p><strong>QUESTION 13:</strong> Which birth month has the highest median Extroversion score in this sample? Explain how the boxplot supports your answer.<br>
 <strong>ANSWER</strong>:</p>
 </section>
 <section id="neuroticism" class="level2">
 <h2 class="anchored" data-anchor-id="neuroticism">Neuroticism</h2>
-<p><strong>QUESTION</strong>: Create a dataset called <code>neuro</code> that includes only the Section and Neuroticism columns:</p>
+<p><strong>QUESTION 14:</strong> Create a dataset called <code>neuro</code> that includes only the Section and Neuroticism columns:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>neuro <span class="ot">&lt;-</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -604,8 +604,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ^</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: <strong>USE GGPLOT</strong> to create a side-by-side boxplot comparing Neuroticism for all the different sections:</p>
-<p><strong>QUESTION</strong>: Based on the boxplot, which section appears to be the lowest in trait neuroticism? Explain your reasoning.<br>
+<p><strong>QUESTION 15:</strong> <strong>USE GGPLOT</strong> to create a side-by-side boxplot comparing Neuroticism for all the different sections:</p>
+<p><strong>QUESTION 16:</strong> Which section has the lowest median Neuroticism score in this sample? Explain how the boxplot supports your answer.<br>
 <strong>ANSWER</strong>:</p>
 
 

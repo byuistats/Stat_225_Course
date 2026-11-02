@@ -62,10 +62,10 @@ Perform the appropriate statistical test:
 ```
 
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 1:** What is the P-value?  
 __ANSWER__:  
 
-__QUESTION__:  State your conclusion in context of the research question.  
+**QUESTION 2:** State your conclusion in context of the research question.  
 __ASNWER__:  
 
 
@@ -78,7 +78,7 @@ Check the test requirements for this hypothesis test:
 ```
 
 
-__QUESTION__:  What are the test requirements, and are they satisfied?  
+**QUESTION 3:** What are the test requirements, and are they satisfied?  
 __ANSWER__:  
 
 
@@ -90,7 +90,7 @@ Calculate a 90% confidence interval for the population average sodium in the can
 
 ```
 
-__QUESTION__:  Interpret the confidence interval in context of the research question.  
+**QUESTION 4:** Interpret the confidence interval in context of the research question.  
 __ANSWER__:  
 
 
@@ -130,7 +130,7 @@ Create a table of summary statistics comparing cholesterol levels for each treat
 ```
 
 
-__QUESTION__:  What is the difference between the sample averages of cholesterol between the 2 groups?  
+**QUESTION 5:** What is the difference between the sample averages of cholesterol between the 2 groups?  
 __ANSWER__:  
 
 
@@ -152,10 +152,10 @@ Perform the appropriate statistical test:
 ```
 
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 6:** What is the P-value?  
 __ANSWER__:  
 
-__QUESTION__:  State your conclusion in context of the research question.  
+**QUESTION 7:** State your conclusion in context of the research question.  
 __ASNWER__:  
 
 
@@ -168,7 +168,7 @@ Check the test requirements for this hypothesis test:
 ```
 
 
-__QUESTION__:  What are the test requirements, and are they satisfied?  
+**QUESTION 8:** What are the test requirements, and are they satisfied?  
 __ANSWER__:  
 
 
@@ -180,7 +180,7 @@ Calculate a 95% confidence interval for the difference between the mean choleste
 
 ```
 
-__QUESTION__:  Interpret the confidence interval in context of the research question.  
+**QUESTION 9:** Interpret the confidence interval in context of the research question.  
 __ANSWER__:  
 
 ---
@@ -222,7 +222,7 @@ Create a histogram of the differences (after-before):
 ```
 
 
-__QUESTION__:  What is the average difference between after and before weights?  
+**QUESTION 10:** What is the average difference between after and before weights?  
 __ANSWER__:  
 
 
@@ -235,10 +235,10 @@ Perform the appropriate statistical test:
 ```
 
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 11:** What is the P-value?  
 __ANSWER__:  
 
-__QUESTION__:  State your conclusion in context of the research question.  
+**QUESTION 12:** State your conclusion in context of the research question.  
 __ASNWER__:  
 
 
@@ -251,7 +251,7 @@ Check the test requirements for this hypothesis test:
 ```
 
 
-__QUESTION__:  What are the test requirements, and are they satisfied?  
+**QUESTION 13:** What are the test requirements, and are they satisfied?  
 __ANSWER__:  
 
 
@@ -263,7 +263,7 @@ Calculate a 95% confidence interval for the mean difference between before and a
 
 ```
 
-__QUESTION__:  Interpret the confidence interval in context of the research question.  
+**QUESTION 14:** Interpret the confidence interval in context of the research question.  
 __ANSWER__:  
 
 
@@ -285,7 +285,7 @@ $$H_a:  $$
 
 ## Data Summarization
 
-__QUESTION__:  What is your sample proportion of units that pass quality control, $\hat{p}$:  
+**QUESTION 15:** What is your sample proportion of units that pass quality control, $\hat{p}$:  
 __ANSWER__:  
 
 
@@ -298,14 +298,14 @@ Perform the appropriate statistical test:
 ```
 
 
-__QUESTION__:  What is the P-value?  
+**QUESTION 16:** What is the P-value?  
 __ANSWER__:  
 
-__QUESTION__:  State your conclusion in context of the research question.  
+**QUESTION 17:** State your conclusion in context of the research question.  
 __ASNWER__:  
 
 
-__QUESTION__:  What are the test requirements for a 1-sample proportion hypothesis test, and are they satisfied?  
+**QUESTION 18:** What are the test requirements for a 1-sample proportion hypothesis test, and are they satisfied?  
 __ANSWER__:  
 
 ```{r}
@@ -323,10 +323,10 @@ Create a 99% confidence interval for the true proportion of items that pass insp
 
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question.  
+**QUESTION 19:** Interpret the confidence interval in context of the research question.  
 __ANSWER__:  
 
-__QUESTION__:  What are the test requirements for a 1-sample proportion confidence interval, and are they satisfied?  
+**QUESTION 20:** What are the test requirements for a 1-sample proportion confidence interval, and are they satisfied?  
 __ANSWER__:  
 
 ```{r}

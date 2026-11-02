@@ -40,7 +40,7 @@ Create a histogram and a boxplot for Duration of Old Faithful eruptions:
 
 ```
 
-__QUESTION__:  Describe the shape of the distribution of duration.  
+**QUESTION 1:** Describe the shape of the distribution of duration.  
 __ANSWER__:  
 
 
@@ -58,7 +58,7 @@ Create a histogram and boxplot for happiness scores:
 
 ```
 
-__Question__: What is the general shape of the distribution?  
+**QUESTION 2:** What is the general shape of the distribution?  
 __Answer__:  
 
 

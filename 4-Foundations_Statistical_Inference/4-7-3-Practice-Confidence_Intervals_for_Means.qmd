@@ -35,7 +35,7 @@ creativity <- read_csv('https://github.com/byuistats/Math221D_Course/raw/main/Da
 t.test(, conf.level = )$conf.int
 ```
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 1:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
@@ -46,7 +46,7 @@ Create a 93% confidence interval for the __true population average__ number of s
 
 ```
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 2:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
@@ -62,7 +62,7 @@ malpractice <- import("https://github.com/byuistats/Math221D_Course/raw/main/Dat
 
 ```
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 3:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
@@ -82,7 +82,7 @@ old_faithful <- rio::import("https://byuistats.github.io/M221R/Data/old_faithful
 ```
 
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 4:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 

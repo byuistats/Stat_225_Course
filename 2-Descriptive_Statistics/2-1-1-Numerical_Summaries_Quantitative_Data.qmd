@@ -86,15 +86,15 @@ Calculate the Median payout for operations done on the wrong patient using the `
 median(wrong_patient$Wrong_Patient, na.rm=TRUE)
 ```
 
-__QUESTION__:  What does this mean?  
+**QUESTION 1:** What does the median payout represent in context?  
 __ANSWER__:  
 
 
-__QUESTION__:  Notice how much bigger the Mean is from the Median. Why is that the case?  
+**QUESTION 2:** Notice how much bigger the Mean is from the Median. Why is that the case?  
 __ANSWER__:  
 
 
-__QUESTION__:  Which do you think is most appropriate to use, the Mean or the Median?  Why?  
+**QUESTION 3:** Which do you think is most appropriate to use, the Mean or the Median?  Why?  
 __ANSWER__:  
 
 
@@ -126,10 +126,10 @@ table(data2)
 
 The first row of the `table()` output is the *value* being counted.  The second row is the *frequency* of occurrence.
 
-__QUESTION__:  Which value is most frequently occurring?  
+**QUESTION 4:** Which value is most frequently occurring?  
 __ANSWER__:  
 
-__QUESTION__:  How many times did that value occur?  
+**QUESTION 5:** How many times did that value occur?  
 __ANSWER__:  
 
 
@@ -230,31 +230,31 @@ Use R's `quantile()` function to calculate percentiles.  This functions requires
 quantile(wrong_patient$Wrong_Site, .25, na.rm=TRUE)
 ```
 
-__QUESTION__:  What does this number mean?  
+**QUESTION 6:** Interpret the 25th percentile in context.  
 __ANSWER__:  
 
 
 The first quartile ($Q_1$) or 25<sup>th</sup> percentile (calculated in R) of the wrong-site data is: \$29,496. (This result is illustrated in the figure below.)  This means that 25 percent of the time hospitals lost a wrong-site lawsuit, they had to pay \$29,496 or less. The 25<sup>th</sup> percentile can be written symbolically as: P<sub>25</sub> = \$29,496.  Other percentiles can be written the same way.  The 99<sup>th</sup> percentile can be written as P<sub>99</sub>.
 
 
-__QUESTION__:  What is the 13<sup>th</sup> percentile of the wrong patient data?  
+**QUESTION 7:** What is the 13th percentile of the wrong-site payout data?  
 
 ```{r}
 quantile()
 ```
 
-__QUESTION__:  Interpret this value:  
+**QUESTION 8:** Interpret the 13th percentile in context:  
 __ANSWER__:  
 
 
-__QUESTION__:  Find P<sub>90</sub>.  
+**QUESTION 9:** Find P<sub>90</sub>.  
 
 ```{r}
 quantile()
 ```
 
 
-__QUESTION__:  Half of the wrong-site lawsuits judgments were less than or equal to what value?
+**QUESTION 10:** What is the median payout for wrong-site lawsuits?
 ```{r}
 quantile()
 ## OR....

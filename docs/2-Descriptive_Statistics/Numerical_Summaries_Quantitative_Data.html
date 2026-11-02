@@ -589,14 +589,14 @@ window.Quarto = {
 </ul></li>
 </ul></li>
 </ul>
-<p>Calculate the Median extroversion percentile using the <code>median()</code> function:</p>
+<p>Calculate the median Extroversion score using <code>median()</code>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(big5<span class="sc">$</span>Extroversion, <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: Explain this number?<br>
+<p><strong>QUESTION 1:</strong> Interpret the median Extroversion score in context.<br>
 <strong>ANSWER</strong>:</p>
 <p><strong>NOTE</strong>: The Median is a good measure of center when the data are skewed or there are large outliers.</p>
 </section>
@@ -620,9 +620,9 @@ window.Quarto = {
 </div>
 </div>
 <p>The first row of the <code>table()</code> output is the <em>value</em> being counted. The second row is the <em>frequency</em> of occurrence.</p>
-<p><strong>QUESTION</strong>: Which value is most frequently occurring?<br>
+<p><strong>QUESTION 2:</strong> Which value is most frequently occurring?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: How many times did that value occur?<br>
+<p><strong>QUESTION 3:</strong> How many times did that value occur?<br>
 <strong>ANSWER</strong>:</p>
 <p><strong>NOTE</strong>: The mode is a good metric when counting frequencies of a categorical variable or with a quantitative variable with few likely options, such as number of children in a family.</p>
 </section>
@@ -701,18 +701,18 @@ window.Quarto = {
  38 </code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: What does this number mean?<br>
+<p><strong>QUESTION 4:</strong> What does this number mean?<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: What is the 13<sup>th</sup> percentile of Extroversion?</p>
+<p><strong>QUESTION 5:</strong> What is the 13<sup>th</sup> percentile of Extroversion?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in quantile(): argument "x" is missing, with no default</code></pre>
 </div>
 </div>
-<p><strong>QUESTION</strong>: Interpret this value:<br>
+<p><strong>QUESTION 6:</strong> Interpret this value:<br>
 <strong>ANSWER</strong>:</p>
-<p><strong>QUESTION</strong>: Half of the Extroversion percentiles are less than or equal to what value?</p>
+<p><strong>QUESTION 7:</strong> Half of the Extroversion percentiles are less than or equal to what value?</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">

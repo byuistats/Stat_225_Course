@@ -29,14 +29,14 @@ prop.test(x = , n = , conf.level=)$conf.int
 ```
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question:  
+**QUESTION 1:** Interpret the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  Are the assumptions for the normality of $\hat p$ are met?  (Check $n\hat{p}$ and $n(1-\hat{p})$)  
+**QUESTION 2:** Are the success-failure conditions for this confidence interval satisfied? Check $n\hat{p}$ and $n(1-\hat{p})$.  
 __ANSWER__:  
 
-__QUESTION__:  Perform a statistical hypothesis test to see if the population proportion, $p$, is less than 3%.  Use $\alpha=0.05$.  
+**QUESTION 3:** Perform a statistical hypothesis test to see if the population proportion, $p$, is less than 3%.  Use $\alpha=0.05$.  
 
 ```{r}
 
@@ -45,14 +45,14 @@ prop.test(x=, n=, p=, alternative=)
 ```
 
 
-__QUESTION__:  What is the p-value for the above test?  
+**QUESTION 4:** What is the p-value for the above test?  
 __ANSWER__:  
 
 
-__QUESTION__:  State your conclusion using the technical requirements and in context of the research question.  
+**QUESTION 5:** State your conclusion about the hypothesis test in context of the research question.  
 __ANSWER__:  
 
-__QUESTION__:  Are the test requirements for a statistical hypothesis for a proportion met?  (Check $np$ and $n(1-p)$)  
+**QUESTION 6:** Under the null hypothesis, are the success-failure conditions for the test satisfied? Check $np_0$ and $n(1-p_0)$.  
 __ANSWER__:  
 
 
@@ -68,11 +68,11 @@ A company surveyed 150 customers about their satisfaction, and 105 responded tha
 ```
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question:  
+**QUESTION 7:** Interpret the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  Are the assumptions for the normality of $\hat p$ are met?  Why?  
+**QUESTION 8:** Are the success-failure conditions for this confidence interval satisfied? Check $n\hat{p}$ and $n(1-\hat{p})$.  
 __ANSWER__:  
 
 
@@ -87,11 +87,11 @@ A health study surveyed 250 individuals about their exercise habits, and 140 rep
 ```
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question:  
+**QUESTION 9:** Interpret the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  Are the assumptions for the normality of $\hat p$ are met?  Why?  
+**QUESTION 10:** Are the success-failure conditions for this confidence interval satisfied? Check $n\hat{p}$ and $n(1-\hat{p})$.  
 __ANSWER__:  
 
 

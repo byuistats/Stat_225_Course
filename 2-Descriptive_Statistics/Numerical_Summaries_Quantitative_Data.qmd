@@ -76,13 +76,13 @@ The median is the middle value in a sorted data set. Half of the observations in
     + If there are an odd number of values, the median is the middle value in the sorted list.
     + If there are an even number of values, the median is the mean of the two middle values in the sorted list.
 
-Calculate the Median extroversion percentile using the `median()` function:
+Calculate the median Extroversion score using `median()`:
 
 ```{r}
 median(big5$Extroversion, na.rm=TRUE)
 ```
 
-__QUESTION__:  Explain this number?  
+**QUESTION 1:** Interpret the median Extroversion score in context.  
 __ANSWER__:  
 
 
@@ -113,10 +113,10 @@ table(data2)
 
 The first row of the `table()` output is the *value* being counted.  The second row is the *frequency* of occurrence.
 
-__QUESTION__:  Which value is most frequently occurring?  
+**QUESTION 2:** Which value is most frequently occurring?  
 __ANSWER__:  
 
-__QUESTION__:  How many times did that value occur?  
+**QUESTION 3:** How many times did that value occur?  
 __ANSWER__:  
 
 
@@ -218,22 +218,22 @@ Calculate the 25th percentile for Extroversion:
 quantile(big5$Extroversion, .25, na.rm=TRUE)
 ```
 
-__QUESTION__:  What does this number mean?  
+**QUESTION 4:** What does this number mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the 13<sup>th</sup> percentile of Extroversion?  
+**QUESTION 5:** What is the 13<sup>th</sup> percentile of Extroversion?  
 
 ```{r}
 quantile()
 ```
 
-__QUESTION__:  Interpret this value:  
+**QUESTION 6:** Interpret this value:  
 __ANSWER__:  
 
 
 
-__QUESTION__:  Half of the Extroversion percentiles are less than or equal to what value?
+**QUESTION 7:** Half of the Extroversion percentiles are less than or equal to what value?
 ```{r}
 quantile()
 ## OR....

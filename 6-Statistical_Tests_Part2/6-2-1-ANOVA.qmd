@@ -71,7 +71,7 @@ If the null hypothesis is *false*, we would expect the treatment means to be muc
 
 The test statistic is the ratio of the variation **between** groups and the average variation **within** groups.  The further spread out the sample means are relative to the noise within the groups, the more evidence we have against $H_0$.  
 
-A large F-statistics means the group averages are much more spread out than the natural variability in crop emergence.  
+A large F statistic means the group averages are much more spread out than the natural variability in crop emergence.  
 
 ### Visualizing Between-group and Within-group Variation
 
@@ -333,19 +333,19 @@ plot(aov_sepal, which=1)
 ```
 
 
-__Question__:  What is the F-statistics?  
+**QUESTION 1:** What is the F statistic?  
 __Answer__:   119.3
 
-__Question__:  What are the between-groups degrees of freedom?  
+**QUESTION 2:** What are the between-groups degrees of freedom?  
 __Answer__:  2
 
-__Question__:  What are the within-groups degrees of freedom?  
+**QUESTION 3:** What are the within-groups degrees of freedom?  
 __Answer__:  147
 
-__Question__:  What is the P-value?  
+**QUESTION 4:** What is the P-value?  
 __Answer__:  <2e-16
 
-__Question__:  What is your conclusion?  
+**QUESTION 5:** What is your conclusion?  
 __Answer__:  Because p is less than alpha, we reject the null hypothesis.  We conclude that at least one of the means of Sepal Length is different from the other group means.  
 
 
@@ -393,16 +393,16 @@ Perform an ANOVA:
 
 ```
 
-__Question__:  What is the F-statistics?  
+**QUESTION 6:** What is the F statistic?  
 __Answer__:  
 
-__Question__:  What are the between-groups degrees of freedom?  
+**QUESTION 7:** What are the between-groups degrees of freedom?  
 __Answer__:  
 
-__Question__:  What are the within-groups degrees of freedom?  
+**QUESTION 8:** What are the within-groups degrees of freedom?  
 __Answer__:  
 
-__Question__:  What is the P-value?  
+**QUESTION 9:** What is the P-value?  
 __Answer__:  
 
 
@@ -412,11 +412,11 @@ Check ANOVA requirements (max_sd/min_sd < 2, normal residuals)
 
 ```
 
-__Question__:  What is your conclusion for the hypothesis test?  
+**QUESTION 10:** What is your conclusion for the hypothesis test?  
 __Answer__:  
 
 
-__QUESTION__:  Which group means are significantly different from each other?  
+**QUESTION 11:** Which group means are significantly different from each other?  
 
 ```{r}
 

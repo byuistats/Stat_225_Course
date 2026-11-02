@@ -21,10 +21,10 @@ library(car)
 math <- import('https://byuistats.github.io/BYUI_M221_Book/Data/MathSelfEfficacy.xlsx')
 ```
 
-__Question__: What is the explanatory variable, $x$?  
+**QUESTION 1:** What is the explanatory variable, $x$?  
 __Answer__:  
 
-__Question__: What is the response variable, $y$?  
+**QUESTION 2:** What is the response variable, $y$?  
 __Answer__:  
 
 
@@ -40,16 +40,16 @@ ggplot(math, aes(x = ConfidenceRatingMean, y = Score )) +
   ) 
 ```
 
-__Question__:  Based on the scatterplot, does the relationship appear roughly linear?  
+**QUESTION 3:** Based on the scatterplot, does the relationship appear roughly linear?  
 __Answer__:  
 
-__Question__: What is the direction of the relationship?
+**QUESTION 4:** What is the direction of the relationship?
 __Answer__:  
 
-__Question__: What do you think is the strength of the relationship?  (Strong/Moderate/Weak)
+**QUESTION 5:** What do you think is the strength of the relationship?  (Strong/Moderate/Weak)
 __Answer__:  
 
-__Question__: What is the correlation coefficient, r?
+**QUESTION 6:** What is the correlation coefficient, r?
 __Answer__:  
 
 ```{r}
@@ -144,15 +144,15 @@ confint(math_lm, level = .92)
 
 The `lm()` output includes only the slope and the intercept. 
 
-__Question__:  How do we interpret the intercept of 18.69?  
+**QUESTION 7:** How do we interpret the intercept of 18.69?  
 __Answer__:  
 
-__Question__:  How do we interpret the slope of 12.69 in context?  
+**QUESTION 8:** How do we interpret the slope of 12.69 in context?  
 __Answer__:  
 
 Now that we have an estimate of the slope and the intercept, we can plug in values of $x$ into our formula, $\hat y = b_o + b_1x = 18.69 + 12.69*x$.  
 
-__Question__:  What is the expected score on a test of someone who ranks themselves 5 in confidence?  
+**QUESTION 9:** What is the expected score on a test of someone who ranks themselves 5 in confidence?  
 __Answer__:  
 
 ```{r}
@@ -273,10 +273,10 @@ Look at the relationship between Alcohol Consumption compared to life expectancy
 alcohol <- import('https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/life_expectancy_vs_alcohol_consumption.csv')
 ```
 
-__Question__:  What is the response variable?  
+**QUESTION 10:** What is the response variable?  
 __Answer__:  
 
-__Question__:  What is the explanatory variable?  
+**QUESTION 11:** What is the explanatory variable?  
 __Answer__:  
 
 
@@ -287,7 +287,7 @@ Make a presentation-worthy scatter plot using `ggplot()` including a regression 
 ```
 
 
-__Question__:  Describe in words the nature of the relationship between the 2 variables (direction/strength/linearity)
+**QUESTION 12:** Describe in words the nature of the relationship between the 2 variables (direction/strength/linearity)
 __Answer__:  
 
 Calculate the correlation coefficient:
@@ -296,7 +296,7 @@ Calculate the correlation coefficient:
 
 ```
 
-__Question__:  What is the the correlation coefficient, $r$?  
+**QUESTION 13:** What is the correlation coefficient, $r$?  
 __Answer__:  
 
 Perform a linear regression analysis for the relationship between alcohol consumption and life expectancy. 
@@ -313,24 +313,24 @@ Perform a linear regression analysis for the relationship between alcohol consum
 ```
 
 
-__Question__:  What is the slope of the regression line?  
+**QUESTION 14:** What is the slope of the regression line?  
 __Answer__:  
 
-__Question__:  Interpret the slope of the regression line in context of the problem:  
+**QUESTION 15:** Interpret the slope of the regression line in context of the problem:  
 __Answer__:  
 
-__Question__:  What is the intercept of the regression line?  
+**QUESTION 16:** What is the intercept of the regression line?  
 __Answer__:  
 
-__Question__:  Interpret the intercept of the regression line in context of the problem:  
+**QUESTION 17:** Interpret the intercept of the regression line in context of the problem:  
 __Answer__:  
 
 
-__Question__:  What do you conclude about the slope of the regression line?    
+**QUESTION 18:** What do you conclude about the slope of the regression line?    
 __Answer__:  
 
-__Question__:  What is the confidence interval for the slope? 
+**QUESTION 19:** What is the confidence interval for the slope? 
 
-__Question__:  Give a 1-sentence interpretation of the confidence interval in context of your research question:  
+**QUESTION 20:** Give a 1-sentence interpretation of the confidence interval in context of your research question:  
 __Answer__:  
 

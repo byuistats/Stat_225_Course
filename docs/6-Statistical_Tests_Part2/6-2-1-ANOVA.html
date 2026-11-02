@@ -571,7 +571,7 @@ window.Quarto = {
 <p>If the null hypothesis were <em>true</em>, any differences observed between the treatment means should be due to random variation or “noise” inherent in growing corn. The within-treatment variation is a good estimate of the “noise” because it reflects the natural variability in seed yields when the null hypothesis is true.</p>
 <p>If the null hypothesis is <em>false</em>, we would expect the treatment means to be much more spread out relative to the within-treatment variation.</p>
 <p>The test statistic is the ratio of the variation <strong>between</strong> groups and the average variation <strong>within</strong> groups. The further spread out the sample means are relative to the noise within the groups, the more evidence we have against <span class="math inline">\(H_0\)</span>.</p>
-<p>A large F-statistics means the group averages are much more spread out than the natural variability in crop emergence.</p>
+<p>A large F statistic means the group averages are much more spread out than the natural variability in crop emergence.</p>
 </section>
 <section id="visualizing-between-group-and-within-group-variation" class="level3">
 <h3 class="anchored" data-anchor-id="visualizing-between-group-and-within-group-variation">Visualizing Between-group and Within-group Variation</h3>
@@ -787,15 +787,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div>
 </div>
-<p><strong>Question</strong>: What is the F-statistics?<br>
+<p><strong>QUESTION 1:</strong> What is the F statistic?<br>
 <strong>Answer</strong>: 119.3</p>
-<p><strong>Question</strong>: What are the between-groups degrees of freedom?<br>
+<p><strong>QUESTION 2:</strong> What are the between-groups degrees of freedom?<br>
 <strong>Answer</strong>: 2</p>
-<p><strong>Question</strong>: What are the within-groups degrees of freedom?<br>
+<p><strong>QUESTION 3:</strong> What are the within-groups degrees of freedom?<br>
 <strong>Answer</strong>: 147</p>
-<p><strong>Question</strong>: What is the P-value?<br>
+<p><strong>QUESTION 4:</strong> What is the P-value?<br>
 <strong>Answer</strong>: &lt;2e-16</p>
-<p><strong>Question</strong>: What is your conclusion?<br>
+<p><strong>QUESTION 5:</strong> What is your conclusion?<br>
 <strong>Answer</strong>: Because p is less than alpha, we reject the null hypothesis. We conclude that at least one of the means of Sepal Length is different from the other group means.</p>
 <section id="which-means-are-different-1" class="level3">
 <h3 class="anchored" data-anchor-id="which-means-are-different-1">Which Means are Different</h3>
@@ -829,18 +829,18 @@ virginica-versicolor 0.652 0.4082273 0.8957727     0</code></pre>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#aov_petal &lt;- aov()</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(aov_petal)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>Question</strong>: What is the F-statistics?<br>
+<p><strong>QUESTION 6:</strong> What is the F statistic?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What are the between-groups degrees of freedom?<br>
+<p><strong>QUESTION 7:</strong> What are the between-groups degrees of freedom?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What are the within-groups degrees of freedom?<br>
+<p><strong>QUESTION 8:</strong> What are the within-groups degrees of freedom?<br>
 <strong>Answer</strong>:</p>
-<p><strong>Question</strong>: What is the P-value?<br>
+<p><strong>QUESTION 9:</strong> What is the P-value?<br>
 <strong>Answer</strong>:</p>
 <p>Check ANOVA requirements (max_sd/min_sd &lt; 2, normal residuals)</p>
-<p><strong>Question</strong>: What is your conclusion for the hypothesis test?<br>
+<p><strong>QUESTION 10:</strong> What is your conclusion for the hypothesis test?<br>
 <strong>Answer</strong>:</p>
-<p><strong>QUESTION</strong>: Which group means are significantly different from each other?</p>
+<p><strong>QUESTION 11:</strong> Which group means are significantly different from each other?</p>
 <p><strong>ANSWER</strong>:</p>
 
 
