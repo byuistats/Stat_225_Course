@@ -10,56 +10,13 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRU
 
 Recall that the normal distribution is a probability distribution defined by its center ($\mu$) and its spread ($\sigma$).  
 
+We can use the `mosaic` library to calculate probabilities and percentiles for the normal distribution.  
 
-# Normal Probability Calculator
+If we know the mean and standard deviation of a normal distribution, we can calculate probabilities and percentiles using the `xpnorm()` and `xqnorm()` functions.  
 
-The code below can serve as a template for any calculations involving the normal distribution.  Feel free to copy and paste this into the subsequent code chunks.  
+`xpnorm()` calculates the probability of a value being less than a given value.  
 
-__NOTE__:  R saves any objects that are named.  This means that if you run `mu <- 12`, R keeps track of `mu` until you change it.  When doing multiple problems that all use `mu`, be sure to run the whole code chunk, which will overwrite the names from previous examples.  
-
-```{r}
-
-# Value
-x <- 
-
-# Population Mean
-mu <- 
-
-# Population Standard deviation
-sigma <- 
-
-# Z-score:  number of standard deviations above the mean
-z <- (x-mu) / sigma
-z
-
-
-# Probability of observing a z-score LESS THAN the one we observed (left tail)
-pnorm(z)
-
-# Probability of observing a z-score GREATER THAN the one we observed (Right Tail)
-1-pnorm(z)
-
-
-# For calculating the area between 2 numbers
-A <- 
-B <- 
-pnorm(B, mu, sigma) - pnorm(A, mu, sigma)
-
-# Find the X_bar associated with a spceific percentile
-qnorm(.25, mu, sigma)
-
-```
-
-```{r}
-# Try it with Mosaic library
-library(mosaic)
-
-xpnorm()
-
-xqnorm()
-
-```
-
+``xqnorm()` calculates the value of a given percentile.  
 
 
 ## Brisket Competition

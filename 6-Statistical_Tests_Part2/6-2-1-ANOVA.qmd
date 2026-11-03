@@ -361,6 +361,15 @@ TukeyHSD(aov_sepal)
 
 The output gives us confidence intervals and P-values for each of the pairwise differences between the means. 
 
+We can also plot the confidence intervals for each of the pairwise comparisons using the `plot()` function with `TukeyHSD()` output as follows:
+
+```{r}
+
+plot(TukeyHSD(aov_sepal))
+
+```
+
+Remember that these are confidence intervals for the differences between the means for each pair of species.  If the confidence interval contains 0, we conclude that there is no significant difference between the means for that pair of species.  If the confidence interval does not contain 0, we conclude that there is a significant difference between the means for that pair of species.  
 
 # Your turn!
 
@@ -393,7 +402,7 @@ Perform an ANOVA:
 
 ```
 
-**QUESTION 6:** What is the F statistic?  
+**QUESTION 6:** What is the value of the F statistic?  
 __Answer__:  
 
 **QUESTION 7:** What are the between-groups degrees of freedom?  
@@ -424,3 +433,11 @@ __Answer__:
 ```
 
 __ANSWER__:  
+
+**QUESTION 12:** Plot the confidence intervals for the pairwise comparisons.  Which group means are significantly different from each other?  
+
+
+```{r}
+
+
+```

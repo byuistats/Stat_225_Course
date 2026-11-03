@@ -1,0 +1,75 @@
+---
+title: "GGPlot Practice: Recreating the Descriptive Statistics Graphs with GGPlot"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
+```
+
+# Introduction
+
+Use `ggplot2` to recreate the graphs from the Descriptive Statistics application activity.
+
+**NOTICE**: Make each graph presentable by adding titles, axis labels, and adjusting the colors and themes.  
+
+## Load the Libraries and Data
+
+```{r}
+library(tidyverse)
+library(rio)
+library(mosaic)
+library(car)
+
+student <- read_csv("https://raw.githubusercontent.com/byuistats/Math221D_Cannon/master/Data/student_data_kaggle.csv")
+
+```
+
+
+For all of the graphs below
+
+# Histogram
+
+Create a histogram of the primary response variable, `G3`.  Change the color of the bars and add a title and axis labels. 
+
+```{r}
+
+```
+
+# Side-by-Side Boxplots
+
+Create a side-by-side boxplot of final grades (`G3`) for each level of father's job (`Fjob`).  Change the color of the boxes and add a title and axis labels.  
+
+```{r}
+
+```
+
+Create a side-by-side boxplot of final grades (`G3`) for each level of mother's job (`Mjob`).  Change the color of the boxes and add a title and axis labels.  
+
+```{r}
+
+```
+
+# Scatter Plot
+
+Create a scatter plot showing the relationship between mid-term grade (`G2`) and final grade (`G3`).  Include a regression line, change the color of the points, and add a title and axis labels.  
+
+```{r}
+
+```
+
+# Sorted Bar Chart
+
+Create a sorted bar chart of the number of students for each reason they chose their school (`reason`). Sort the bars from most frequent to least frequent.
+
+```{r}
+
+```
+
+# Grouped Bar Chart
+
+Create a grouped bar chart with `sex` on the x-axis and `romantic` represented by the fill color. Place the bars for each romantic relationship status next to one another.
+
+```{r}
+
+```
+
+

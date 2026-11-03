@@ -48,6 +48,8 @@ website:
         - text: "Into the Tidyverse"
         - text: "A Better Way to Plot"
           href: ./3-Data_Wrangling_Visualization/3-1-1-GGPlot_Intro.qmd
+        - text: "Practice GGPlot"
+          href: ./3-Data_Wrangling_Visualization/3-1-2-Practice_GGPlot.qmd
         - href: ./3-Data_Wrangling_Visualization/3-2-1-Wrangling_Basics.qmd
         - href: ./3-Data_Wrangling_Visualization/3-3-1-Filter.qmd
         - href: ./3-Data_Wrangling_Visualization/3-4-1-Select.qmd

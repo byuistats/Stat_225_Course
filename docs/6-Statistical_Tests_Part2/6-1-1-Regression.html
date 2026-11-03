@@ -251,6 +251,10 @@ window.Quarto = {
  <span class="dropdown-text">A Better Way to Plot</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/3-1-2-Practice_GGPlot.html">
+ <span class="dropdown-text">Practice GGPlot</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/3-2-1-Wrangling_Basics.html">
  <span class="dropdown-text">Intro to Data Wrangling</span></a>
   </li>  
@@ -480,12 +484,14 @@ window.Quarto = {
   <ul>
   <li><a href="#review" id="toc-review" class="nav-link active" data-scroll-target="#review">Review</a></li>
   <li><a href="#linear-regression" id="toc-linear-regression" class="nav-link" data-scroll-target="#linear-regression">Linear Regression</a></li>
+  <li><a href="#hypothesis-test-for-the-slope" id="toc-hypothesis-test-for-the-slope" class="nav-link" data-scroll-target="#hypothesis-test-for-the-slope">Hypothesis Test for the Slope</a></li>
   <li><a href="#define-best" id="toc-define-best" class="nav-link" data-scroll-target="#define-best">Define “best”</a></li>
   <li><a href="#in-r" id="toc-in-r" class="nav-link" data-scroll-target="#in-r">In R</a>
   <ul class="collapse">
   <li><a href="#plotting-the-regression-line" id="toc-plotting-the-regression-line" class="nav-link" data-scroll-target="#plotting-the-regression-line">Plotting the Regression Line</a></li>
   <li><a href="#ggplot" id="toc-ggplot" class="nav-link" data-scroll-target="#ggplot">GGPlot</a></li>
   <li><a href="#hypothesis-testing-for-regression" id="toc-hypothesis-testing-for-regression" class="nav-link" data-scroll-target="#hypothesis-testing-for-regression">Hypothesis Testing for Regression</a></li>
+  <li><a href="#confidence-intervals-for-the-slope" id="toc-confidence-intervals-for-the-slope" class="nav-link" data-scroll-target="#confidence-intervals-for-the-slope">Confidence Intervals for the Slope</a></li>
   <li><a href="#regression-requirements" id="toc-regression-requirements" class="nav-link" data-scroll-target="#regression-requirements">Regression Requirements</a></li>
   </ul></li>
   <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your Turn</a></li>
@@ -568,6 +574,14 @@ window.Quarto = {
 <p>We can estimate the slope and intercept of the line that “best fits” the data and use that line to make predictions.</p>
 <p><strong>NOTE</strong>: As before, Greek letters signify population parameters in statistics while Latin letters are often used for sample statistics. We estimate <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> with <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> respectively. This leads to an equation for predicted values:</p>
 <p><span class="math display">\[\hat{y}=b_0+b_1x_1\]</span> where <span class="math inline">\(\hat{y}\)</span> signifies a predicted value for <span class="math inline">\(y\)</span> for a given <span class="math inline">\(x\)</span>.</p>
+</section>
+<section id="hypothesis-test-for-the-slope" class="level1">
+<h1>Hypothesis Test for the Slope</h1>
+<p>For regression analysis, we are most often interested in the slope of the regression line. The slope tells us how much we expect <span class="math inline">\(y\)</span> to change for a given change in <span class="math inline">\(x\)</span>.</p>
+<p>The hypotheses for a regression analysis are always the same:</p>
+<p><span class="math display">\[H_o: \beta_1 = 0\]</span><br>
+<span class="math display">\[H_a: \beta_1 \neq 0\]</span></p>
+<p><strong>NOTE</strong>: The R output will give us two hypothesis tests, one for the slope (<span class="math inline">\(\beta_1\)</span>) and one for the intercept (<span class="math inline">\(\beta_0\)</span>). We are almost always only interested in the slope. The intercept is often absurd and not very interesting. The slope is what tells us about the relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</p>
 </section>
 <section id="define-best" class="level1">
 <h1>Define “best”</h1>
@@ -685,7 +699,7 @@ ConfidenceRatingMean 10.89262 14.49703</code></pre>
 <h2 class="anchored" data-anchor-id="hypothesis-testing-for-regression">Hypothesis Testing for Regression</h2>
 <p>A linear equation has 2 parameters: Slope and Intercept. In most situations, the intercept isn’t very interesting by itself and is often absurd. We are most often only interested in the slope:</p>
 <p><span class="math display">\[H_o: \beta_1 = 0\]</span> <span class="math display">\[H_a: \beta_1 \neq 0\]</span></p>
-<p>These hypotheses are the same for all simple linear regression questions.</p>
+<p>In context of this question, the null hypothesis is that there is no linear relationship between Confidence Rating and Test Score. The alternative hypothesis is that there is a linear relationship between Confidence Rating and Test Score.</p>
 <p>To get the p-value and test statistics, we use the <code>summary()</code> function as we did with aov:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(math_lm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -710,6 +724,10 @@ Multiple R-squared:  0.5298,    Adjusted R-squared:  0.5264
 F-statistic: 154.4 on 1 and 137 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
+<p>Because the p-value for the <em>slope</em> is very small (&lt; 2e-16), we reject the null hypothesis. We have sufficient evidence to suggest there is a linear relationship between Confidence Rating and Test Score.</p>
+</section>
+<section id="confidence-intervals-for-the-slope" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-intervals-for-the-slope">Confidence Intervals for the Slope</h2>
 <p>We can also calculate confidence intervals for the slope by using the <code>confint()</code> function. This function requires you to tell it which model to extract a confidence intervals from. You can specify which parameter you’re interested in, and the level of confidence:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># input the model into the following function:</span></span>
@@ -806,7 +824,7 @@ ConfidenceRatingMean 10.674297 14.71535</code></pre>
 <strong>Answer</strong>:</p>
 <p><strong>QUESTION 17:</strong> Interpret the intercept of the regression line in context of the problem:<br>
 <strong>Answer</strong>:</p>
-<p><strong>QUESTION 18:</strong> What do you conclude about the slope of the regression line?<br>
+<p><strong>QUESTION 18:</strong> Using the regression-slope hypothesis test at <span class="math inline">\(\alpha=0.05\)</span>, do we have evidence that alcohol consumption is linearly associated with life expectancy? State whether you reject or fail to reject <span class="math inline">\(H_0: \beta_1=0\)</span>, then give your conclusion in context.<br>
 <strong>Answer</strong>:</p>
 <p><strong>QUESTION 19:</strong> What is the confidence interval for the slope?</p>
 <p><strong>QUESTION 20:</strong> Give a 1-sentence interpretation of the confidence interval in context of your research question:<br>

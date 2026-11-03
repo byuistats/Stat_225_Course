@@ -83,11 +83,11 @@ A distribution is right-skewed if a histogram of the distribution shows a long r
   </th>
 </tr><tr>
   <td>
-    <img src= "https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson03_shape_wageshist.png" width=130%>
+    <img src= "https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson03_shape_wageshist.png" width=100%>
   </td><td>
-    <img src = "https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson03_shape_maleheightshist.png" width=130%>
+    <img src = "https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson03_shape_maleheightshist.png" width=100%>
   <td>
-    <img src = "https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson03_shape_gpahist.png" width=130%>
+    <img src = "https://raw.githubusercontent.com/byuistats/Math221D_Course/main/Images/Lesson03_shape_gpahist.png" width=100%>
   </td>
 </tr><tr>
   <td>

@@ -81,6 +81,17 @@ $$\hat{y}=b_0+b_1x_1$$
 where $\hat{y}$ signifies a predicted value for $y$ for a given $x$.
 
 
+# Hypothesis Test for the Slope  
+
+For regression analysis, we are most often interested in the slope of the regression line.  The slope tells us how much we expect $y$ to change for a given change in $x$.  
+
+The hypotheses for a regression analysis are always the same:  
+
+$$H_o: \beta_1 = 0$$  
+$$H_a: \beta_1 \neq 0$$
+
+**NOTE**: The R output will give us two hypothesis tests, one for the slope ($\beta_1$) and one for the intercept ($\beta_0$).  We are almost always only interested in the slope.  The intercept is often absurd and not very interesting.  The slope is what tells us about the relationship between $x$ and $y$.  
+
 # Define "best"
 
 There are several ways we could fit a line through the dots of a scatter plot.  To define "best" we have to understand something called a "residual" in statistics.  
@@ -161,8 +172,6 @@ __Answer__:
 
 ```
 
-
-
 ## Plotting the Regression Line
 
 ## GGPlot
@@ -202,7 +211,7 @@ A linear equation has 2 parameters: Slope and Intercept.  In most situations, th
 $$H_o: \beta_1 = 0$$
 $$H_a: \beta_1 \neq 0$$
 
-These hypotheses are the same for all simple linear regression questions.  
+In context of this question, the null hypothesis is that there is no linear relationship between Confidence Rating and Test Score.  The alternative hypothesis is that there is a linear relationship between Confidence Rating and Test Score.  
 
 To get the p-value and test statistics, we use the `summary()` function as we did with aov:
 
@@ -210,6 +219,9 @@ To get the p-value and test statistics, we use the `summary()` function as we di
 summary(math_lm)
 ```
 
+Because the p-value for the *slope* is very small (< 2e-16), we reject the null hypothesis.  We have sufficient evidence to suggest there is a linear relationship between Confidence Rating and Test Score.  
+
+## Confidence Intervals for the Slope  
 
 We can also calculate confidence intervals for the slope by using the `confint()` function.  This function requires you to tell it which model to extract a confidence intervals from.  You can specify which parameter you're interested in, and the level of confidence:  
 
@@ -326,7 +338,7 @@ __Answer__:
 __Answer__:  
 
 
-**QUESTION 18:** What do you conclude about the slope of the regression line?    
+**QUESTION 18:** Using the regression-slope hypothesis test at $\alpha=0.05$, do we have evidence that alcohol consumption is linearly associated with life expectancy? State whether you reject or fail to reject $H_0: \beta_1=0$, then give your conclusion in context.    
 __Answer__:  
 
 **QUESTION 19:** What is the confidence interval for the slope? 

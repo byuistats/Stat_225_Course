@@ -43,7 +43,17 @@ Create a histogram and a boxplot for Duration of Old Faithful eruptions:
 **QUESTION 1:** Describe the shape of the distribution of duration.  
 __ANSWER__:  
 
+**QUESTION 2:** Based on the boxplot, approximately what would you say is the 3rd quartile?  
+ANSWER:  
 
+**QUESTION 3:** Write a complete sentence to interpret the 3rd quartile in context of the problem.  
+ANSWER:  
+
+**QUESTION 4:** Based on the boxplot, what is the median?  
+ANSWER:
+
+**QUESTION 5:** Based on the boxplot, what is the mean? Hint: This is a trick question  
+ANSWER:  
 
 # Gratitude
 
@@ -58,7 +68,7 @@ Create a histogram and boxplot for happiness scores:
 
 ```
 
-**QUESTION 2:** What is the general shape of the distribution?  
+**QUESTION 6:** What is the general shape of the distribution?  
 __Answer__:  
 
 

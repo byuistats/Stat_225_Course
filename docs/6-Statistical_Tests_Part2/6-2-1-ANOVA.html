@@ -251,6 +251,10 @@ window.Quarto = {
  <span class="dropdown-text">A Better Way to Plot</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/3-1-2-Practice_GGPlot.html">
+ <span class="dropdown-text">Practice GGPlot</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../3-Data_Wrangling_Visualization/3-2-1-Wrangling_Basics.html">
  <span class="dropdown-text">Intro to Data Wrangling</span></a>
   </li>  
@@ -816,6 +820,18 @@ virginica-versicolor 0.652 0.4082273 0.8957727     0</code></pre>
 </div>
 </div>
 <p>The output gives us confidence intervals and P-values for each of the pairwise differences between the means.</p>
+<p>We can also plot the confidence intervals for each of the pairwise comparisons using the <code>plot()</code> function with <code>TukeyHSD()</code> output as follows:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">TukeyHSD</span>(aov_sepal))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="6-2-1-ANOVA_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Remember that these are confidence intervals for the differences between the means for each pair of species. If the confidence interval contains 0, we conclude that there is no significant difference between the means for that pair of species. If the confidence interval does not contain 0, we conclude that there is a significant difference between the means for that pair of species.</p>
 </section>
 </section>
 </section>
@@ -826,10 +842,10 @@ virginica-versicolor 0.652 0.4082273 0.8957727     0</code></pre>
 <p>State your null and alternative hypotheses:</p>
 <p>Perform an ANOVA:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#aov_petal &lt;- aov()</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(aov_petal)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#aov_petal &lt;- aov()</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(aov_petal)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong>QUESTION 6:</strong> What is the F statistic?<br>
+<p><strong>QUESTION 6:</strong> What is the value of the F statistic?<br>
 <strong>Answer</strong>:</p>
 <p><strong>QUESTION 7:</strong> What are the between-groups degrees of freedom?<br>
 <strong>Answer</strong>:</p>
@@ -842,6 +858,7 @@ virginica-versicolor 0.652 0.4082273 0.8957727     0</code></pre>
 <strong>Answer</strong>:</p>
 <p><strong>QUESTION 11:</strong> Which group means are significantly different from each other?</p>
 <p><strong>ANSWER</strong>:</p>
+<p><strong>QUESTION 12:</strong> Plot the confidence intervals for the pairwise comparisons. Which group means are significantly different from each other?</p>
 
 
 </section>
