@@ -46,7 +46,7 @@ __NOTE__:  When you use `geom_bar()` with raw data, you do not need to specify a
 
 ```
 
-__Question__:  Which group appears to be most likely to have hypertension?  
+**QUESTION 1:** Which group appears to be most likely to have hypertension?  
 __Answer__:  
 
 
@@ -80,16 +80,16 @@ Once you've created the table with only the counts, perform the Chi-square test 
 
 ```
 
-__Question__:  Are the requirements satisfied for the $\chi$-square test for independence?  
+**QUESTION 2:** Are the requirements satisfied for the $\chi$-square test for independence?  
 __Answer__:  
 
-__Question__:  What is the value of the test statistic?  
+**QUESTION 3:** What is the value of the test statistic?  
 __Answer__:  
 
-__Question__:  What is the P-value?  
+**QUESTION 4:** What is the P-value?  
 __Answer__:  
 
-__Question__:  State your conclusion in context of this problem:  
+**QUESTION 5:** State your conclusion in context of this problem:  
 __Answer__:  
 
 
@@ -107,31 +107,31 @@ therapy <- read_csv('https://github.com/byuistats/Math221D_Course/raw/refs/heads
 ```
 
 
-__QUESTION__:  Create a side-by-side bar chart that groups the bars based on therapy type and colors them by improvement level.
+**QUESTION 6:** Create a side-by-side bar chart that groups the bars based on therapy type and colors them by improvement level.
 
 ```{r}
 
 ```
 
-__QUESTION__:  State your null and alternative hypothesis:  
+**QUESTION 7:** State your null and alternative hypothesis:  
 
 Ho:  
 Ha:  
 
-__QUESTION__:  Perform a Chi-square test of independence:
+**QUESTION 8:** Perform a Chi-square test of independence:
 
 ```{r}
 
 ```
 
-__QUESTION__:  What is your P-value?  
+**QUESTION 9:** What is your P-value?  
 __ASNWER__:  
 
-__QUESTION__:  State your conclusion.  
+**QUESTION 10:** State your conclusion.  
 __ANSWER__:  
 
 
-__QUESTION__:  Are the requirements for a Chi-square test of independence satisfied?  
+**QUESTION 11:** Are the requirements for a Chi-square test of independence satisfied?  
 __ANSWER__:  
 
 
@@ -146,31 +146,31 @@ birds <- read_csv('https://github.com/byuistats/Math221D_Course/raw/refs/heads/m
 
 ```
 
-__QUESTION__:  Create a side-by-side bar chart that groups the bars based on Imperiled Status and colors them by Land Designation.
+**QUESTION 12:** Create a side-by-side bar chart that groups the bars based on Imperiled Status and colors them by Land Designation.
 
 ```{r}
 
 ```
 
 
-__QUESTION__:  State your null and alternative hypothesis:  
+**QUESTION 13:** State your null and alternative hypothesis:  
 
 Ho:  
 Ha:  
 
-__QUESTION__:  Perform a Chi-square test of independence:
+**QUESTION 14:** Perform a Chi-square test of independence:
 
 ```{r}
 
 ```
 
-__QUESTION__:  What is your P-value?  
+**QUESTION 15:** What is your P-value?  
 __ASNWER__:  
 
-__QUESTION__:  State your conclusion.  
+**QUESTION 16:** State your conclusion.  
 __ANSWER__:  
 
 
-__QUESTION__:  Are the requirements for a Chi-square test of independence satisfied?  
+**QUESTION 17:** Are the requirements for a Chi-square test of independence satisfied?  
 __ANSWER__:  
 

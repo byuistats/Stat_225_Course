@@ -70,33 +70,33 @@ __NOTE__:  Unless specified, you may use base R functions OR GGPlot.
 ```
 
 
-__QUESTION__:  How many students have responded to this survey? (i.e. how many rows)  
+**QUESTION 1:** How many students have responded to this survey? (i.e. how many rows)  
 __ANSWER__:  
 
-__QUESTION__:  What is the maximum number of languages spoken among respondents?  
+**QUESTION 2:** What is the maximum number of languages spoken among respondents?  
 __ANSWER__:  
 
-__QUESTION__:  Create a histogram of Extroversion. Be sure to label your graph with a title and improved x and y axis labels.   
+**QUESTION 3:** Create a histogram of Extroversion. Be sure to label your graph with a title and improved x and y axis labels.   
 ```{r}
 # Put your histogram code here:  
 
 ```
 
 
-__QUESTION__:  What is the highest score for Extroversion?      
+**QUESTION 4:** What is the highest score for Extroversion?      
 __ANSWER__:  
 
-__QUESTION__:  What problems, if any, do you notice?  
+**QUESTION 5:** What problems, if any, do you notice?  
 __ANSWER__:  
 
-__QUESTION__:  Make a table of birth months:
+**QUESTION 6:** Make a table of birth months:
 ```{r}
 # Answer
 
 ```
 
 
-__QUESTION__:  Make a bar plot of birth months:
+**QUESTION 7:** Make a bar plot of birth months:
 ```{r}
 
 # Answer
@@ -104,11 +104,11 @@ __QUESTION__:  Make a bar plot of birth months:
 ```
 
 
-__QUESTION__:  What problems, if any, do you notice?  
+**QUESTION 8:** What problems, if any, do you notice?  
 __ANSWER__:  
 
 
-__QUESTION__:  Which month has the most births for this sample of students?  
+**QUESTION 9:** Which month has the most births for this sample of students?  
 __ANSWER__:  
 
 
@@ -123,7 +123,7 @@ Recall a few useful functions for data wrangling:
 
 ## Extroversion
 
-__QUESTION__:  Create a new dataset called `extro` that includes only columns for birth month and extroversion scores.  Make sure it only has values that are real.  
+**QUESTION 10:** Create a new dataset called `extro` that includes only columns for birth month and extroversion scores.  Make sure it only has values that are real.  
 
 HINT: Extroversion is measured in percentiles, and you should already know what the months of the year are.
 
@@ -133,7 +133,7 @@ extro <-
   
 ```
 
-__QUESTION__:  **USE GGPLOT** to create a side-by-side boxplot of Extroversion scores for all birth months.
+**QUESTION 11:** **USE GGPLOT** to create a side-by-side boxplot of Extroversion scores for all birth months.
 
 ```{r}
 
@@ -141,16 +141,16 @@ ggplot()
 
 ```
 
-__QUESTION__:  Based on the boxplot, which month appears to be the least extroverted?  Explain your reasoning.  
+**QUESTION 12:** Which birth month has the lowest median Extroversion score in this sample? Explain how the boxplot supports your answer.  
 __ANSWER__:  
 
-__QUESTION__:    Based on the boxplot, which month appears to be the most extroverted?  Explain your reasoning.  
+**QUESTION 13:** Which birth month has the highest median Extroversion score in this sample? Explain how the boxplot supports your answer.  
 __ANSWER__:  
 
 
 ## Neuroticism
 
-__QUESTION__:  Create a dataset called `neuro` that includes only the Section and Neuroticism columns:  
+**QUESTION 14:** Create a dataset called `neuro` that includes only the Section and Neuroticism columns:  
 
 ```{r}
 
@@ -158,14 +158,14 @@ neuro <-
   
 ```
 
-__QUESTION__:  **USE GGPLOT** to create a side-by-side boxplot comparing Neuroticism for all the different sections:
+**QUESTION 15:** **USE GGPLOT** to create a side-by-side boxplot comparing Neuroticism for all the different sections:
 
 ```{r}
 
 
 ```
 
-__QUESTION__:    Based on the boxplot, which section appears to be the lowest in trait neuroticism?  Explain your reasoning.  
+**QUESTION 16:** Which section has the lowest median Neuroticism score in this sample? Explain how the boxplot supports your answer.  
 __ANSWER__:  
 
 

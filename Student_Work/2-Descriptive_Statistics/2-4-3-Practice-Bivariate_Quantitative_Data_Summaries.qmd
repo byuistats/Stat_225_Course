@@ -41,19 +41,19 @@ glimpse(cars)
 
 ```
 
-__QUESTION__:  What is the response/dependent variable?  
+**QUESTION 1:** What is the response/dependent variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 2:** What is the explanatory variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What do you think is the nature of the relationship between the two?  (strength and direction)
+**QUESTION 3:** What do you think is the nature of the relationship between the two?  (strength and direction)
 __ANSWER__:  
 
 
-__QUESTION__:  What is your best guess at the correlation coefficient, $r$?  
+**QUESTION 4:** What is your best guess at the correlation coefficient, $r$?  
 __ANSWER__:  
 
 
@@ -68,11 +68,11 @@ cor()
 ```
 
 
-__QUESTION__:  Does the relationship look linear?  
+**QUESTION 5:** Does the relationship look linear?  
 __ANSWER__:  
 
 
-__QUESTION__:  What does this r measure?  
+**QUESTION 6:** What does this r measure?  
 __ANSWER__:  
 
 
@@ -92,19 +92,19 @@ glimpse(manatees)
 ```
 
 
-__QUESTION__:  What is the response/dependent variable?  
+**QUESTION 7:** What is the response/dependent variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 8:** What is the explanatory variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What do you think is the nature of the relationship between the two?  
+**QUESTION 9:** What do you think is the nature of the relationship between the two?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is your best guess at the correlation coefficient, $r$?  
+**QUESTION 10:** What is your best guess at the correlation coefficient, $r$?  
 __ANSWER__:  
 
 
@@ -116,7 +116,7 @@ __ANSWER__:
 
 ```
 
-__QUESTION__:  Does the relationship look linear?  
+**QUESTION 11:** Does the relationship look linear?  
 __ANSWER__:  
 
 
@@ -138,19 +138,19 @@ mcat <- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/mca
 glimpse(mcat)
 ```
 
-__QUESTION__:  What is the response/dependent variable?  
+**QUESTION 12:** What is the response/dependent variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 13:** What is the explanatory variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What do you think is the nature of the relationship between the two?  
+**QUESTION 14:** What do you think is the nature of the relationship between the two?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is your best guess at the correlation coefficient, $r$?  
+**QUESTION 15:** What is your best guess at the correlation coefficient, $r$?  
 __ANSWER__:  
 
 
@@ -162,7 +162,7 @@ __ANSWER__:
 
 ```
 
-__QUESTION__:  Does the relationship look linear?  
+**QUESTION 16:** Does the relationship look linear?  
 __ANSWER__:  
 
 

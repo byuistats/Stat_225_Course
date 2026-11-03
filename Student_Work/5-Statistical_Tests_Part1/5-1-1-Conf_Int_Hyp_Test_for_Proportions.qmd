@@ -87,12 +87,12 @@ Create a 99% confidence interval for the true proportion of students who regular
 ```
 
 
-__QUESTION__:  Interpret the confidence interval in context of the research question:  
+**QUESTION 1:** Interpret the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
 
-__QUESTION__:  Are the assumptions for the normality of $\hat p$ are met?  Why?  
+**QUESTION 2:** Are the success-failure conditions for this confidence interval satisfied? Check $n\hat{p}$ and $n(1-\hat{p})$.  
 __ANSWER__:  
 
 
@@ -191,13 +191,13 @@ $$\alpha = $$
 
 ```
 
-__Question__:  What is the value of the test statistics for this test?  
+**QUESTION 3:** What is the value of the test statistic?  
 __Answer__:  
 
-__Question__:  What is the P-Value?  
+**QUESTION 4:** What is the P-Value?  
 __Answer__:  
 
-__Question__:  State your conclusion in context of this problem:  
+**QUESTION 5:** State your conclusion in context of this problem:  
 __Answer__:  
 
 
@@ -207,13 +207,13 @@ Make a $(1-\alpha)$ level confidence interval for the true population proportion
 
 ```
 
-__Question__:  Interpret the confidence interval in context of the question:  
+**QUESTION 6:** Interpret the confidence interval in context of the question:  
 __Answer__:  
 
-__Question__:  Are the hypothesis test requirements for the normality of $\hat{p}$ satisfied?  
+**QUESTION 7:** For the hypothesis test, are the success-failure conditions satisfied under the null hypothesis? Check $np_0$ and $n(1-p_0)$.  
 __Answer__:  
 
-__Question__:  Are the requirements for a confidence interval for $p$ satisfied?  
+**QUESTION 8:** Are the requirements for a confidence interval for $p$ satisfied?  
 __Answer__:  
 
 

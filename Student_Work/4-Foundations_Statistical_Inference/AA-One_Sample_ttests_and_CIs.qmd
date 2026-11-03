@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRU
 
 In this activity, you will execute statistical hypothesis tests and generate confidence intervals for each of the Big 5 personality traits using data collected from a random sample of Stat 225 sstudents.  
 
-__Question__:  What is the population of this analysis?  
+**QUESTION 1:** What is the population of this analysis?  
 __Answer__:  
 
 For each personality trait, include:
@@ -79,9 +79,9 @@ t.test(extrov, mu = 50, alternative = "greater")
 
 4. Explain your conclusion:  
 
-Technical:  Because the p-value is less than $\alpha$, I reject the null hypothesis.  
+Technical:  Because the p-value is greater than $\alpha$, I fail to reject the null hypothesis.  
 
-Contextual:  I have sufficient evidence to suggest that Stat 225 students are, on average, more Extroverted than the general population.  
+Contextual:  I have insufficient evidence to suggest that Stat 225 students are, on average, more Extroverted than the general population.  
 
 5. Create a Confidence Interval for the average extroversion of Stat 225 students:  
 
@@ -92,7 +92,7 @@ t.test(extrov, conf.level = 1-.025)$conf.int
 
 6. Explain your confidence interval:  
 
-I am 97.5% confident that the true average extroversion of Stat 225 students is somewhere between the 54.62 and 59.34 percentiles.  
+I am 97.5% confident that the true average extroversion of Stat 225 students is somewhere between the 48.242 and 55.419 percentiles.  
 
 # Agreeableness
 

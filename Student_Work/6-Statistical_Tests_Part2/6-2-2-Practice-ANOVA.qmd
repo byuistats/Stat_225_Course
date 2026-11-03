@@ -70,29 +70,29 @@ Perform an Analysis of Variance test including checking for the appropriateness 
 
 ```
 
-__Question__:  What is the test statistic?  
+**QUESTION 1:** What is the test statistic?  
 __Answer__:  
 
 
-__Question__:  What are the degrees of freedom for your analysis?  
+**QUESTION 2:** What are the degrees of freedom for your analysis?  
   a. Numerator (between Groups) Degrees of Freedom  
   b. Denominator (within groups) Degrees of Freedom  
 __Answer__:  
 
 
-__Question__:  What is the P-value?  
+**QUESTION 3:** What is the P-value?  
 __Answer__:  
 
 
-__Question__:  Do you reject the null hypothesis?  Why?  
+**QUESTION 4:** Do you reject the null hypothesis?  Why?  
 __Answer__:  
 
 
-__Question__:  State your conclusion in context of the problem.  
+**QUESTION 5:** State your conclusion in context of the problem.  
 __Answer__:  
 
 
-__Question__:  Can we trust the p-value?
+**QUESTION 6:** Based on the ANOVA condition checks, is the P-value reliable? Explain.
   a. Check for equal standard deviation (is the ratio of the largest SD / smallest SD greater than 2?)
   b. Check Normality of the residuals (`qqPlot()`)  
 __Answer__:  
@@ -131,13 +131,13 @@ Create a summary statistics table for human contact for each of the treatment gr
 
 ```
 
-__Question__:  What do you observe?  
+**QUESTION 7:** What do you observe?  
 __Answer__:  
 
-__Question__:  What is the maximum standard deviation?  
+**QUESTION 8:** What is the maximum standard deviation?  
 __Answer__:  
 
-__Question__:  What is the minimum standard deviation?  
+**QUESTION 9:** What is the minimum standard deviation?  
 __Answer__:  
 
 
@@ -151,25 +151,25 @@ Perform an Analysis of Variance test including checking for the appropriateness 
 
 ```
 
-__Question__:  What is the test statistic (F-value)?  
+**QUESTION 10:** What is the test statistic (F-value)?  
 __Answer__:  
 
-__Question__:  What are the degrees of freedom for your analysis?  
+**QUESTION 11:** What are the degrees of freedom for your analysis?  
 
   a. Numerator (between Groups) Degrees of Freedom  
   b. Denominator (within groups) Degrees of Freedom  
 __Answer__:  
   
-__Question__:  What is the P-value?  
+**QUESTION 12:** What is the P-value?  
 __Answer__:  
 
-__Question__:  Do you reject the null hypothesis?  Why?  
+**QUESTION 13:** Do you reject the null hypothesis?  Why?  
 __Answer__:  
 
-__Question__:  State your conclusion in context of the problem.  
+**QUESTION 14:** State your conclusion in context of the problem.  
 __Answer__:  
 
-__Question__:  Can we trust the p-value?
+**QUESTION 15:** Based on the ANOVA condition checks, is the P-value reliable? Explain.
   a. Check for equal standard deviation (is the ratio of the largest SD / smallest SD greater than 2?)
   b. Check Normality of the residuals (`qqPlot()`)  
 __Answer__:  

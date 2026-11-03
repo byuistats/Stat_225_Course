@@ -120,10 +120,10 @@ p_value
 
 ```
 
-__Question__:  What is the test statistic, $t$?  
+**QUESTION 1:** What is the test statistic, $t$?  
 __Answer__:    
 
-__Question__:  What is the probability of observing $t$ "greater" then the one we observed if the population mean was really 50?  (The P-value)  
+**QUESTION 2:** What is the probability of observing $t$ "greater" then the one we observed if the population mean was really 50?  (The P-value)  
 __Answer__:    
 
 
@@ -149,20 +149,20 @@ t.test(test_scores, mu = 50, alternative = "greater")
 
 Dig through the output and answer the following questions:  
 
-__Question__: What is the test statistic, $t$?  
+**QUESTION 3:** What is the test statistic, $t$?  
 __Answer__:  
 
-__Question__:  What is the P-value?  
+**QUESTION 4:** What is the P-value?  
 __Answer__:    
 
 
 Check that your answers match the "by hand" method above.  
 
 
-__QUESTION__:  What is your conclusion based on $\alpha=0.05$?  
+**QUESTION 5:** What is your conclusion based on $\alpha=0.05$?  
 __ANSWER__:  Because P-value < 0.05 we reject the null hypothesis in favor of the alternative.  
 
-__Question__:  State your conclusion in context of our research question?  
+**QUESTION 6:** State your conclusion in context of our research question?  
 __Answer__:  We have sufficient evidence to conclude that Stat 225 students are more extroverted than the general population, on average.  
 
 
@@ -182,7 +182,7 @@ t.test(test_scores, conf.level = .99)$conf.int
 
 ```
 
-__Question__:  Describe in words the interpretation of the confidence interval in context of Extroversion.  
+**QUESTION 7:** Describe in words the interpretation of the confidence interval in context of Extroversion.  
 __Answer__:  I am 99% confident that the true population mean test score for Stat 225 students is between 52.19455 and 76.76545.  
 
 
@@ -216,7 +216,7 @@ The dataset below contains information about body temperatures of healthy adults
 ### Load the data:
 
 ```{r}
-
+library(rio)
 # These lines load the data into the data frame body_temp:
 
 body_temp <- import("https://byuistats.github.io/M221R/Data/body_temp.xlsx")
@@ -241,7 +241,7 @@ Create a histogram to visualize the body temperature data.
 
 ```
 
-__Question__:  Describe the general shape of the distribution.  
+**QUESTION 8:** Describe the general shape of the distribution.  
 __Answer__:  
 
 
@@ -258,10 +258,10 @@ Use a significance level of $\alpha = 0.01$ to test whether the mean body temper
 
 ```
 
-__Question__:  What is the P-value?  
+**QUESTION 9:** What is the P-value?  
 __Answer__:  
 
-__QUESTION__:  What is your conclusion?  
+**QUESTION 10:** What is your conclusion?  
 __ANSWER__:  
 
 
@@ -277,5 +277,5 @@ Create a 99% confidence interval for the true population average temperature of 
 Check the requirements for the t-test ($n>30$ or `qqPlot()`):
 
 
-__QUESTION__:  Are the requirements for the t-test satisfied?  
+**QUESTION 11:** Are the requirements for the t-test satisfied?  
 __ANSWER__:  

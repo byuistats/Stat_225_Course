@@ -231,7 +231,7 @@ Do men’s voting preferences differ significantly from women’s voting prefere
 
 Use a level of significance of $\alpha = 0.05$
 
-__QUESTION__: State the null and alternative hypothesis:  
+**QUESTION 1:** State the null and alternative hypothesis:  
 
 Ho:  
 Ha:  
@@ -248,23 +248,23 @@ clean_voting <- voting %>%
 ```
 
 
-__QUESTION__:  Perform a hypothesis test:   
+**QUESTION 2:** Perform a hypothesis test:   
 
 ```{r}
 
 
 ```
 
-__QUESTION__:  What is the test statistic for this test?  
+**QUESTION 3:** What is the test statistic for this test?  
 __ANSWER__:  
 
-__QUESTION__:  How many degrees of freedom are there for this test?  
+**QUESTION 4:** How many degrees of freedom are there for this test?  
 __ANSWER__:  
 
-__QUESTION__:  What is the p-value?  
+**QUESTION 5:** What is the p-value?  
 __ANSWER__:  
 
-__QUESTION__:  What is your conclusion?  
+**QUESTION 6:** What is your conclusion?  
 __ANSWER__:  
 
 

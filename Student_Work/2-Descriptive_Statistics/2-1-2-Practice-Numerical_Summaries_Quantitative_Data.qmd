@@ -46,10 +46,10 @@ favstats()
 
 ```
 
-__QUESTION__:  What is the mean duration time of Old Faithful eruptions?  
+**QUESTION 1:** What is the mean duration time of Old Faithful eruptions?  
 __ANSWER__:  
 
-__QUESTION__:  What is the standard deviation of duration?  
+**QUESTION 2:** What is the standard deviation of duration?  
 __ANSWER__:  
 
 
@@ -62,13 +62,13 @@ __ANSWER__:
 
 ```
 
-__Question__: What is the mean wait time between eruptions?  
+**QUESTION 3:** What is the mean wait time between eruptions?  
 __Answer__: 
 
-__Question__: What is the maximum wait time between eruptions?  
+**QUESTION 4:** What is the maximum wait time between eruptions?  
 __Answer__:  
 
-__Question__: The middle 50% of wait times will be between what 2 numbers?  
+**QUESTION 5:** The middle 50% of wait times will be between what 2 numbers?  
 __Answer__:  
 
 
@@ -84,13 +84,13 @@ Create a summary statistics table and answer the questions below:
 ```
 
 
-__Question__: What is the maximum self-reported happiness score?  
+**QUESTION 6:** What is the maximum self-reported happiness score?  
 __Answer__:  
 
 
-__Question__: What is the standard deviation of happiness scores?  
+**QUESTION 7:** What is the standard deviation of happiness scores?  
 __Answer__:  
 
-__Question__: Explain what the standard deviation means in context of this problem.  
+**QUESTION 8:** Explain what the standard deviation means in context of this problem.  
 __Answer__:  
 

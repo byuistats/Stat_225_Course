@@ -98,7 +98,7 @@ favstats(weight_loss$post)
 
 Decide how you're going to define the difference ($post - pre$ or $pre - post$).
 
-__Question__: Based on your definition, what does a negative number mean?  
+**QUESTION 1:** Based on your definition, what does a negative number mean?  
 __Answer__:  
 
 

@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!**/AA*.qmd"
     - "!Student_Work/"
   resources:
     - "Images/**"
@@ -25,6 +26,7 @@ website:
         - href: ./1-Getting_Started/1-4-1-Installing_Packages.qmd
         - href: ./1-Getting_Started/1-5-1-Stat_Process.qmd
         - href: ./1-Getting_Started/1-5-2-Practice-Stat_Process.qmd
+        - href: ./1-Getting_Started/1-6-1-Personality_and_Creativity_Exploration.qmd
 
     - text: "Descriptive Stats"
       menu:
@@ -35,13 +37,13 @@ website:
          - href: ./2-Descriptive_Statistics/2-2-2-Practice-Graphical_Summaries_Quantitative_Data.qmd
          - href: ./2-Descriptive_Statistics/2-3-1-Quantitative_Data_Summaries_Multiple_Groups.qmd
          - href: ./2-Descriptive_Statistics/2-3-2-Practice-Quantitative_Data_Summaries_Multiple_Groups.qmd
-         - href: ./2-Descriptive_Statistics/2-4-1-Response_and_Explanatory_Variables.qmd
+         - text: "In-Class: Response and Explanatory Variables"
+           href: ./2-Descriptive_Statistics/2-4-1-Response_and_Explanatory_Variables.qmd
          - href: ./2-Descriptive_Statistics/2-4-2-Bivariate_Quantitative_Data_Summaries.qmd
          - href: ./2-Descriptive_Statistics/2-4-3-Practice-Bivariate_Quantitative_Data_Summaries.qmd
          - href: ./2-Descriptive_Statistics/2-5-1-Univariate_Categorical_Data_Summaries.qmd
          - href: ./2-Descriptive_Statistics/2-6-1-Bivariate_Categorical_Data_Summaries.qmd
          - href: ./2-Descriptive_Statistics/2-6-2-Practice-Categorical_Data_Summaries.qmd
-
 
     - text:  "Data Wrangling"
       menu:
@@ -56,7 +58,6 @@ website:
         - href: ./3-Data_Wrangling_Visualization/3-5-1-Mutate.qmd
         - href: ./3-Data_Wrangling_Visualization/3-6-1-Factors.qmd
         - href: ./3-Data_Wrangling_Visualization/3-7-1-Exploring_New_Data_with_Tidyverse.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-8-1-AA_Data_Wrang_and_Viz.qmd
         - text: "Bonus Material"
         - href: ./3-Data_Wrangling_Visualization/Bonus_More_Tidy_Practice.qmd
         - href: ./3-Data_Wrangling_Visualization/Bonus_GroupBy_Summarise.qmd

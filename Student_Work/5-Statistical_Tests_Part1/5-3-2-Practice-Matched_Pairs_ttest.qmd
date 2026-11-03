@@ -57,7 +57,7 @@ Create histograms and summary statistic tables for the measurements for each typ
 
 Give the summary statistics (`favstats()`) for the *differences* in the measured head diameters.  
 
-__Question__: What does a negative number mean given the definition of the difference?  
+**QUESTION 1:** What does a negative number mean given the definition of the difference?  
 __Answer__:  
 
 ```{r}
@@ -90,20 +90,20 @@ $$ H_a: \mu_d > < = \ne 0$$
 
 ```
 
-__Question__:  What is the value of the test statistic, $t$?  
+**QUESTION 2:** What is the value of the test statistic, $t$?  
 __Answer__:  
 
-__Question__:  How many degrees of freedom does this test statistics have?  
+**QUESTION 3:** How many degrees of freedom does this test have?  
 __Answer__:  
 
-__Question__:  What is the P-value?  
+**QUESTION 4:** What is the P-value?  
 __Answer__:  
 
-__Question__:  Can we trust this P-value? (eg. How many differences in our sample? Check the `qqPlot()` of the differences for normality)  
+**QUESTION 5:** Can we trust this P-value? (eg. How many differences in our sample? Check the `qqPlot()` of the differences for normality)  
 __Answer__:  
 
 
-__Question__:  State your conclusion about the hypothesis test.  
+**QUESTION 6:** State your conclusion about the hypothesis test.  
 __Answer__:  
 
 
@@ -117,7 +117,7 @@ Create a 95% confidence interval for the true average difference between the car
 ```
 
 
-__Question__:  Give a one-sentence explanation of your confidence interval.  
+**QUESTION 7:** Give a one-sentence explanation of your confidence interval.  
 __Answer__:  
 
 
@@ -176,19 +176,19 @@ Perform a t-test for the differences.
 
 ```
 
-__Question__:  What is the value of the test statistic, $t$?  
+**QUESTION 8:** What is the value of the test statistic, $t$?  
 __Answer__:  
 
-__Question__:  How many degrees of freedom does this test statistics have?  
+**QUESTION 9:** How many degrees of freedom does this test have?  
 __Answer__:  
 
-__Question__:  What is the P-value?  
+**QUESTION 10:** What is the P-value?  
 __Answer__:  
 
-__Question__:  Are the requirements satisfied for a matched pairs t-test?  (Can we trust the P-value?)  
+**QUESTION 11:** Are the requirements satisfied for a matched pairs t-test?  (Can we trust the P-value?)  
 __Answer__:  
 
-__Question__:  State your conclusion about the hypothesis test.  
+**QUESTION 12:** State your conclusion about the hypothesis test.  
 __Answer__:  
 
 
@@ -202,7 +202,7 @@ Create a 95% confidence interval for the difference in cholesterol scores:
 ```
 
 
-__Question__:  Explain your confidence interval in context of the research question  
+**QUESTION 13:** Explain your confidence interval in context of the research question  
 __Answer__:  
 
 

@@ -59,10 +59,10 @@ Take some time to familiarize yourself with the data.  Check the [website](https
 
 ## Response Variable:  Univariate Summary Statistics
 
-__QUESTION__:  What is the primary response variable?  (What are we trying to predict?)  
+**QUESTION 1:** What is the primary response variable?  (What are we trying to predict?)  
 __ANSWER__:  
 
-__QUESTION__:  Create a table of summary statistics for the primary response variable:  
+**QUESTION 2:** Create a table of summary statistics for the primary response variable:  
 
 ```{r}
 
@@ -70,22 +70,22 @@ favstats()
 
 ```
 
-__QUESTION__:  What is the mean grade?  
+**QUESTION 3:** What is the mean grade?  
 __ANSWER__:  
 
-__QUESTION__:  What is the median grade?  
+**QUESTION 4:** What is the median grade?  
 __ANSWER__:  
 
-__QUESTION__:  What is the Standard Deviation of grades?  
+**QUESTION 5:** What is the Standard Deviation of grades?  
 __ANSWER__:  
 
-__QUESTION__:  Interpret in words what the standard deviation means?  
+**QUESTION 6:** Interpret in words what the standard deviation means?  
 __ANSWER__:  
 
-__QUESTION__:  What is the 75th percentile of grades?  
+**QUESTION 7:** What is the 75th percentile of grades?  
 __ANSWER__:  
 
-__QUESTION__:  Interpret in words what the 75th percentile means?  
+**QUESTION 8:** Interpret in words what the 75th percentile means?  
 __ANSWER__:  
 
 
@@ -97,10 +97,10 @@ Create a histogram of the primary response variable:
 
 ```
 
-__QUESTION__:  What is the basic shape of the distribution?  
+**QUESTION 9:** What is the basic shape of the distribution?  
 __ANSWER__:  
 
-__QUESTION__:  What anomalies, if any, do you notice?  
+**QUESTION 10:** What anomalies, if any, do you notice?  
 __ANSWER__:  
 
 
@@ -132,7 +132,7 @@ favstats(~)
 
 ```
 
-__QUESTION__:  What is the mean grade for females?  
+**QUESTION 11:** What is the mean grade for females?  
 __ANSWER__:  
 
 
@@ -143,7 +143,7 @@ Create a side-by-side boxplot of final grades for each level of father's job (`F
 
 ```
 
-__QUESTION__:  Which level of Fjob tends to have students with the highest final grades?  
+**QUESTION 12:** Which level of Fjob tends to have students with the highest final grades?  
 __ANSWER__:  
 
 
@@ -155,7 +155,7 @@ Create a side-by-side boxplot of final grades for each level of mother's job (`M
 
 ```
 
-__QUESTION__:  Which level of Mjob appears to have students with the highest final grades?  
+**QUESTION 13:** Which level of Mjob appears to have students with the highest final grades?  
 __ANSWER__:  
 
 
@@ -170,13 +170,13 @@ Create a scatter plot looking at the relationship between mid-term grade (G2) an
 
 ```
 
-__QUESTION__:  Does the relationship appear roughly linear?  
+**QUESTION 14:** Does the relationship appear roughly linear?  
 __ANSWER__:  
 
-__QUESTION__:  What anomalies, if any, do you notice?  
+**QUESTION 15:** What anomalies, if any, do you notice?  
 __ANSWER__:  
 
-__QUESTION__:  Based on the scatter plot, guess the correlation coefficient:    
+**QUESTION 16:** Based on the scatter plot, guess the correlation coefficient:    
 __ANSWER__:  
 
 Calculate the correlation coefficient, r: 
@@ -192,7 +192,7 @@ Calculate the correlation coefficient, r:
 ## Categorical Descriptive Statistics
 
 
-__QUESTION__:  What are the levels of mother's profession?  
+**QUESTION 17:** What are the levels of mother's profession?  
 
 ```{r}
 
@@ -208,7 +208,7 @@ Create a proportion table table for `sex`
 
 ```
 
-__QUESTION__:  What percent of respondents are female?  
+**QUESTION 18:** What percent of respondents are female?  
 __ANSWER__:  
 
 
@@ -221,7 +221,7 @@ Create a *SORTED* bar chart of the counts of reasons students chose their school
 
 ```
 
-__QUESTION__:  Which reason appears to be the most popular?  
+**QUESTION 19:** Which reason appears to be the most popular?  
 __ANSWER__:  
 
 
@@ -236,11 +236,11 @@ Then calculate the proportion of each gender in a romantic relationship (should 
 ```
 
 
-__QUESTION__:  What percent of female respondents are in a romantic relationship?  
+**QUESTION 20:** What percent of female respondents are in a romantic relationship?  
 __ANSWER__:  
 
 
-__QUESTION__:  What percent of male respondents are in a romantic relationship?  
+**QUESTION 21:** What percent of male respondents are in a romantic relationship?  
 __ANSWER__:  
 
 

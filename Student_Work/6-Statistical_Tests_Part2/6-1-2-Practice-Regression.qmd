@@ -48,19 +48,19 @@ cars <- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/acu
 
 ```
 
-__QUESTION__:  What is the response/dependent variable?  
+**QUESTION 1:** What is the response/dependent variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 2:** What is the explanatory variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What do you think is the nature of the relationship between the two?  (Positive or Negative?)
+**QUESTION 3:** What do you think is the nature of the relationship between the two?  (Positive or Negative?)
 __ANSWER__:  
 
 
-__QUESTION__:  How strong do you think the relationship is?  
+**QUESTION 4:** How strong do you think the relationship is?  
 __ANSWER__:  
 
 
@@ -77,15 +77,15 @@ Use `ggplot()` to create a scatter plot with the regression line, then calculate
 ```
 
 
-__QUESTION__:  Does the relationship look linear?  
+**QUESTION 5:** Does the relationship look linear?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the correlation coefficient, r?  
+**QUESTION 6:** What is the correlation coefficient, r?  
 __ANSWER__:  
 
 
-__QUESTION__:  What does r show?   
+**QUESTION 7:** What does r show?   
 __ANSWER__:  
 
 
@@ -98,30 +98,30 @@ __ANSWER__:
 ```
 
 
-__QUESTION__:  What is the slope of the regression line, and what does it mean?  
+**QUESTION 8:** What is the slope of the regression line, and what does it mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the intercept and what does it mean?  
+**QUESTION 9:** What is the intercept and what does it mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the p-value?  
+**QUESTION 10:** What is the p-value?  
 __ANSWER__:  
 
 
-__QUESTION__:  State your conclusion in context of the research question:  
+**QUESTION 11:** State your conclusion in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the confidence interval for the slope?  
+**QUESTION 12:** What is the confidence interval for the slope?  
 __ANSWER__:  
 
 ```{r}
 
 ```
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 13:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
@@ -141,7 +141,7 @@ Check for constant variance (Residual by Predicted plot):
 ```
 
 
-__QUESTION__:  Do the test requirements appear to be satisfied?  Why?  
+**QUESTION 14:** Do the test requirements appear to be satisfied?  Why?  
 __ANSWER__:  
 
 
@@ -170,19 +170,19 @@ Load the data and use R to answer the questions below.
 manatees <- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/manatees.csv')
 ```
 
-__QUESTION__:  What is the response/dependent variable?  
+**QUESTION 15:** What is the response/dependent variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 16:** What is the explanatory variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What do you think is the nature of the relationship between the two?  (Positive or Negative?)
+**QUESTION 17:** What do you think is the nature of the relationship between the two?  (Positive or Negative?)
 __ANSWER__:  
 
 
-__QUESTION__:  How strong do you think the relationship is?  
+**QUESTION 18:** How strong do you think the relationship is?  
 __ANSWER__:  
 
 
@@ -199,15 +199,15 @@ Use `ggplot()` to create a scatter plot with the regression line, then calculate
 ```
 
 
-__QUESTION__:  Does the relationship look linear?  
+**QUESTION 19:** Does the relationship look linear?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the correlation coefficient, r?  
+**QUESTION 20:** What is the correlation coefficient, r?  
 __ANSWER__:  
 
 
-__QUESTION__:  What does r show?   
+**QUESTION 21:** What does r show?   
 __ANSWER__:  
 
 
@@ -220,30 +220,30 @@ __ANSWER__:
 ```
 
 
-__QUESTION__:  What is the slope of the regression line, and what does it mean?  
+**QUESTION 22:** What is the slope of the regression line, and what does it mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the intercept and what does it mean?  
+**QUESTION 23:** What is the intercept and what does it mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the p-value?  
+**QUESTION 24:** What is the p-value?  
 __ANSWER__:  
 
 
-__QUESTION__:  State your conclusion in context of the research question:  
+**QUESTION 25:** State your conclusion in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the confidence interval for the slope?  
+**QUESTION 26:** What is the confidence interval for the slope?  
 __ANSWER__:  
 
 ```{r}
 
 ```
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 27:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
@@ -263,7 +263,7 @@ Check for constant variance (Residual by Predicted plot):
 ```
 
 
-__QUESTION__:  Do the test requirements appear to be satisfied?  Why?  
+**QUESTION 28:** Do the test requirements appear to be satisfied?  Why?  
 __ANSWER__:  
 
 
@@ -286,19 +286,19 @@ Load the data and respond to the questions below:
 mcat <- import('https://github.com/byuistats/Math221D_Cannon/raw/master/Data/mcat_gpa.csv')
 ```
 
-__QUESTION__:  What is the response/dependent variable?  
+**QUESTION 29:** What is the response/dependent variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the explanatory variable?  
+**QUESTION 30:** What is the explanatory variable?  
 __ANSWER__:  
 
 
-__QUESTION__:  What do you think is the nature of the relationship between the two?  (Positive or Negative?)
+**QUESTION 31:** What do you think is the nature of the relationship between the two?  (Positive or Negative?)
 __ANSWER__:  
 
 
-__QUESTION__:  How strong do you think the relationship is?  
+**QUESTION 32:** How strong do you think the relationship is?  
 __ANSWER__:  
 
 
@@ -314,15 +314,15 @@ Use `ggplot()` to create a scatter plot with the regression line, then calculate
 ```
 
 
-__QUESTION__:  Does the relationship look linear?  
+**QUESTION 33:** Does the relationship look linear?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the correlation coefficient, r?  
+**QUESTION 34:** What is the correlation coefficient, r?  
 __ANSWER__:  
 
 
-__QUESTION__:  What does r show?   
+**QUESTION 35:** What does r show?   
 __ANSWER__:  
 
 
@@ -334,30 +334,30 @@ __ANSWER__:
 ```
 
 
-__QUESTION__:  What is the slope of the regression line, and what does it mean?  
+**QUESTION 36:** What is the slope of the regression line, and what does it mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the intercept and what does it mean?  
+**QUESTION 37:** What is the intercept and what does it mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the p-value?  
+**QUESTION 38:** What is the p-value?  
 __ANSWER__:  
 
 
-__QUESTION__:  State your conclusion in context of the research question:  
+**QUESTION 39:** State your conclusion in context of the research question:  
 __ANSWER__:  
 
 
-__QUESTION__:  What is the confidence interval for the slope?  
+**QUESTION 40:** What is the confidence interval for the slope?  
 __ANSWER__:  
 
 ```{r}
 
 ```
 
-__QUESTION__:  Explain the confidence interval in context of the research question:  
+**QUESTION 41:** Explain the confidence interval in context of the research question:  
 __ANSWER__:  
 
 
@@ -377,6 +377,6 @@ Check for constant variance (Residual by Predicted plot):
 ```
 
 
-__QUESTION__:  Do the test requirements appear to be satisfied?  Why?  
+**QUESTION 42:** Do the test requirements appear to be satisfied?  Why?  
 __ANSWER__:  
 

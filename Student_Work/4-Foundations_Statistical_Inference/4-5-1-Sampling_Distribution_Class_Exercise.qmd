@@ -67,10 +67,10 @@ Recall a few useful functions for data exploration:
 ```
 
 
-__QUESTION__:  What is/are some potential dependent/response variables?  
+**QUESTION 1:** What is/are some potential dependent/response variables?  
 __ANSWER__:  
 
-__QUESTION__:  What are some potential explanatory variables?  
+**QUESTION 2:** What are some potential explanatory variables?  
 __ANSWER__:  
 
 
@@ -85,15 +85,15 @@ Let's look deeper into `bill_depth_mm`.
 
 ```
 
-__QUESTION__:  What is your sample mean?  
+**QUESTION 3:** What is your sample mean?  
 __ANSWER__:  
 
 
-__QUESTION__:  What is your sample standard deviation?  
+**QUESTION 4:** What is your sample standard deviation?  
 __ANSWER__: 
 
 
-__QUESTION__:  What is your sample median?  
+**QUESTION 5:** What is your sample median?  
 __ANSWER__: 
 
 
@@ -104,10 +104,10 @@ __ANSWER__:
 
 ```
 
-__QUESTION__:  How many females in your sample?  
+**QUESTION 6:** How many females in your sample?  
 __ANSWER__:  
 
-__QUESTION__:  How many males in your sample?  
+**QUESTION 7:** How many males in your sample?  
 __ANSWER__:  
 
 
@@ -117,13 +117,13 @@ __ANSWER__:
 
 ```
 
-__QUESTION__:  How many Adelie penguins do you have in your sample?  
+**QUESTION 8:** How many Adelie penguins do you have in your sample?  
 __ANSWER__:  
 
-__QUESTION__:  How many Chinstrap penguins do you have in your sample?  
+**QUESTION 9:** How many Chinstrap penguins do you have in your sample?  
 __ANSWER__:  
 
-__QUESTION__:  How many Gentoo penguins do you have in your sample?  
+**QUESTION 10:** How many Gentoo penguins do you have in your sample?  
 __ANSWER__:  
 
 

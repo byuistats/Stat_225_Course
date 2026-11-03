@@ -82,7 +82,7 @@ __PRO TIP__: Ask a ton of questions throughout this process! You are not always 
 
 As you look at the whole dataset, think about what the response variable might be and start to think about what factors might impact that response.  Start to **mentally rank** which factors you think might be most impactful.  
 
-__QUESTIONS__: For our data, what do you think is our response variable?  
+**QUESTION 1:** For this dataset, what is the response variable?  
 
 What other factors do you think might impact the response variable? 
 
@@ -157,7 +157,7 @@ __NOTE__: For now, we are focusing on categorical explanatory variables. Later i
 
 Now that we've spent time with the data, we can formalize our hypotheses and get ready to prepare the data to perform the proper analysis.
 
-__QUESTION__: Which 3 explanatory variables do you think have the biggest impact on happiness?  
+**QUESTION 2:** Which three explanatory variables appear most strongly associated with happiness in this sample? Explain your choices.  
 __Answer__:  
   1. 
   2. 
