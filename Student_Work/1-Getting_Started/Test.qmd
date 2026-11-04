@@ -1,6 +1,13 @@
 ---
 title: Testing...Testing...1...2...3
 author: '[your name]'
+execute:
+  echo: true
+  error: true
+  warning: false
+knitr:
+  opts_chunk:
+    message: false
 format:
   html:
     self-contained: true

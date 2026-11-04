@@ -1,0 +1,29 @@
+---
+title: 'Installing R'
+---
+
+# Install R and RStudio
+
+R is the software that runs your analyses. RStudio is the desktop app where you write and run R code. Install R first, then install RStudio.
+
+## 1. Install R
+
+- **Windows:** Download R from [CRAN for Windows](https://cran.r-project.org/bin/windows/base/) and run the installer.
+- **Mac:** Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open **Apple menu > About This Mac**. If the window says **Chip** and lists an M-series chip, download the `arm64` package. If it says **Processor** and lists Intel, download the `x86_64` package. [Apple shows where to find this information](https://support.apple.com/en-us/116943). Open the downloaded `.pkg` installer. You do not need to choose a processor type for RStudio; use the macOS download on the RStudio page.
+
+## 2. Install RStudio Desktop
+
+Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html). Choose the Windows `.exe` installer or the macOS `.dmg` installer. On Windows, run the installer and accept the defaults. On Mac, open the `.dmg` file and drag RStudio to Applications. The download page lists the current operating system requirements.
+
+## If you use a Chromebook
+
+Use [Posit Cloud](https://posit.cloud/) in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.
+
+## Check your installation
+
+1. Create an easy-to-find folder, such as `Stat225`.
+2. [Download the course files](https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip), unzip them, and move the `Student_Work` folder into your course folder.
+3. In RStudio, open `Student_Work/1-Getting_Started/Test.qmd` and click **Render**.
+4. If the report opens in your browser, the installation is working. The `Test.html` file is saved beside `Test.qmd`; upload it to Canvas if your instructor requests it.
+
+If RStudio cannot find R, install R first and restart RStudio. If you still have trouble, ask for help in class.

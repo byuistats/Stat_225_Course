@@ -1,9 +1,6 @@
 ---
 title: "2-Sample Proportion Practice"
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
-```
 
 
 # Instructions

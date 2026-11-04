@@ -1,11 +1,6 @@
 ---
 title: "BYU-Idaho Stat 225: Introduction to Statistics in R"
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-
 ## An Interactive Textbook
 
 This course is intended to familiarize students with foundational concepts and vocabulary in statistics and introduce basic data wrangling and visualization in R.

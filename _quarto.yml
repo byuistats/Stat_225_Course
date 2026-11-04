@@ -2,15 +2,21 @@ project:
   type: website
   output-dir: docs
   render:
-    - "*.qmd"
-    - "!**/AA*.qmd"
-    - "!Student_Work/"
+    - "**/*-Reading-*.qmd"
+    - "**/*-Practice-*.qmd"
+    - "**/*-Practice_*.qmd"
+    - "!Student_Work/**"
   resources:
     - "Images/**"
 
-execute: 
+execute:
+  echo: true
   error: true
   warning: false
+
+knitr:
+  opts_chunk:
+    message: false
     
 website:
   title: "Stat 225 - Intro to Stats in R"
@@ -20,96 +26,85 @@ website:
     left:
     - text: "Getting Started"
       menu:
-        - href: ./1-Getting_Started/1-1-1-Course_Intro.qmd
-        - href: ./1-Getting_Started/1-2-1-Installing_R.qmd
-        - href: ./1-Getting_Started/1-3-1-Introducing_R.qmd
-        - href: ./1-Getting_Started/1-4-1-Installing_Packages.qmd
-        - href: ./1-Getting_Started/1-5-1-Stat_Process.qmd
+        - href: ./1-Getting_Started/1-1-1-Reading-Course_Intro.qmd
+        - href: ./1-Getting_Started/1-2-1-Reading-Installing_R.qmd
+        - href: ./1-Getting_Started/1-3-1-Reading-Introducing_R.qmd
+        - href: ./1-Getting_Started/1-4-1-Reading-Installing_Packages.qmd
+        - href: ./1-Getting_Started/1-5-1-Reading-Stat_Process.qmd
         - href: ./1-Getting_Started/1-5-2-Practice-Stat_Process.qmd
-        - href: ./1-Getting_Started/1-6-1-Personality_and_Creativity_Exploration.qmd
+        - href: ./1-Getting_Started/1-6-1-Reading-Personality_and_Creativity_Exploration.qmd
 
     - text: "Descriptive Stats"
       menu:
          - text: "Descriptive Statistics"
-         - href: ./2-Descriptive_Statistics/2-1-1-Numerical_Summaries_Quantitative_Data.qmd
+         - href: ./2-Descriptive_Statistics/2-1-1-Reading-Numerical_Summaries_Quantitative_Data.qmd
          - href: ./2-Descriptive_Statistics/2-1-2-Practice-Numerical_Summaries_Quantitative_Data.qmd
-         - href: ./2-Descriptive_Statistics/2-2-1-Graphical_Summaries_Quantitative_Data.qmd
+         - href: ./2-Descriptive_Statistics/2-2-1-Reading-Graphical_Summaries_Quantitative_Data.qmd
          - href: ./2-Descriptive_Statistics/2-2-2-Practice-Graphical_Summaries_Quantitative_Data.qmd
-         - href: ./2-Descriptive_Statistics/2-3-1-Quantitative_Data_Summaries_Multiple_Groups.qmd
+         - href: ./2-Descriptive_Statistics/2-3-1-Reading-Quantitative_Data_Summaries_Multiple_Groups.qmd
          - href: ./2-Descriptive_Statistics/2-3-2-Practice-Quantitative_Data_Summaries_Multiple_Groups.qmd
-         - text: "In-Class: Response and Explanatory Variables"
-           href: ./2-Descriptive_Statistics/2-4-1-Response_and_Explanatory_Variables.qmd
-         - href: ./2-Descriptive_Statistics/2-4-2-Bivariate_Quantitative_Data_Summaries.qmd
+         - href: ./2-Descriptive_Statistics/2-4-2-Reading-Bivariate_Quantitative_Data_Summaries.qmd
          - href: ./2-Descriptive_Statistics/2-4-3-Practice-Bivariate_Quantitative_Data_Summaries.qmd
-         - href: ./2-Descriptive_Statistics/2-5-1-Univariate_Categorical_Data_Summaries.qmd
-         - href: ./2-Descriptive_Statistics/2-6-1-Bivariate_Categorical_Data_Summaries.qmd
+         - href: ./2-Descriptive_Statistics/2-5-1-Reading-Univariate_Categorical_Data_Summaries.qmd
+         - href: ./2-Descriptive_Statistics/2-5-2-Practice-Univariate_Categorical_Data_Summaries.qmd
+         - href: ./2-Descriptive_Statistics/2-6-1-Reading-Bivariate_Categorical_Data_Summaries.qmd
          - href: ./2-Descriptive_Statistics/2-6-2-Practice-Categorical_Data_Summaries.qmd
 
     - text:  "Data Wrangling"
       menu:
-        - text: "Into the Tidyverse"
-        - text: "A Better Way to Plot"
-          href: ./3-Data_Wrangling_Visualization/3-1-1-GGPlot_Intro.qmd
-        - text: "Practice GGPlot"
-          href: ./3-Data_Wrangling_Visualization/3-1-2-Practice_GGPlot.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-2-1-Wrangling_Basics.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-3-1-Filter.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-4-1-Select.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-5-1-Mutate.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-6-1-Factors.qmd
-        - href: ./3-Data_Wrangling_Visualization/3-7-1-Exploring_New_Data_with_Tidyverse.qmd
-        - text: "Bonus Material"
-        - href: ./3-Data_Wrangling_Visualization/Bonus_More_Tidy_Practice.qmd
-        - href: ./3-Data_Wrangling_Visualization/Bonus_GroupBy_Summarise.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-1-1-Reading-GGPlot_Intro.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-1-2-Practice_GGPlot.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-2-1-Reading-Wrangling_Basics.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-3-1-Reading-Filter.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-4-1-Reading-Select.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-5-1-Reading-Mutate.qmd
+        - href: ./3-Data_Wrangling_Visualization/3-6-1-Reading-Factors.qmd
 
     - text: "Inferential Stats"
       menu:
          - text: "Foundations"
-         - href: ./4-Foundations_Statistical_Inference/4-1-1-Probability.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-2-1-The_Normal_Distribution.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-1-1-Reading-Probability.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-1-2-Practice-Probability.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-2-1-Reading-The_Normal_Distribution.qmd
          - href: ./4-Foundations_Statistical_Inference/4-2-2-Practice-The_Normal_Distribution.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-3-1-Sampling_Distributions_CLT_LLN.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-4-1-Assessing_Normality.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-3-1-Reading-Sampling_Distributions_CLT_LLN.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-4-1-Reading-Assessing_Normality.qmd
          - text: "Central Limit Theorem Practice"
-           href: ./4-Foundations_Statistical_Inference/4-6-1-Central_Limit_Theorem_Practice.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-7-1-Introducing_T-Distribution.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-7-2-Confidence_Intervals_for_Means.qmd
+           href: ./4-Foundations_Statistical_Inference/4-6-1-Reading-Central_Limit_Theorem_Practice.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-5-1-Reading-Sampling_Distribution_Class_Exercise.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-7-1-Reading-Introducing_T-Distribution.qmd
          - href: ./4-Foundations_Statistical_Inference/4-7-3-Practice-Confidence_Intervals_for_Means.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-8-1-Introducing_Hypothesis_Tests.qmd
-         - href: ./4-Foundations_Statistical_Inference/4-9-1-One_Sample_ttest.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-8-1-Reading-Introducing_Hypothesis_Tests.qmd
+         - href: ./4-Foundations_Statistical_Inference/4-9-1-Reading-One_Sample_ttest.qmd
 
     - text: "Statistical Tests I"
       menu:
-        - href: ./5-Statistical_Tests_Part1/5-1-1-Conf_Int_Hyp_Test_for_Proportions.qmd
+        - href: ./5-Statistical_Tests_Part1/5-1-1-Reading-Conf_Int_Hyp_Test_for_Proportions.qmd
         - href: ./5-Statistical_Tests_Part1/5-1-2-Practice-Conf_Int_Hyp_Test_for_Proportions.qmd
-        - href: ./5-Statistical_Tests_Part1/5-2-1-Two_sample_Independent_ttest.qmd
+        - href: ./5-Statistical_Tests_Part1/5-2-1-Reading-Two_sample_Independent_ttest.qmd
         - href: ./5-Statistical_Tests_Part1/5-2-2-Practice-Two_sample_Independent_ttest.qmd
-        - href: ./5-Statistical_Tests_Part1/5-3-1-Matched_Pairs_ttest.qmd
+        - href: ./5-Statistical_Tests_Part1/5-3-1-Reading-Matched_Pairs_ttest.qmd
         - href: ./5-Statistical_Tests_Part1/5-3-2-Practice-Matched_Pairs_ttest.qmd
-        - href: ./5-Statistical_Tests_Part1/5-4-1-Two_sample_Proportions.qmd
+        - href: ./5-Statistical_Tests_Part1/5-4-1-Reading-Two_sample_Proportions.qmd
         - href: ./5-Statistical_Tests_Part1/5-4-2-Practice-Two_sample_Proportions.qmd
 
     - text: "Statistical Tests II"
       menu:
-        - href: ./6-Statistical_Tests_Part2/6-1-1-Regression.qmd
+        - href: ./6-Statistical_Tests_Part2/6-1-1-Reading-Regression.qmd
         - href: ./6-Statistical_Tests_Part2/6-1-2-Practice-Regression.qmd
-        - href: ./6-Statistical_Tests_Part2/6-2-1-ANOVA.qmd
+        - href: ./6-Statistical_Tests_Part2/6-2-1-Reading-ANOVA.qmd
         - href: ./6-Statistical_Tests_Part2/6-2-2-Practice-ANOVA.qmd
-        - href: ./6-Statistical_Tests_Part2/6-3-1-Chi_Square_Test_of_Independence.qmd
+        - href: ./6-Statistical_Tests_Part2/6-3-1-Reading-Chi_Square_Test_of_Independence.qmd
         - href: ./6-Statistical_Tests_Part2/6-3-2-Practice-Chi_Square_Test_of_Independence.qmd
 
     - text: "Semester Project"
       menu:
-        - href: ./7-Semester_Project/Data_Search.qmd
-        - href: ./7-Semester_Project/Importing_Data.qmd
-        - href: ./7-Semester_Project/7-1-1-Semester_Project_Template_Part1.qmd
-        - href: ./7-Semester_Project/7-2-1-Semester_Project_Template_Part2.qmd
+        - href: ./7-Semester_Project/7-1-1-Reading-Semester_Project_Template_Part1.qmd
+        - href: ./7-Semester_Project/7-2-1-Reading-Semester_Project_Template_Part2.qmd
 
         
     - text: "Resources"
       menu:
-        - href: ./8-References/Course_Map.qmd
-        - href: ./8-References/Hypothesis_Test_ProcessB.qmd
         - text: "Tidyverse Cheat Sheet"
           href: https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
         - text: "R for Data Science"

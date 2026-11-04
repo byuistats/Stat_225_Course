@@ -2,9 +2,6 @@
 title: "Data Cleaning 2"
 subtitle: "Spaced Learning"
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
-```
 
 
 Clean the Madison County real estate data and answer the following questions.  

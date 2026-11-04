@@ -1,0 +1,61 @@
+---
+title: 'Practice: Probability'
+execute:
+  echo: true
+  error: true
+  warning: false
+knitr:
+  opts_chunk:
+    message: false
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+---
+
+# Introduction
+
+Use the probability rules from the reading to answer the questions below. For discrete events, probabilities range from 0 to 1, all possible outcomes have probabilities that add to 1, and the probability of an event not occurring is its complement. For continuous distributions, probability is represented by area under the curve.
+
+# Discrete Events
+
+## Campus Transportation
+
+A campus survey asked 200 students how they usually travel to campus. Of those surveyed, 82 usually walk, 54 drive, 38 ride the bus, and the rest use another method.
+
+**QUESTION 1:** What is the probability that a randomly selected student from this survey usually uses another method?  
+__ANSWER__:  
+
+
+**QUESTION 2:** What is the probability that a randomly selected student usually walks or rides the bus?  
+
+__ANSWER__:  
+
+**QUESTION 3:** What is the probability that a randomly selected student does *not* usually drive? (Use the complement rule.)  
+
+__ANSWER__:  
+
+## A Six-Sided Die
+
+Assume a fair six-sided die has outcomes 1, 2, 3, 4, 5, and 6, each equally likely.
+
+**QUESTION 4:** What is the probability of rolling an even number?  
+
+__ANSWER__:  
+
+
+# Continuous Probability
+
+Suppose the distribution of a quantitative measurement is represented by a smooth, continuous curve.
+
+**QUESTION 5:** What is the total area under the curve, and what does that area represent?  
+
+__ANSWER__:  
+
+
+**QUESTION 6:** If the probability that a measurement falls between 10 and 20 is 0.65, what is the probability that it falls outside that interval?  
+
+__ANSWER__:  
+
+
+

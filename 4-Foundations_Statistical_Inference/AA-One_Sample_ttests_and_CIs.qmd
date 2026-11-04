@@ -2,9 +2,6 @@
 title: "Don't Take it Personally"
 subtitle: "Hypothesis Tests and Confidence Intervals"
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
-```
 
 
 

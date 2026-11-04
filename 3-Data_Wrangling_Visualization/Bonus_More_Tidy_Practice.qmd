@@ -1,9 +1,6 @@
 ---
 title: "Level up your Tidy-ness"
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = TRUE)
-```
 
 
 # Putting it All Together

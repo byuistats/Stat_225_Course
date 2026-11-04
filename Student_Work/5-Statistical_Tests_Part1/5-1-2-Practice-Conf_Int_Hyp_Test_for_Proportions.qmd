@@ -1,6 +1,13 @@
 ---
 title: Confidence Intervals and Hypothesis Tests Practice
 subtitle: Proportions
+execute:
+  echo: true
+  error: true
+  warning: false
+knitr:
+  opts_chunk:
+    message: false
 format:
   html:
     self-contained: true

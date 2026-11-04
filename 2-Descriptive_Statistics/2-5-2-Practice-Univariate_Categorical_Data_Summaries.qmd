@@ -1,0 +1,115 @@
+---
+title: "Practice: Univariate Categorical Data Summaries"
+---
+
+# Introduction
+
+In this practice, you will summarize one categorical variable at a time. For each dataset, make a table of counts and proportions, then use `barplot()` to display the categories in sorted order.
+
+Use `table()` to count the categories, `prop.table()` to find proportions, and `sort(..., decreasing = TRUE)` to put the largest category first. You may save a sorted table as an object and use that object in `barplot()`.
+
+# Question 1: How Do Students Get to Campus?
+
+A class survey asked 24 students how they usually travel to campus. The responses are in the vector below.
+
+```{r}
+travel <- c(
+  "Walk", "Car", "Walk", "Bus", "Car", "Walk",
+  "Bike", "Car", "Walk", "Bus", "Car", "Walk",
+  "Car", "Bike", "Walk", "Car", "Bus", "Walk",
+  "Car", "Walk", "Bike", "Car", "Walk", "Bus"
+)
+```
+
+**QUESTION 1:** Create a table of counts for `travel`.
+
+```{r}
+
+```
+
+**QUESTION 2:** Create a table of proportions for `travel`.
+
+```{r}
+
+```
+
+**QUESTION 3:** Create a sorted bar chart of the counts, with the most common travel method first. Add `las = 2` if the category labels need to be rotated.
+
+```{r}
+
+```
+
+**QUESTION 4:** Which travel method is most common? What proportion of students chose it?
+
+__ANSWER__:
+
+# Question 2: Favorite Study Location
+
+Students were asked where they prefer to study. These 30 responses are from a sample of students.
+
+```{r}
+study_location <- c(
+  "Library", "Home", "Study room", "Library", "Home", "Cafe",
+  "Library", "Study room", "Home", "Library", "Cafe", "Home",
+  "Study room", "Library", "Home", "Library", "Study room", "Cafe",
+  "Home", "Library", "Study room", "Home", "Library", "Cafe",
+  "Study room", "Home", "Library", "Study room", "Home", "Library"
+)
+```
+
+**QUESTION 5:** Make a sorted table of counts for `study_location`, from the largest count to the smallest.
+
+```{r}
+
+```
+
+**QUESTION 6:** Use your sorted count table to make a bar chart with `barplot()`. Give the chart a descriptive title by using the `main` argument.
+
+```{r}
+
+```
+
+**QUESTION 7:** Make a sorted table of proportions and use it to make a bar chart of proportions. The bars should be in the same order as the counts.
+
+```{r}
+
+```
+
+**QUESTION 8:** What fraction of the students prefer the library? Write the proportion as a percent.
+
+__ANSWER__:
+
+# Question 3: Preferred Campus Drink
+
+A campus club asked 28 students which is their beverage of choice. Each student selected one option.
+
+```{r}
+drink <- c(
+  "Water", "Monster/Energy", "Dr. Pepper", "Coke", "Monster/Energy", "Water", "Coke",
+  "Monster/Energy", "Dr. Pepper", "Monster/Energy", "Coke", "Water", "Monster/Energy", "Dr. Pepper",
+  "Monster/Energy", "Coke", "Water", "Monster/Energy", "Dr. Pepper", "Monster/Energy", "Coke",
+  "Water", "Monster/Energy", "Dr. Pepper", "Coke", "Monster/Energy", "Water", "Monster/Energy"
+)
+```
+
+**QUESTION 9:** Create a table showing the counts for each drink. Then create a second table showing the proportions.
+
+```{r}
+
+```
+
+**QUESTION 10:** Create a sorted bar chart of the counts using `barplot()`. Make sure the bars run from most popular to least popular.
+
+```{r}
+
+```
+
+**QUESTION 11:** Create a sorted bar chart of the proportions using `barplot()`. Label the vertical axis `Proportion` with the `ylab` argument.
+
+```{r}
+
+```
+
+**QUESTION 12:** Which drink is least popular? How many students selected it, and what proportion of the sample is that?
+
+__ANSWER__:
