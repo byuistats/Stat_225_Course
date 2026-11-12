@@ -51,6 +51,7 @@ where $\mu_\text{athletes}$ is the population average reaction time for athletes
 Now look at how the data might be organized:  
 
 ```{r, echo=FALSE}
+install.packages("pander")
 library(tidyverse)
 library(pander)
 

@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: docs
   render:
+    - "index.qmd"
     - "**/*-Reading-*.qmd"
     - "**/*-Practice-*.qmd"
     - "**/*-Practice_*.qmd"
