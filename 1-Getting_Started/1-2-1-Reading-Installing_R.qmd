@@ -54,36 +54,38 @@ Use [Posit Cloud](https://posit.cloud/) in your browser instead of installing so
 
 ## Create an R Project
 
-Once you have R and RStudio installed, you will create an R Project to organize your work. An R Project is a folder that contains all of your course files and keeps them organized. 
+Once you have R and RStudio installed, create an R Project to organize your work. An R Project makes it easy to access and manage all the course material.  
 
-1. Create an easy-to-find folder, such as `Stat225`.  
-2. [Download the course files](https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip), unzip the folder, and move the `Student_Work` folder into your course folder.  
-3. Open RStudio and click **File > New Project > Existing Directory**. Click "Browse" and navigate to your course folder and select it. Click **Create Project**. You should see the course files in the Files pane of RStudio.  
+1. Create an easy-to-find folder on your computer (like your Desktop) or in OneDrive.  Call it something like `Stat225`.  
+2. [Download the course files](https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip), unzip the folder, and move the `Student_Work` folder into your course folder from step 1.  
+3. Open RStudio and click **File > New Project > Existing Directory**. Click "Browse" and navigate to your course folder and select it. Click **Create Project**. 
 
 In the top right corner of RStudio, you should see the name of your course folder. This is the name of your R Project. You can click the down arrow next to it to see a list of all your R Projects and switch between them.  
 
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_Project_Dropdown_Highlight.png)
 
 ## Check your installation
 
 Open RStudio and check that your Project is open by looking at the top right corner of RStudio. You should see the name of your course folder. 
 
-![](../Images/RStudio_Project_Dropdown_Highlight.png)
+If you do not see your course folder, click the down arrow in the top right corner.  It may say something like Project (None).  If you do not see your course folder in the dropdown, make sure you completed the steps above to create an R Project in your course folder.  If you are still having trouble, ask for help in class.  
 
-If you do not see your course folder, click **File > Open Project** and navigate to your course folder to open it.  
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/Project_None.png)
+
 
 All the folders in Student_Work should be visible in the Files pane of RStudio. 
 
-![](../Images/RStudio_FolderWindow_Highlight.png)
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_FolderWindow_Highlight.png)
 
 1. Click on 1-Getting_Started in the Foler window.  
 2. Click on the `Test.qmd` file which should open up some strange looking file in the main editor window.  
 3. Click the **Render** button at the top of the editor window. 
 
-![](../Images/RStudio_RenderButton_Highlight.png)
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_RenderButton_Highlight.png)
 
 This will create a new file called `Test.html` in the folder window.  
 
-![](../Images/RStudio_HTML_Location_Highlight.png)
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_HTML_Location_Highlight.png)
 
 If everything worked out, submit the `Test.html` file in Canvas. 
 
@@ -97,4 +99,4 @@ Most of you will have absolutely no idea what you just did. That's totally **nor
 
 Take a deep breath.  Be patient.  I promise it will all make sense soon.  
 
-The important thing for now is that your technology for the course is up and running.  
+The important thing for now is that you are (or will be soon) set up for success!  

@@ -17,24 +17,97 @@ format:
 
 R is the software that runs your analyses. RStudio is the desktop app where you write and run R code. Install R first, then install RStudio.
 
-## 1. Install R
+## Choose your computer
 
-- **Windows:** Download R from [CRAN for Windows](https://cran.r-project.org/bin/windows/base/) and run the installer.
-- **Mac:** Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open **Apple menu > About This Mac**. If the window says **Chip** and lists an M-series chip, download the `arm64` package. If it says **Processor** and lists Intel, download the `x86_64` package. [Apple shows where to find this information](https://support.apple.com/en-us/116943). Open the downloaded `.pkg` installer. You do not need to choose a processor type for RStudio; use the macOS download on the RStudio page.
+Follow the instructions for your computer. Install R first, then install RStudio Desktop.
 
-## 2. Install RStudio Desktop
+::: {.panel-tabset}
 
-Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html). Choose the Windows `.exe` installer or the macOS `.dmg` installer. On Windows, run the installer and accept the defaults. On Mac, open the `.dmg` file and drag RStudio to Applications. The download page lists the current operating system requirements.
+### Windows
 
-## If you use a Chromebook
+#### 1. Install R
 
-Use [Posit Cloud](https://posit.cloud/) in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.
+Download R from [CRAN for Windows](https://cran.r-project.org/bin/windows/base/) and run the installer. The default installation choices are fine.
+
+#### 2. Install RStudio Desktop
+
+Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html). Choose the Windows `.exe` installer, run it, and accept the default choices.
+
+### Mac
+
+#### 1. Install R
+
+
+**Which Mac processor do you have?**
+
+Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open:  
+
+ **Apple menu > About This Mac**
+ 
+ If the window says **Chip** and lists an M-series chip, download the `arm64` package. 
+ 
+ If it says **Processor** and lists Intel, download the `x86_64` package. Open the downloaded `.pkg` installer.
+
+#### 2. Install RStudio Desktop
+
+Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html) and choose the macOS `.dmg` installer. Open the downloaded file and drag RStudio to Applications. You do not need to choose a processor type for RStudio. The download page lists the current operating system requirements.
+
+### Chromebook/Tablet
+
+If you are using a Chromebook or tablet, you can set up a free account on [Posit Cloud](https://posit.cloud/) and run RStudio in your browser. You do not need to install any software locally. Follow the course instructions for opening the course files in Posit Cloud.
+
+Use [Posit Cloud](https://posit.cloud/) in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.  
+
+
+
+:::
+
+
+## Create an R Project
+
+Once you have R and RStudio installed, create an R Project to organize your work. An R Project makes it easy to access and manage all the course material.  
+
+1. Create an easy-to-find folder on your computer (like your Desktop) or in OneDrive.  Call it something like `Stat225`.  
+2. [Download the course files](https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip), unzip the folder, and move the `Student_Work` folder into your course folder from step 1.  
+3. Open RStudio and click **File > New Project > Existing Directory**. Click "Browse" and navigate to your course folder and select it. Click **Create Project**. 
+
+In the top right corner of RStudio, you should see the name of your course folder. This is the name of your R Project. You can click the down arrow next to it to see a list of all your R Projects and switch between them.  
+
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_Project_Dropdown_Highlight.png)
 
 ## Check your installation
 
-1. Create an easy-to-find folder, such as `Stat225`.
-2. [Download the course files](https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip), unzip them, and move the `Student_Work` folder into your course folder.
-3. In RStudio, open `Student_Work/1-Getting_Started/Test.qmd` and click **Render**.
-4. If the report opens in your browser, the installation is working. The `Test.html` file is saved beside `Test.qmd`; upload it to Canvas if your instructor requests it.
+Open RStudio and check that your Project is open by looking at the top right corner of RStudio. You should see the name of your course folder. 
 
-If RStudio cannot find R, install R first and restart RStudio. If you still have trouble, ask for help in class.
+If you do not see your course folder, click the down arrow in the top right corner.  It may say something like Project (None).  If you do not see your course folder in the dropdown, make sure you completed the steps above to create an R Project in your course folder.  If you are still having trouble, ask for help in class.  
+
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/Project_None.png)
+
+
+All the folders in Student_Work should be visible in the Files pane of RStudio. 
+
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_FolderWindow_Highlight.png)
+
+1. Click on 1-Getting_Started in the Foler window.  
+2. Click on the `Test.qmd` file which should open up some strange looking file in the main editor window.  
+3. Click the **Render** button at the top of the editor window. 
+
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_RenderButton_Highlight.png)
+
+This will create a new file called `Test.html` in the folder window.  
+
+![](https://raw.githubusercontent.com/byuistats/Stat_225_Course/main/Images/RStudio_HTML_Location_Highlight.png)
+
+If everything worked out, submit the `Test.html` file in Canvas. 
+
+If you were unable to get things working, don't stress.  We will have time in class to troubleshoot setup issues.  
+
+__NOTE__:  You will not be penalized for turning this assignment in late.  The purpose of this assignment is to make sure your technology is set up so that we can focus on learning the material in class.  
+
+## Learning by Faith
+
+Most of you will have absolutely no idea what you just did. That's totally **normal**.  
+
+Take a deep breath.  Be patient.  I promise it will all make sense soon.  
+
+The important thing for now is that you are (or will be soon) set up for success!  
