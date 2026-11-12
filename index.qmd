@@ -12,7 +12,7 @@ This book is designed to be a digital workbook.  You can download the notes, pra
 
 ### Download Course Material
 
-To download the folder containing all of the exercises, notes and application activities by following these steps:
+To download the folder containing all of the exercises, notes and application activities follow these steps:
 
   1. Create a class folder where you will save all your work throughout this semester.  This can be on your computer locally or in cloud-based storage such as One-Drive or iCloud.
   2. Click on the link below to download the `.zip` file containing all contents of the course website:
@@ -28,7 +28,7 @@ To download the folder containing all of the exercises, notes and application ac
 
 These files will be the basis of your coursework.  
 
-There may be additional files to download throughout the semester.  You can save those to your 
+There may be additional files to download throughout the semester.  You can download and save the supplemental files in the same location as the `Student_Work` folder.  This will help keep your work organized and easy to find.  
 
 
 ### How to Use This Book

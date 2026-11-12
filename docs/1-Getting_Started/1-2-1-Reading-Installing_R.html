@@ -395,8 +395,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#install-r-and-rstudio" id="toc-install-r-and-rstudio" class="nav-link active" data-scroll-target="#install-r-and-rstudio">Install R and RStudio</a>
   <ul class="collapse">
-  <li><a href="#install-r" id="toc-install-r" class="nav-link" data-scroll-target="#install-r">1. Install R</a></li>
-  <li><a href="#install-rstudio-desktop" id="toc-install-rstudio-desktop" class="nav-link" data-scroll-target="#install-rstudio-desktop">2. Install RStudio Desktop</a></li>
+  <li><a href="#choose-your-computer" id="toc-choose-your-computer" class="nav-link" data-scroll-target="#choose-your-computer">Choose your computer</a></li>
   <li><a href="#if-you-use-a-chromebook" id="toc-if-you-use-a-chromebook" class="nav-link" data-scroll-target="#if-you-use-a-chromebook">If you use a Chromebook</a></li>
   <li><a href="#check-your-installation" id="toc-check-your-installation" class="nav-link" data-scroll-target="#check-your-installation">Check your installation</a></li>
   </ul></li>
@@ -428,16 +427,40 @@ ul.task-list li input[type="checkbox"] {
 <section id="install-r-and-rstudio" class="level1">
 <h1>Install R and RStudio</h1>
 <p>R is the software that runs your analyses. RStudio is the desktop app where you write and run R code. Install R first, then install RStudio.</p>
-<section id="install-r" class="level2">
-<h2 class="anchored" data-anchor-id="install-r">1. Install R</h2>
-<ul>
-<li><strong>Windows:</strong> Download R from <a href="https://cran.r-project.org/bin/windows/base/">CRAN for Windows</a> and run the installer.</li>
-<li><strong>Mac:</strong> Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open <strong>Apple menu &gt; About This Mac</strong>. If the window says <strong>Chip</strong> and lists an M-series chip, download the <code>arm64</code> package. If it says <strong>Processor</strong> and lists Intel, download the <code>x86_64</code> package. <a href="https://support.apple.com/en-us/116943">Apple shows where to find this information</a>. Open the downloaded <code>.pkg</code> installer. You do not need to choose a processor type for RStudio; use the macOS download on the RStudio page.</li>
-</ul>
+<section id="choose-your-computer" class="level2">
+<h2 class="anchored" data-anchor-id="choose-your-computer">Choose your computer</h2>
+<p>Follow the instructions for your computer. Install R first, then install RStudio Desktop.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Mac</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="install-r" class="level4">
+<h4 class="anchored" data-anchor-id="install-r">1. Install R</h4>
+<p>Download R from <a href="https://cran.r-project.org/bin/windows/base/">CRAN for Windows</a> and run the installer. The default installation choices are fine.</p>
 </section>
-<section id="install-rstudio-desktop" class="level2">
-<h2 class="anchored" data-anchor-id="install-rstudio-desktop">2. Install RStudio Desktop</h2>
-<p>Download <a href="https://docs.posit.co/ide/user/download.html">RStudio Desktop</a>. Choose the Windows <code>.exe</code> installer or the macOS <code>.dmg</code> installer. On Windows, run the installer and accept the defaults. On Mac, open the <code>.dmg</code> file and drag RStudio to Applications. The download page lists the current operating system requirements.</p>
+<section id="install-rstudio-desktop" class="level4">
+<h4 class="anchored" data-anchor-id="install-rstudio-desktop">2. Install RStudio Desktop</h4>
+<p>Download <a href="https://docs.posit.co/ide/user/download.html">RStudio Desktop</a>. Choose the Windows <code>.exe</code> installer, run it, and accept the default choices.</p>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<section id="install-r-1" class="level4">
+<h4 class="anchored" data-anchor-id="install-r-1">1. Install R</h4>
+</section>
+<section id="which-mac-processor-do-you-have" class="level4">
+<h4 class="anchored" data-anchor-id="which-mac-processor-do-you-have">Which Mac processor do you have?</h4>
+<p>Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open:</p>
+<p><strong>Apple menu &gt; About This Mac</strong></p>
+<p>If the window says <strong>Chip</strong> and lists an M-series chip, download the <code>arm64</code> package.</p>
+<p>If it says <strong>Processor</strong> and lists Intel, download the <code>x86_64</code> package. Open the downloaded <code>.pkg</code> installer.</p>
+</section>
+<section id="install-rstudio-desktop-1" class="level4">
+<h4 class="anchored" data-anchor-id="install-rstudio-desktop-1">2. Install RStudio Desktop</h4>
+<p>Download <a href="https://docs.posit.co/ide/user/download.html">RStudio Desktop</a> and choose the macOS <code>.dmg</code> installer. Open the downloaded file and drag RStudio to Applications. You do not need to choose a processor type for RStudio. The download page lists the current operating system requirements.</p>
+</section>
+</div>
+</div>
+</div>
 </section>
 <section id="if-you-use-a-chromebook" class="level2">
 <h2 class="anchored" data-anchor-id="if-you-use-a-chromebook">If you use a Chromebook</h2>

@@ -6,18 +6,46 @@ title: 'Installing R'
 
 R is the software that runs your analyses. RStudio is the desktop app where you write and run R code. Install R first, then install RStudio.
 
-## 1. Install R
+## Choose your computer
 
-- **Windows:** Download R from [CRAN for Windows](https://cran.r-project.org/bin/windows/base/) and run the installer.
-- **Mac:** Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open **Apple menu > About This Mac**. If the window says **Chip** and lists an M-series chip, download the `arm64` package. If it says **Processor** and lists Intel, download the `x86_64` package. [Apple shows where to find this information](https://support.apple.com/en-us/116943). Open the downloaded `.pkg` installer. You do not need to choose a processor type for RStudio; use the macOS download on the RStudio page.
+Follow the instructions for your computer. Install R first, then install RStudio Desktop.
 
-## 2. Install RStudio Desktop
+::: {.panel-tabset}
 
-Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html). Choose the Windows `.exe` installer or the macOS `.dmg` installer. On Windows, run the installer and accept the defaults. On Mac, open the `.dmg` file and drag RStudio to Applications. The download page lists the current operating system requirements.
+### Windows
+
+#### 1. Install R
+
+Download R from [CRAN for Windows](https://cran.r-project.org/bin/windows/base/) and run the installer. The default installation choices are fine.
+
+#### 2. Install RStudio Desktop
+
+Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html). Choose the Windows `.exe` installer, run it, and accept the default choices.
+
+### Mac
+
+#### 1. Install R
+
+
+**Which Mac processor do you have?** 
+
+Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open:  
+
+ **Apple menu > About This Mac**
+ 
+ If the window says **Chip** and lists an M-series chip, download the `arm64` package. 
+ 
+ If it says **Processor** and lists Intel, download the `x86_64` package. Open the downloaded `.pkg` installer.
+
+#### 2. Install RStudio Desktop
+
+Download [RStudio Desktop](https://docs.posit.co/ide/user/download.html) and choose the macOS `.dmg` installer. Open the downloaded file and drag RStudio to Applications. You do not need to choose a processor type for RStudio. The download page lists the current operating system requirements.
+
+:::
 
 ## If you use a Chromebook
 
-Use [Posit Cloud](https://posit.cloud/) in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.
+Use [Posit Cloud](https://posit.cloud/) in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.  
 
 ## Check your installation
 
