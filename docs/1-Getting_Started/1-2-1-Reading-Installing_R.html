@@ -396,8 +396,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#install-r-and-rstudio" id="toc-install-r-and-rstudio" class="nav-link active" data-scroll-target="#install-r-and-rstudio">Install R and RStudio</a>
   <ul class="collapse">
   <li><a href="#choose-your-computer" id="toc-choose-your-computer" class="nav-link" data-scroll-target="#choose-your-computer">Choose your computer</a></li>
-  <li><a href="#if-you-use-a-chromebook" id="toc-if-you-use-a-chromebook" class="nav-link" data-scroll-target="#if-you-use-a-chromebook">If you use a Chromebook</a></li>
+  <li><a href="#create-an-r-project" id="toc-create-an-r-project" class="nav-link" data-scroll-target="#create-an-r-project">Create an R Project</a></li>
   <li><a href="#check-your-installation" id="toc-check-your-installation" class="nav-link" data-scroll-target="#check-your-installation">Check your installation</a></li>
+  <li><a href="#learning-by-faith" id="toc-learning-by-faith" class="nav-link" data-scroll-target="#learning-by-faith">Learning by Faith</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -431,7 +432,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="choose-your-computer">Choose your computer</h2>
 <p>Follow the instructions for your computer. Install R first, then install RStudio Desktop.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Mac</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Mac</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Chromebook/Tablet</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <section id="install-r" class="level4">
@@ -446,9 +447,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <section id="install-r-1" class="level4">
 <h4 class="anchored" data-anchor-id="install-r-1">1. Install R</h4>
-</section>
-<section id="which-mac-processor-do-you-have" class="level4">
-<h4 class="anchored" data-anchor-id="which-mac-processor-do-you-have">Which Mac processor do you have?</h4>
+<p><strong>Which Mac processor do you have?</strong></p>
 <p>Macs use either Apple silicon (M-series) or Intel processors. R has a different installer for each, so choose the one that matches your Mac. To find out which, open:</p>
 <p><strong>Apple menu &gt; About This Mac</strong></p>
 <p>If the window says <strong>Chip</strong> and lists an M-series chip, download the <code>arm64</code> package.</p>
@@ -459,22 +458,51 @@ ul.task-list li input[type="checkbox"] {
 <p>Download <a href="https://docs.posit.co/ide/user/download.html">RStudio Desktop</a> and choose the macOS <code>.dmg</code> installer. Open the downloaded file and drag RStudio to Applications. You do not need to choose a processor type for RStudio. The download page lists the current operating system requirements.</p>
 </section>
 </div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>If you are using a Chromebook or tablet, you can set up a free account on <a href="https://posit.cloud/">Posit Cloud</a> and run RStudio in your browser. You do not need to install any software locally. Follow the course instructions for opening the course files in Posit Cloud.</p>
+<p>Use <a href="https://posit.cloud/">Posit Cloud</a> in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.</p>
+</div>
 </div>
 </div>
 </section>
-<section id="if-you-use-a-chromebook" class="level2">
-<h2 class="anchored" data-anchor-id="if-you-use-a-chromebook">If you use a Chromebook</h2>
-<p>Use <a href="https://posit.cloud/">Posit Cloud</a> in your browser instead of installing software locally. Follow the course instructions for opening the course files in Posit Cloud.</p>
+<section id="create-an-r-project" class="level2">
+<h2 class="anchored" data-anchor-id="create-an-r-project">Create an R Project</h2>
+<p>Once you have R and RStudio installed, you will create an R Project to organize your work. An R Project is a folder that contains all of your course files and keeps them organized.</p>
+<ol type="1">
+<li>Create an easy-to-find folder, such as <code>Stat225</code>.<br>
+</li>
+<li><a href="https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip">Download the course files</a>, unzip the folder, and move the <code>Student_Work</code> folder into your course folder.<br>
+</li>
+<li>Open RStudio and click <strong>File &gt; New Project &gt; Existing Directory</strong>. Click “Browse” and navigate to your course folder and select it. Click <strong>Create Project</strong>. You should see the course files in the Files pane of RStudio.</li>
+</ol>
+<p>In the top right corner of RStudio, you should see the name of your course folder. This is the name of your R Project. You can click the down arrow next to it to see a list of all your R Projects and switch between them.</p>
 </section>
 <section id="check-your-installation" class="level2">
 <h2 class="anchored" data-anchor-id="check-your-installation">Check your installation</h2>
+<p>Open RStudio and check that your Project is open by looking at the top right corner of RStudio. You should see the name of your course folder.</p>
+<p><img src="../Images/RStudio_Project_Dropdown_Highlight.png" class="img-fluid"></p>
+<p>If you do not see your course folder, click <strong>File &gt; Open Project</strong> and navigate to your course folder to open it.</p>
+<p>All the folders in Student_Work should be visible in the Files pane of RStudio.</p>
+<p><img src="../Images/RStudio_FolderWindow_Highlight.png" class="img-fluid"></p>
 <ol type="1">
-<li>Create an easy-to-find folder, such as <code>Stat225</code>.</li>
-<li><a href="https://raw.github.com/byuistats/Math221D_Course/main/Student_Work.zip">Download the course files</a>, unzip them, and move the <code>Student_Work</code> folder into your course folder.</li>
-<li>In RStudio, open <code>Student_Work/1-Getting_Started/Test.qmd</code> and click <strong>Render</strong>.</li>
-<li>If the report opens in your browser, the installation is working. The <code>Test.html</code> file is saved beside <code>Test.qmd</code>; upload it to Canvas if your instructor requests it.</li>
+<li>Click on 1-Getting_Started in the Foler window.<br>
+</li>
+<li>Click on the <code>Test.qmd</code> file which should open up some strange looking file in the main editor window.<br>
+</li>
+<li>Click the <strong>Render</strong> button at the top of the editor window.</li>
 </ol>
-<p>If RStudio cannot find R, install R first and restart RStudio. If you still have trouble, ask for help in class.</p>
+<p><img src="../Images/RStudio_RenderButton_Highlight.png" class="img-fluid"></p>
+<p>This will create a new file called <code>Test.html</code> in the folder window.</p>
+<p><img src="../Images/RStudio_HTML_Location_Highlight.png" class="img-fluid"></p>
+<p>If everything worked out, submit the <code>Test.html</code> file in Canvas.</p>
+<p>If you were unable to get things working, don’t stress. We will have time in class to troubleshoot setup issues.</p>
+<p><strong>NOTE</strong>: You will not be penalized for turning this assignment in late. The purpose of this assignment is to make sure your technology is set up so that we can focus on learning the material in class.</p>
+</section>
+<section id="learning-by-faith" class="level2">
+<h2 class="anchored" data-anchor-id="learning-by-faith">Learning by Faith</h2>
+<p>Most of you will have absolutely no idea what you just did. That’s totally <strong>normal</strong>.</p>
+<p>Take a deep breath. Be patient. I promise it will all make sense soon.</p>
+<p>The important thing for now is that your technology for the course is up and running.</p>
 
 
 </section>
